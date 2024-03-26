@@ -10,3 +10,13 @@ updates:
       - kurone-kito
     schedule:
       interval: monthly
+  - directory: /
+    labels:
+      - dependencies
+    package-ecosystem: npm
+    reviewers:
+      - kurone-kito
+    assignees:
+      - kurone-kito
+    schedule:
+      interval: monthly
