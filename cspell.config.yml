@@ -6,6 +6,7 @@ dictionaries:
   - en-gb
   - en-us
   - fsharp
+  - php
 enableGlobDot: true
 features:
   weighted-suggestions: true
@@ -34,3 +35,5 @@ words:
   - udon
   - vrcsdk
   - vrchat
+  - vstuc
+
