@@ -1,0 +1,12 @@
+### THE PROJECT SPECIFIES #################################################
+
+### Node ###
+# Husky
+.husky/_
+
+# Ignorefiles
+.*ignore
+
+# Yarn v2
+.yarn
+yarn.lock
