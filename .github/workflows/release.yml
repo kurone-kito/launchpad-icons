@@ -65,7 +65,7 @@ jobs:
         # cspell: disable-next-line
         uses: rickstaa/action-create-tag@v1
         with:
-          tag: "${{ env.version }}"
+          tag: '${{ env.version }}'
       - name: Publish the Release to GitHub
         uses: softprops/action-gh-release@v2
         with:
