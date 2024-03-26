@@ -1,0 +1,36 @@
+allowCompoundWords: true
+dictionaries:
+  - cpp
+  - csharp
+  - dotnet
+  - en-gb
+  - en-us
+  - fsharp
+enableGlobDot: true
+features:
+  weighted-suggestions: true
+globRoot: ${cwd}
+ignorePaths:
+  - .git
+  - .github/CODE_OF_CONDUCT.*
+  - .vscode/extensions.json
+  - Assets/UdonSharp
+  - Assets/XR
+  - cspell.config.yml
+  - Packages/com.*
+  - Packages/dev.*
+  - Packages/*.json
+  - ProjectSettings
+ignoreRegExpList:
+  - (avtr|wrld)_([0-9a-f]{8})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{12})
+language: en,ja
+useGitignore: true
+version: '0.2'
+words:
+  - kito
+  - kuroné
+  - nunit
+  - scriban
+  - udon
+  - vrcsdk
+  - vrchat
