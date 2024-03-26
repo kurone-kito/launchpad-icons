@@ -5,5 +5,11 @@ parserOptions:
     - './tsconfig.json'
 root: true
 rules:
+  import/extensions:
+    - error
+    - never
+    - css: ignorePackages
+      js: ignorePackages
+      json: ignorePackages
   n/no-missing-import: off
   n/no-unsupported-features/es-syntax: off
