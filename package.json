@@ -1,16 +1,17 @@
 {
-  "name": "@kurone-kito/yarn-project-boilerplate",
+  "name": "@kurone-kito/launchpad-icons",
   "version": "0.1.0",
   "private": true,
-  "description": "The boilerplate project of the Node.js / Yarn",
+  "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
   "keywords": [
-    "boilerplate",
-    "template"
+    "Icons",
+    "LaunchPad",
+    "VRChat"
   ],
   "homepage": "https://github.com/kurone-kito/yarn-project-boilerplate#readme",
   "bugs": "https://github.com/kurone-kito/yarn-project-boilerplate/issues",
   "repository": "github:kurone-kito/yarn-project-boilerplate",
-  "license": "MIT",
+  "license": "CC BY-NC 4.0",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "files": [],
