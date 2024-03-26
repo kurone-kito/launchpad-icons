@@ -1,0 +1,9 @@
+extends:
+  - '@kurone-kito/eslint-config-base'
+parserOptions:
+  project:
+    - './tsconfig.json'
+root: true
+rules:
+  n/no-missing-import: off
+  n/no-unsupported-features/es-syntax: off

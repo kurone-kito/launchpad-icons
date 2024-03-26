@@ -6,6 +6,7 @@ reviews:
   auto_review:
     enabled: true
   path_filters:
+    - '!.yarn/**/*'
     - '!Assets'
     - '!Packages/com.vrchat.core.*/**/*'
     - '!ProjectSettings'
