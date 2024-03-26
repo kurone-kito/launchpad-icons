@@ -10,6 +10,7 @@
     ".eslintrc*": ".eslintignore",
     ".gitconfig": ".gitattributes, .gitignore",
     ".markdownlint.*": ".markdownlint-cli2.*",
+    ".prettierrc.*": ".prettierignore",
     ".tool-versions": ".node-version, .nvmrc, global.json",
     "package.json": ".npmrc, pnpm-lock.yaml, pnpm-workspace.yaml",
     "tsconfig.json": "*.tsbuildinfo"

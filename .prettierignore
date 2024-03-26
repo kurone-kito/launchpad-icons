@@ -1,5 +1,25 @@
 ### THE PROJECT SPECIFIES #################################################
 
+### Unity ###
+# Example scenes
+[Aa]ssets/Scenes*
+
+# TextMesh Pro
+[Aa]ssets/TextMesh Pro
+
+# UdonSharp
+[Aa]ssets/SerializedUdonPrograms*
+[Aa]ssets/UdonSharp/PrefabBuild*
+
+# VRChat Creator Companion
+[Pp]ackages/com.vrchat.*
+[Pp]ackages/dev.*
+[Pp]ackages/*.json
+
+# Others
+[Pp]roject[Ss]ettings
+debug.log*
+
 ### Node ###
 # Husky
 .husky/_
@@ -9,3 +29,7 @@
 
 # Pnpm
 pnpm-lock.yaml
+
+### Others ###
+Website/app.js
+Website/index.html
