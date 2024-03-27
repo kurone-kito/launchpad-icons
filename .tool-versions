@@ -1,1 +1,2 @@
 dotnet 6.0.422
+nodejs 22.2.0 ref:v22.2.0 lts-gallium lts latest system
