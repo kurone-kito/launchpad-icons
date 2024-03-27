@@ -47,6 +47,21 @@ jobs:
           repository: vrchat-community/package-list-action
           path: ${{ env.pathToCi }}
           clean: false
+      - name: Pre-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Enable the corepack because of the Yarn berry
+        run: corepack enable
+      - name: Post-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          cache: ${{ !env.ACT && 'yarn' || '' }}
+          node-version-file: .node-version
+      - env:
+          HUSKY: 0
+        name: Install the dependencies
+        run: corepack up
       - name: Load cached data from previous runs
         uses: actions/cache@v4
         with:
