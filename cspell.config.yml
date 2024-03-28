@@ -2,10 +2,12 @@ allowCompoundWords: true
 dictionaries:
   - cpp
   - csharp
+  - css
   - dotnet
   - en-gb
   - en-us
   - fsharp
+  - php
 enableGlobDot: true
 features:
   weighted-suggestions: true
@@ -14,6 +16,7 @@ ignorePaths:
   - .git
   - .github/CODE_OF_CONDUCT.*
   - .vscode/extensions.json
+  - Assets/TextMesh Pro
   - Assets/UdonSharp
   - Assets/XR
   - cspell.config.yml
@@ -27,10 +30,18 @@ language: en,ja
 useGitignore: true
 version: '0.2'
 words:
+  - atrous
+  - denoiser
   - kito
   - kuroné
+  - MSAA
   - nunit
+  - occludee
+  - occluder
   - scriban
+  - spatialize
   - udon
   - vrcsdk
   - vrchat
+  - vstuc
+  - waivable
