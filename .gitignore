@@ -199,6 +199,9 @@ $RECYCLE.BIN/
 [Aa]ssets/SerializedUdonPrograms*
 [Aa]ssets/UdonSharp/PrefabBuild*
 
+# VRWorld Toolkit
+[Aa]ssets/_LastBuild*
+
 # Others
 debug.log*
 
