@@ -4,7 +4,10 @@
 
 ## ✨ Features
 
+- ✅ 50 Icons like the _VRChat LaunchPad_
+- ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat
+- ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
 
 ## ▶ Getting Started
 

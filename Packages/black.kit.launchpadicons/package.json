@@ -9,6 +9,9 @@
     "email": "krone@kit.black",
     "url": "https://kit.black/"
   },
+  "dependencies": {
+    "com.unity.vectorgraphics": "2.0.0-preview.24"
+  },
   "vpmDependencies": {
     "com.vrchat.base": "3.5.1"
   }
