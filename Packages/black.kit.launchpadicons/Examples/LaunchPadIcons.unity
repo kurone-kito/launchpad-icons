@@ -14473,7 +14473,7 @@ GameObject:
   - component: {fileID: 2008151004}
   - component: {fileID: 2008151003}
   - component: {fileID: 2008151009}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Catalog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
