@@ -12,7 +12,5 @@
   "dependencies": {
     "com.unity.vectorgraphics": "2.0.0-preview.24"
   },
-  "vpmDependencies": {
-    "com.vrchat.base": "3.5.1"
-  }
+  "vpmDependencies": {}
 }
