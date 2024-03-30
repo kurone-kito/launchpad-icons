@@ -15,7 +15,7 @@
 
 ### 1. Import the registry via the VRChat Creator Companion (VCC)
 
-**[Add to VCC](vcc://vpm/addRepo?url=https%3A%2F%2Fkurone-kito.github.io%2Fvpm%2Findex.json)**
+Visit the **[VPM Catalogue page](https://kurone-kito.github.io/vpm/)** and click on the **Add to VCC** button.
 
 ### 2. Import the package to your project
 
@@ -23,8 +23,6 @@
 2. Find the "LaunchPad Icons" package and click on the "(+) Add package" button
 
 ### 3. Use the package, enjoy :D
-
-(To be added)
 
 ## License
 
