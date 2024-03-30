@@ -1,7 +1,7 @@
 {
   "name": "black.kit.launchpadicons",
   "displayName": "LaunchPad Icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "unity": "2022.3",
   "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
   "author": {
@@ -12,7 +12,5 @@
   "dependencies": {
     "com.unity.vectorgraphics": "2.0.0-preview.24"
   },
-  "vpmDependencies": {
-    "com.vrchat.base": "3.5.1"
-  }
+  "vpmDependencies": {}
 }
