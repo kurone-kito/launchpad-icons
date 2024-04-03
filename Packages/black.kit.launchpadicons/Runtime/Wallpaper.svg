@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 138.5">
+  <defs>
+    <style>
+      .b {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
+      .c {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <rect class="c" x="7.5" y="7.5" width="145" height="80" rx="3" ry="3"/>
+  <path class="b" d="M120.5,138.5H39.5c15.1-13,22.8-26,23-39h33c-1.7,13,6.7,26,25,39Z"/>
+  <polygon class="b" points="21 75.5 32 54.5 48 70.5 76 28.5 103 71.5 124 50.5 141.2 75.5 21 75.5"/>
+  <circle class="b" cx="115" cy="30.5" r="12"/>
+</svg>
