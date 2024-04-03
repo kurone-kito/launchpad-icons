@@ -35,10 +35,9 @@ jobs:
       - name: Get the Package version based on the package.json file
         id: version
         # cspell: disable-next-line
-        uses: zoexx/github-action-json-file-properties@1.0.6
+        uses: sergeysova/jq-action@v2
         with:
-            file_path: "${{ env.packagePath }}/package.json"
-            prop_path: "version"
+          cmd: jq -r ".version" "${{ env.packagePath }}/package.json"
       - name: Configure the Environment Variables needed for releasing the Package
         run: |
           echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}".zip >> $GITHUB_ENV
