@@ -9,15 +9,14 @@ jobs:
     outputs:
       config_package: ${{ steps.config_package.outputs.configPackage }}
     steps:
-
-    - name: Ensure that required repository variable has been created for the Package
-      id: config_package
-      run: |
-        if [ "${{ vars.PACKAGE_NAME }}" != "" ]; then
-          echo "configPackage=true" >> $GITHUB_OUTPUT;
-        else
-          echo "configPackage=false" >> $GITHUB_OUTPUT;
-        fi
+      - name: Ensure that required repository variable has been created for the Package
+        id: config_package
+        run: |
+          if [ "${{ vars.PACKAGE_NAME }}" != "" ]; then
+            echo "configPackage=true" >> $GITHUB_OUTPUT;
+          else
+            echo "configPackage=false" >> $GITHUB_OUTPUT;
+          fi
 
   build:
     needs: config
@@ -44,7 +43,7 @@ jobs:
           echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.unitypackage" >> $GITHUB_ENV
           echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
       - name: Zip the Package for release
-        working-directory: "${{ env.packagePath }}"
+        working-directory: '${{ env.packagePath }}'
         run: zip -r -9 "${{ github.workspace }}/${{ env.zipFile }}" .
       - name: Build a list of .meta files for future use
         run: find "${{ env.packagePath }}/" -name \*.meta >> metaList
