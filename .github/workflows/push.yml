@@ -21,19 +21,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Enable the corepack because of the Yarn berry
+      - name: Enable the corepack because of the pnpm
         run: corepack enable
       - name: Post-prepare the Node.js version ${{ matrix.node-version }} environment
         uses: actions/setup-node@v4
         with:
-          cache: ${{ !env.ACT && 'yarn' || '' }}
+          cache: ${{ !env.ACT && 'pnpm' || '' }}
           node-version: ${{ matrix.node-version }}
       - env:
           HUSKY: 0
         name: Install the dependencies
-        run: yarn install --inline-builds
+        run: pnpm install --prefer-frozen-lockfile
       - name: Run the tests
-        run: yarn run test
+        run: pnpm run test
     strategy:
       matrix:
         node-version:

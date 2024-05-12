@@ -23,7 +23,6 @@ ignorePaths:
   - ProjectSettings
 ignoreRegExpList:
   - (avtr|wrld)_([0-9a-f]{8})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{12})
-usePnP: true
 version: '0.2'
 words:
   - atrous
