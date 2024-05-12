@@ -312,9 +312,8 @@ $RECYCLE.BIN/
 # JSON
 *.json
 
-# yarn v2
-.yarn/
-yarn.lock
+# Pnpm
+pnpm-lock.yaml
 
 ### Text ###
 LICENSE

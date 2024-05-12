@@ -2,4 +2,4 @@
 # -*- mode: sh -*-
 # vim: set ft=sh :
 
-yarn exec lint-staged
+pnpm exec lint-staged
