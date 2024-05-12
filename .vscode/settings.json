@@ -1,6 +1,5 @@
 {
   "dotnet.preferCSharpExtension": true,
-  "eslint.nodePath": ".yarn/sdks",
   "files.associations": {
     "*.asmdef": "json",
     "*.asset": "yaml",
@@ -13,8 +12,6 @@
     "LICENSE": "plaintext"
   },
   "files.readonlyInclude": {
-    "**/.pnp.*": true,
-    "**/.yarn": true,
     "**/node_modules/**/*": true,
     "Packages/com.*/**": true,
     "Packages/dev.*/**": true,
@@ -23,9 +20,6 @@
   },
   "files.watcherExclude": {
     "**/.eslintcache": true,
-    "**/.pnp.*": true,
-    "**/.yarn/cache/**": true,
-    "**/.yarn/unplugged/**": true,
     "**/*.suo": true,
     "**/node_modules/**/*": true,
     "Build/": true,
@@ -36,10 +30,7 @@
     "UserSettings/**": true
   },
   "git.branchProtection": ["main"],
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
   "search.exclude": {
-    "**/.pnp.*": true,
-    "**/.yarn": true,
     "**/*.suo": true,
     "**/node_modules/**/*": true,
     "Build/": true,
@@ -50,7 +41,6 @@
     "UserSettings/**": true
   },
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "yaml.customTags": [
     "tag:unity3d.com,2011:1 mapping",
     "tag:unity3d.com,2011:4 mapping",
