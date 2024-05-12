@@ -26,14 +26,14 @@ jobs:
       - name: Post-prepare the Node.js version ${{ matrix.node-version }} environment
         uses: actions/setup-node@v4
         with:
-          cache: ${{ !env.ACT && 'yarn' || '' }}
+          cache: ${{ !env.ACT && 'pnpm' || '' }}
           node-version: ${{ matrix.node-version }}
       - env:
           HUSKY: 0
         name: Install the dependencies
-        run: yarn install --inline-builds
+        run: corepack up
       - name: Run the tests
-        run: yarn run test
+        run: pnpm run test
     strategy:
       matrix:
         node-version:
