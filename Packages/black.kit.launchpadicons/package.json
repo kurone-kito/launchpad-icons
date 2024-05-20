@@ -4,6 +4,7 @@
   "version": "0.2.0",
   "unity": "2022.3",
   "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
+  "unityRelease": "22f1",
   "author": {
     "name": "Kuroné Kito",
     "email": "krone@kit.black",
