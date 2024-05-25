@@ -1,5 +1,6 @@
 // @refresh reload
 import { createHandler, StartServer } from '@solidjs/start/server';
+import { base } from './constants.json';
 
 /** The description of the site. */
 const description =
@@ -37,6 +38,7 @@ export default createHandler(() => (
           <meta property="og:site_name" content={title} />
           <meta property="og:type" content="website" />
           <link rel="author" href="https://kit.black/" />
+          <link rel="icon" href={`/${base}/icons/Rocket.svg`} />
           {assets}
         </head>
         <body>
