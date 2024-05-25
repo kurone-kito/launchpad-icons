@@ -37,6 +37,7 @@ export default createHandler(() => (
           <meta property="og:site_name" content={title} />
           <meta property="og:type" content="website" />
           <link rel="author" href="https://kit.black/" />
+          <link rel="icon" href="icons/Rocket.svg" />
           {assets}
         </head>
         <body>

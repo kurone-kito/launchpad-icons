@@ -8,7 +8,10 @@ const App: Component = () => (
   <div>
     <nav class="flex gap-2">
       <h1>
-        <a href=".">Launchpad Icons</a>
+        <a class="flex gap-2" href=".">
+          <img src="icons/Rocket.svg" height="16" width="16" />
+          <span>Launchpad Icons</span>
+        </a>
       </h1>
       <ul class="flex gap-2">
         <li>

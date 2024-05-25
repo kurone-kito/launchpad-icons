@@ -370,3 +370,5 @@ debug.log*
 ### Others ###
 Packages/black.kit.launchpadicons/LICENSE
 Packages/black.kit.launchpadicons/README.md
+public/icons
+src/dynamic.json

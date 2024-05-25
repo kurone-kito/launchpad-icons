@@ -6,9 +6,9 @@
     "lib": ["ESNext", "DOM"],
     "noEmit": true,
     "target": "ESNext",
-    "types": ["vinxi/types/client"]
+    "types": ["node", "vinxi/types/client"]
   },
-  "include": ["src/**/*"],
+  "include": ["scripts/**/*", "src/**/*"],
   "exclude": ["Website/**/*"],
   "extends": "@kurone-kito/typescript-config/tsconfig.json"
 }
