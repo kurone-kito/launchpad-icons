@@ -42,6 +42,7 @@
     "@solidjs/router": "^0.13.5",
     "@solidjs/start": "^1.0.1",
     "marked": "^12.0.2",
+    "solid-icons": "^1.1.0",
     "solid-js": "^1.8.17",
     "tw-elements": "^2.0.0"
   },
