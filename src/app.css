@@ -10,4 +10,8 @@
   .heading-root {
     @apply font-extrabold py-4 text-3xl text-surface dark:text-neutral-400;
   }
+
+  .nav-icon-button {
+    @apply text-black/60 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80;
+  }
 }
