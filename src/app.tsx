@@ -2,6 +2,7 @@ import { Router } from '@solidjs/router';
 import { FileRoutes } from '@solidjs/start/router';
 import type { Component } from 'solid-js';
 import { onMount, Suspense } from 'solid-js';
+import { DefaultTemplate } from './components/templates/DefaultTemplate.js';
 import { base } from './constants.json';
 import './app.css';
 
@@ -11,9 +12,14 @@ const App: Component = () => {
     initTWE({ Collapse, Ripple, Tooltip });
   });
   return (
-    <Router base={base} root={(props) => <Suspense>{props.children}</Suspense>}>
-      <FileRoutes />
-    </Router>
+    <DefaultTemplate>
+      <Router
+        base={base}
+        root={(props) => <Suspense>{props.children}</Suspense>}
+      >
+        <FileRoutes />
+      </Router>
+    </DefaultTemplate>
   );
 };
 

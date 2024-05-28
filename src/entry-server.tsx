@@ -28,6 +28,16 @@ export default createHandler(() => (
           />
           <meta name="rating" content="General" />
           <meta name="referer" content="same-origin" />
+          <meta
+            name="theme-color"
+            content="#404040"
+            media="(prefers-color-scheme: dark)"
+          />
+          <meta
+            name="theme-color"
+            content="#FAFAFA"
+            media="(prefers-color-scheme: light)"
+          />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@kurone_kito" />
