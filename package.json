@@ -43,6 +43,7 @@
   "dependencies": {
     "@solidjs/router": "^0.13.6",
     "@solidjs/start": "^1.0.2",
+    "solid-icons": "^1.1.0",
     "solid-js": "^1.8.18",
     "tw-elements": "^2.0.0"
   },
