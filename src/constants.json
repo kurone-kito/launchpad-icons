@@ -1,5 +1,6 @@
 {
   "base": "launchpad-icons",
+  "iconsToDo": 110,
   "newIcons": [
     "CameraReload",
     "Down",
