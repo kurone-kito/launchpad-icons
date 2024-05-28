@@ -1,0 +1,23 @@
+{
+  "iconsToDo": 160,
+  "newIcons": [
+    "Envelope+",
+    "EnvelopeQ",
+    "Material",
+    "Venn",
+    "VennColorMM",
+    "VennColorMPc",
+    "VennColorMPcM",
+    "VennColorOnlyM",
+    "VennColorOnlyPc",
+    "VennColorOnlyQ",
+    "VennColorQPc",
+    "VennColorQPcQ",
+    "VennColorQQ",
+    "VennMonoPc",
+    "VennMonoPcQ",
+    "VennMonoQ"
+  ],
+  "vccUrl": "vcc://vpm/addRepo?url=",
+  "vpmUrl": "https://kurone-kito.github.io/vpm/index.json"
+}

@@ -6,4 +6,8 @@
   .article-container {
     @apply mx-auto p-6 lg:px-0 lg:py-6 lg:container;
   }
+
+  .heading-root {
+    @apply font-extrabold py-4 text-3xl text-surface dark:text-neutral-400;
+  }
 }
