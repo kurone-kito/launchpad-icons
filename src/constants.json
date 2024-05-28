@@ -1,3 +1,23 @@
 {
-  "base": "launchpad-icons"
+  "base": "launchpad-icons",
+  "newIcons": [
+    "CameraReload",
+    "Down",
+    "Previous",
+    "PreviousArrow",
+    "PreviousThin",
+    "PreviousTri",
+    "ProgressBack",
+    "RankExcellent",
+    "RankGood",
+    "RankMedium",
+    "RankPoor",
+    "RankVeryPoor",
+    "ShieldWithGear",
+    "ShieldWithStar",
+    "Terminal",
+    "WingR"
+  ],
+  "vccUrl": "vcc://vpm/addRepo?url=",
+  "vpmUrl": "https://kurone-kito.github.io/vpm/index.json"
 }
