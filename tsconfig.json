@@ -4,7 +4,7 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "noEmit": true,
-    "types": ["vinxi/types/client"]
+    "types": ["node", "vinxi/types/client"]
   },
   "include": ["src/**/*"],
   "exclude": ["Website/**/*"],
