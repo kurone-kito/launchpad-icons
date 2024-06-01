@@ -362,6 +362,8 @@ debug.log*
 # Pnpm
 pnpm-lock.yaml
 
+/*.config.[jt]s
+
 ### Text ###
 LICENSE
 

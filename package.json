@@ -44,6 +44,7 @@
     "@kurone-kito/typescript-config": "^0.12.0",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.14.1",
+    "autoprefixer": "^10.4.19",
     "cspell": "^8.9.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -63,8 +64,10 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "oxlint": "^0.5.1",
+    "postcss": "^8.4.38",
     "prettier": "^3.3.2",
     "rimraf": "^5.0.7",
+    "tailwindcss": "^3.4.4",
     "typescript": "~5.5.2",
     "typescript-eslint-language-service": "^5.0.5"
   },
