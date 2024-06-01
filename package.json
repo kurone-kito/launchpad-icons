@@ -35,6 +35,7 @@
     "test": "pnpm run lint"
   },
   "dependencies": {
+    "@solidjs/router": "^0.13.6",
     "@solidjs/start": "^1.0.2",
     "solid-js": "^1.8.18"
   },

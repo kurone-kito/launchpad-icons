@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .article-container {
+    @apply mx-auto p-6 lg:px-0 lg:py-6 lg:container;
+  }
+}
