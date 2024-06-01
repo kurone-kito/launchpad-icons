@@ -1,4 +1,5 @@
 import twElements from 'tw-elements/plugin.cjs';
+import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,7 +7,7 @@ export default {
     './src/**/*.{html,js,jsx,ts,tsx}',
     './node_modules/tw-elements/js/**/*.js',
   ],
-  plugins: [twElements],
+  plugins: [twElements, typography],
   darkMode: 'class',
   theme: {
     extend: {

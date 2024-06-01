@@ -60,6 +60,7 @@
     "@kurone-kito/prettier-config": "^0.12.0",
     "@kurone-kito/typescript-config": "^0.12.0",
     "@opentelemetry/api": "~1.8.0",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.14.1",

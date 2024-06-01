@@ -57,6 +57,9 @@ importers:
       '@opentelemetry/api':
         specifier: ~1.8.0
         version: 1.8.0
+      '@tailwindcss/typography':
+        specifier: ^0.5.13
+        version: 0.5.13(tailwindcss@3.4.4)
       '@types/node':
         specifier: ^20.14.9
         version: 20.14.9
@@ -1511,6 +1514,11 @@ packages:
 
   '@solidjs/start@1.0.2':
     resolution: {integrity: sha512-SRoFvSnL47O1hg4/Er2es2AVoOWRdGBm0C8h2KsHFjbiRe1r2AxsONHR9job+Hmzbl5icSaGmNoXoQ8qpTy4UA==}
+
+  '@tailwindcss/typography@0.5.13':
+    resolution: {integrity: sha512-ADGcJ8dX21dVVHIwTRgzrcunY6YY9uSlAHHGVKvkA+vLc5qLwEszvKts40lx7z0qc4clpjclwLeK5rVCV2P/uw==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -3378,6 +3386,9 @@ packages:
   lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
+  lodash.castarray@4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+
   lodash.defaults@4.2.0:
     resolution: {integrity: sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==}
 
@@ -3888,6 +3899,10 @@ packages:
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
+
+  postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
 
   postcss-selector-parser@6.1.0:
     resolution: {integrity: sha512-UMz42UD0UY0EApS0ZL9o1XnLhSTtvvvLe5Dc2H2O56fvRZi+KulDyf5ctDhhtYJBGKStV2FL1fy6253cmLgqVQ==}
@@ -6029,6 +6044,14 @@ snapshots:
       - supports-color
       - vinxi
       - vite
+
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.4)':
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.4.4
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -8203,6 +8226,8 @@ snapshots:
 
   lodash.camelcase@4.3.0: {}
 
+  lodash.castarray@4.4.0: {}
+
   lodash.defaults@4.2.0: {}
 
   lodash.isarguments@3.1.0: {}
@@ -8762,6 +8787,11 @@ snapshots:
     dependencies:
       postcss: 8.4.38
       postcss-selector-parser: 6.1.0
+
+  postcss-selector-parser@6.0.10:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
 
   postcss-selector-parser@6.1.0:
     dependencies:
