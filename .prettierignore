@@ -30,6 +30,10 @@ debug.log*
 # Pnpm
 pnpm-lock.yaml
 
+# Solid.js
+.output
+.vinxi
+
 ### Others ###
 Website/app.js
 Website/index.html

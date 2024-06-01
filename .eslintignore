@@ -348,6 +348,9 @@ $RECYCLE.BIN/
 
 ### THE PROJECT SPECIFIES #################################################
 
+### CSS ###
+*.css
+
 ### Unity ###
 # Ignore all files
 [Aa]ssets
@@ -361,6 +364,10 @@ debug.log*
 
 # Pnpm
 pnpm-lock.yaml
+
+# Solid.js
+.output
+.vinxi
 
 /*.config.[jt]s
 

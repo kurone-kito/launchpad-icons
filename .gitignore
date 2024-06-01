@@ -348,6 +348,11 @@ $RECYCLE.BIN/
 
 ### THE PROJECT SPECIFIES #################################################
 
+### Node ###
+# Solid.js
+.output
+.vinxi
+
 ### Unity ###
 # Example scenes
 [Aa]ssets/Scenes*
