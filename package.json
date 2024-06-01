@@ -18,7 +18,9 @@
   "scripts": {
     "build": "vinxi build",
     "clean": "rimraf -g .eslintcache .output .vinxi \"*.tgz\" \"*.tsbuildinfo\" \"node_modules/.cache/**/*\"",
-    "dev": "vinxi dev",
+    "dev": "pnpm run \"/dev:.*/\"",
+    "dev:browser": "delay 5 && open-cli \"http://localhost:3000/launchpad-icons/\"",
+    "dev:vinxi": "vinxi dev",
     "postinstall": "husky",
     "lint": "pnpm run \"/lint:.*:check/\"",
     "lint:cspell:check": "cspell lint --no-progress --show-suggestions -u \"./**/*\"",
@@ -30,7 +32,7 @@
     "lint:prettier:check": "pnpm run prettier -cu",
     "lint:prettier:fix": "pnpm run prettier -uw",
     "prettier": "prettier --cache --log-level=warn \"./**/*\"",
-    "serve": "vinxi serve --dir .output/public",
+    "serve": "vinxi serve --dir .output/public --base /launchpad-icons",
     "start": "vinxi start",
     "test": "pnpm run lint"
   },
