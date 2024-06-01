@@ -16,7 +16,9 @@
   "type": "module",
   "files": [],
   "scripts": {
-    "clean": "rimraf -g .eslintcache \"*.tgz\" \"*.tsbuildinfo\" \"node_modules/.cache/**/*\"",
+    "build": "vinxi build",
+    "clean": "rimraf -g .eslintcache .output .vinxi \"*.tgz\" \"*.tsbuildinfo\" \"node_modules/.cache/**/*\"",
+    "dev": "vinxi dev",
     "postinstall": "husky",
     "lint": "pnpm run \"/lint:.*:check/\"",
     "lint:cspell:check": "cspell lint --no-progress --show-suggestions -u \"./**/*\"",
@@ -28,7 +30,13 @@
     "lint:prettier:check": "pnpm run prettier -cu",
     "lint:prettier:fix": "pnpm run prettier -uw",
     "prettier": "prettier --cache --log-level=warn \"./**/*\"",
+    "serve": "vinxi serve --dir .output/public",
+    "start": "vinxi start",
     "test": "pnpm run lint"
+  },
+  "dependencies": {
+    "@solidjs/start": "^1.0.1",
+    "solid-js": "^1.8.17"
   },
   "prettier": "@kurone-kito/prettier-config",
   "devDependencies": {
@@ -46,6 +54,7 @@
     "@typescript-eslint/parser": "^7.11.0",
     "autoprefixer": "^10.4.19",
     "cspell": "^8.8.3",
+    "delay-cli": "^2.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
@@ -63,13 +72,15 @@
     "eslint-plugin-yaml": "^0.5.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
+    "open-cli": "^8.0.0",
     "oxlint": "^0.4.2",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.7",
     "tailwindcss": "^3.4.3",
     "typescript": "~5.4.5",
-    "typescript-eslint-language-service": "^5.0.5"
+    "typescript-eslint-language-service": "^5.0.5",
+    "vinxi": "^0.3.11"
   },
   "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0",
   "engines": {
