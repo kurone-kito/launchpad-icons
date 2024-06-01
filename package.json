@@ -58,6 +58,7 @@
     "@kurone-kito/lint-staged-config": "^0.11.0",
     "@kurone-kito/prettier-config": "^0.11.0",
     "@kurone-kito/typescript-config": "^0.11.0",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20.13.0",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
