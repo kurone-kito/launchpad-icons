@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 123">
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="123" viewBox="0 0 123 123">
   <defs>
     <style>
       .b {
-        fill: #fff;
+        fill: white;
         stroke-width: 0px;
       }
     </style>

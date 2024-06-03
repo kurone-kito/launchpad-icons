@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 162">
+<svg xmlns="http://www.w3.org/2000/svg" width="162" height="162" viewBox="0 0 162 162">
   <defs>
     <style>
+      .b {
+        stroke-dasharray: 0 0 36.5 20.8;
+      }
+
       .b, .c {
         fill: none;
-        stroke: #fff;
+        stroke: white;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 16px;
       }
-
-      .c {
-        stroke-dasharray: 0 0 36.5 20.8;
-      }
     </style>
   </defs>
-  <circle class="c" cx="81" cy="81" r="73" transform="translate(-33.6 81) rotate(-45)"/>
-  <line class="b" x1="61" y1="81" x2="103" y2="81"/>
-  <line class="b" x1="81" y1="60" x2="81" y2="101"/>
+  <circle class="b" cx="81" cy="81" r="73" transform="translate(-33.6 81) rotate(-45)"/>
+  <line class="c" x1="60" y1="81" x2="102" y2="81"/>
+  <line class="c" x1="81" y1="60" x2="81" y2="101"/>
 </svg>
