@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.4 110">
+<svg xmlns="http://www.w3.org/2000/svg" width="107.4" height="110" viewBox="0 0 107.4 110">
   <defs>
     <style>
       .b {
         fill: none;
-        stroke: #fff;
+        stroke: white;
         stroke-miterlimit: 10;
         stroke-width: 8px;
       }
 
       .c {
-        fill: #fff;
+        fill: white;
         stroke-width: 0px;
       }
     </style>

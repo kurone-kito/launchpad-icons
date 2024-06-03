@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -27 128 128">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 74">
   <defs>
     <style>
       .b {
@@ -23,11 +23,14 @@
       }
     </style>
   </defs>
-  <polygon class="d" points="32 74 0 60 0 0 32 14 32 74"/>
   <g>
-    <line class="b" x1="46" y1="30" x2="64.2" y2="30"/>
-    <polygon class="d" points="61.8 11.8 61.8 48.2 80 30 61.8 11.8"/>
+    <line class="b" x1="44" y1="30" x2="62.2" y2="30"/>
+    <polygon class="d" points="59.8 11.8 59.8 48.2 78 30 59.8 11.8"/>
   </g>
-  <path class="c" d="m2.5,2.5h49.6c1.4,0,1.4,1,1.4,2v11.6"/>
-  <path class="c" d="m3.5,57.5s46.9.5,48.4.5,1.6-.7,1.6-1.6v-12.7"/>
+  <g>
+    <path class="c" d="M2.8,2.5h47.2c1.4,0,1.4,1,1.4,2v12"/>
+    <rect class="d" x=".5" y="0" width="5" height="5"/>
+  </g>
+  <path class="c" d="M2.5,57.5s45.9.5,47.4.5,1.6-.7,1.6-1.6v-12.9"/>
+  <polygon class="d" points="32 74 0 60 0 0 32 14 32 74"/>
 </svg>

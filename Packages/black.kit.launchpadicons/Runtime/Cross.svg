@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.5 89.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="89.5" height="89.5" viewBox="0 0 89.5 89.5">
   <defs>
     <style>
       .b {
         fill: none;
-        stroke: #fff;
+        stroke: white;
         stroke-miterlimit: 10;
         stroke-width: 24px;
       }
