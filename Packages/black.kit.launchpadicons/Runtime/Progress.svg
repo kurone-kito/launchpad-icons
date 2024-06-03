@@ -4,7 +4,7 @@
     <style>
       .b {
         fill: none;
-        stroke: #fff;
+        stroke: white;
         stroke-miterlimit: 10;
         stroke-width: 16px;
       }
