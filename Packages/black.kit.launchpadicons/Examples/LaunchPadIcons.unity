@@ -6510,12 +6510,12 @@ PrefabInstance:
     - target: {fileID: 1603239655964719121, guid: 91cb797e4d424f645914ac84b65832b4,
         type: 3}
       propertyPath: m_text
-      value: User
+      value: UserIcon
       objectReference: {fileID: 0}
     - target: {fileID: 4581744468480628541, guid: 91cb797e4d424f645914ac84b65832b4,
         type: 3}
       propertyPath: m_Name
-      value: User
+      value: UserIcon
       objectReference: {fileID: 0}
     - target: {fileID: 5575773536154157405, guid: 91cb797e4d424f645914ac84b65832b4,
         type: 3}
