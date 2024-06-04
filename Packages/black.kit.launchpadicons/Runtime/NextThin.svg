@@ -4,7 +4,7 @@
     <style>
       .b {
         fill: none;
-        stroke: #fff;
+        stroke: white;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 33px;
