@@ -3,20 +3,20 @@
   <defs>
     <style>
       .b {
-        stroke-width: 30px;
+        stroke-width: 25px;
       }
 
       .b, .c {
         fill: none;
-        stroke: #fff;
+        stroke: white;
         stroke-miterlimit: 10;
       }
 
       .c {
-        stroke-width: 25px;
+        stroke-width: 30px;
       }
     </style>
   </defs>
-  <circle class="c" cx="81" cy="81" r="68.5"/>
-  <line class="b" x1="139.5" y1="46.5" x2="22.5" y2="116.5"/>
+  <circle class="b" cx="81" cy="81" r="68.5"/>
+  <line class="c" x1="139.5" y1="46.5" x2="22.5" y2="116.5"/>
 </svg>
