@@ -25,6 +25,7 @@ jobs:
       contents: write
     env:
       packagePath: Packages/${{ vars.PACKAGE_NAME }}
+      stableVersion:
       unityPackage:
       version:
       zipFile:
@@ -40,8 +41,16 @@ jobs:
         uses: sergeysova/jq-action@v2
         with:
           cmd: jq -r ".version" "${{ env.packagePath }}/package.json"
+      - name: Detect whether the version is a stable release
+        id: stable-match
+        uses: kaisugi/action-regex-match@v1.0.1
+        with:
+          flags: gm
+          regex: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
+          text: ${{ steps.version.outputs.value }}
       - name: Configure the Environment Variables needed for releasing the Package
         run: |
+          echo "stableVersion=${{ steps.stable-match.outputs.match }}" >> $GITHUB_ENV
           echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.unitypackage" >> $GITHUB_ENV
           echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
           echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}".zip >> $GITHUB_ENV
@@ -71,4 +80,5 @@ jobs:
             ${{ env.unityPackage }}
             ${{ env.unityPackage }}.zip
             ${{ env.packagePath }}/package.json
+          prerelease: ${{ env.stableVersion == '' }}
           tag_name: ${{ env.version }}
