@@ -37,6 +37,12 @@ jobs:
         uses: sergeysova/jq-action@v2
         with:
           cmd: jq -r ".version" "${{ env.packagePath }}/package.json"
+      - name: Detect whether the version is a prerelease
+        id: prerelease-match
+        uses: actions-ecosystem/action-regex-match@v2
+        with:
+          text: ${{ steps.version.outputs.value }}
+          regex: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*)(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
       - name: Configure the Environment Variables needed for releasing the Package
         run: |
           echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}".zip >> $GITHUB_ENV
@@ -68,4 +74,5 @@ jobs:
             ${{ env.unityPackage }}
             ${{ env.unityPackage }}.zip
             ${{ env.packagePath }}/package.json
+          prerelease: ${{ steps.prerelease-match.outputs.match == '' }}
           tag_name: ${{ env.version }}
