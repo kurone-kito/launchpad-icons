@@ -39,6 +39,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Set git to use LF
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
       - name: Checkout Local Repository
         uses: actions/checkout@v4
       - name: Checkout Automation Repository without removing prior checkouts
@@ -75,6 +79,8 @@ jobs:
         run: ${{ env.pathToCi }}/build.cmd BuildRepoListing --root ${{ env.pathToCi }} --list-publish-directory $GITHUB_WORKSPACE/${{ env.listPublishDirectory }} --current-package-name ${{ vars.PACKAGE_NAME }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Overwrite the VPM Listing Website by the generated one
+        run: cp -r .output/public/* $GITHUB_WORKSPACE/${{ env.listPublishDirectory }}
       - name: Prepare for GitHub Pages deployment
         uses: actions/configure-pages@v5
         with:
