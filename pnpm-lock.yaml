@@ -14,6 +14,9 @@ importers:
       '@solidjs/start':
         specifier: ^1.0.2
         version: 1.0.2(rollup@4.18.0)(solid-js@1.8.18)(vinxi@0.3.12(@opentelemetry/api@1.8.0)(@types/node@20.14.9)(ioredis@5.4.1)(terser@5.31.1))(vite@5.3.2(@types/node@20.14.9)(terser@5.31.1))
+      marked:
+        specifier: ^13.0.1
+        version: 13.0.1
       solid-icons:
         specifier: ^1.1.0
         version: 1.1.0(solid-js@1.8.18)
@@ -3457,6 +3460,11 @@ packages:
   markdownlint@0.34.0:
     resolution: {integrity: sha512-qwGyuyKwjkEMOJ10XN6OTKNOVYvOIi35RNvDLNxTof5s8UmyGHlCdpngRHoRGNvQVGuxO3BJ7uNSgdeX166WXw==}
     engines: {node: '>=18'}
+
+  marked@13.0.1:
+    resolution: {integrity: sha512-7kBohS6GrZKvCsNXZyVVXSW7/hGBHe49ng99YPkDCckSUrrG7MSFLCexsRxptzOmyW2eT5dySh4Md1V6my52fA==}
+    engines: {node: '>= 18'}
+    hasBin: true
 
   mdast-util-from-markdown@0.8.5:
     resolution: {integrity: sha512-2hkTXtYYnr+NubD/g6KGBS/0mFmBcifAsI0yIWRiRo0PjVs6SSOSOdtzbp6kSGnShDN6G5aWZpKQ2lWRy27mWQ==}
@@ -8295,6 +8303,8 @@ snapshots:
     dependencies:
       markdown-it: 14.1.0
       markdownlint-micromark: 0.1.9
+
+  marked@13.0.1: {}
 
   mdast-util-from-markdown@0.8.5:
     dependencies:

@@ -14,4 +14,12 @@
   .nav-icon-button {
     @apply text-black/60 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80;
   }
+
+  .prose-article {
+    @apply article-container leading-loose prose prose-neutral dark:prose-invert prose-h2:text-surface dark:prose-h2:text-neutral-400;
+  }
+
+  .prose-anchor {
+    @apply prose-a:text-primary prose-a:transition prose-a:duration-150 prose-a:ease-in-out hover:prose-a:text-primary-600 focus:prose-a:text-primary-600 active:prose-a:text-primary-700 dark:prose-a:text-primary-400 dark:hover:prose-a:text-primary-500 dark:focus:prose-a:text-primary-500 dark:active:prose-a:text-primary-600;
+  }
 }
