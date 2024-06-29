@@ -17,6 +17,9 @@ importers:
       solid-js:
         specifier: ^1.8.18
         version: 1.8.18
+      tw-elements:
+        specifier: ^2.0.0
+        version: 2.0.0
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
@@ -4443,6 +4446,9 @@ packages:
 
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+
+  tw-elements@2.0.0:
+    resolution: {integrity: sha512-aiitkqzmCZIZ9zJr3V6ErVzU/CrKoAkptpv94t0pEKnVn2Ah4jOplXOO/v6Fo9jr3PoTA5dxvlyS4w8rnW/iag==}
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -9370,6 +9376,8 @@ snapshots:
       strip-bom: 3.0.0
 
   tslib@2.6.3: {}
+
+  tw-elements@2.0.0: {}
 
   type-check@0.4.0:
     dependencies:
