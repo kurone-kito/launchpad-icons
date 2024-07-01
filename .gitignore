@@ -351,6 +351,10 @@ $RECYCLE.BIN/
 ### Node ###
 nodePackages/*/LICENSE
 nodePackages/builder/assets
+nodePackages/react/assets
+nodePackages/react/src/index.ts?
+nodePackages/solid/assets
+nodePackages/solid/src/index.ts?
 
 ### Unity ###
 # Example scenes

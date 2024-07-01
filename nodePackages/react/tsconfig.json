@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "exclude": ["dist", "node_modules"],
+  "extends": "@kurone-kito/typescript-config/tsconfig.json"
+}
