@@ -19,15 +19,33 @@
   "license": "CC-BY-NC-4.0",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
-  "files": [],
+  "bin": {
+    "lib-codeBuilder": "./dist/codeBuilder.mjs"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "cpy --flat ../../LICENSE .",
-    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" LICENSE node_modules/.cache",
-    "prepack": "pnpm run clean && pnpm run build"
+    "prebuild": "pnpm run \"/^prebuild:.+/\"",
+    "build": "tsc",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" assets dist LICENSE node_modules/.cache",
+    "preinstall": "pnpm dlx mkdirp dist && pnpm dlx touch dist/codeBuilder.mjs",
+    "lib-codeBuilder": "node dist/codeBuilder.mjs",
+    "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "start": "tsc -w"
+  },
+  "dependencies": {
+    "json5": "^2.2.3"
   },
   "devDependencies": {
+    "@kurone-kito/typescript-config": "^0.15.0-alpha.2",
+    "@types/node": "^20.14.10",
     "cpy-cli": "^5.0.0",
-    "rimraf": "^5.0.10"
+    "rimraf": "^5.0.10",
+    "symlink-dir": "^6.0.1",
+    "typescript": "~5.5.3"
   },
   "engines": {
     "node": ">=18"

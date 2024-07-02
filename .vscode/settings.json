@@ -6,6 +6,7 @@
     "*": "${capture}.meta, ${capture}.md5",
     "*.dll": "${capture}.pdb",
     "*.md": "${capture}.*.md",
+    "*.mjs": "${capture}.${extname}.map",
     "*.sln": "*.csproj",
     ".eslintrc*": ".eslintignore",
     ".gitconfig": ".gitattributes, .gitignore",
