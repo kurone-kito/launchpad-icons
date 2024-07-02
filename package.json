@@ -58,6 +58,7 @@
     "cspell": "^8.13.1",
     "eslint": "^9.8.0",
     "eslint-formatter-codeframe": "^7.32.1",
+    "eslint-plugin-solid": "^0.14.1",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.8",

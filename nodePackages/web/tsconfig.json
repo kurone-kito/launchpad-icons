@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "lib": ["ESNext", "DOM"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,
-    "target": "ESNext"
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "types": ["@solidjs/start/env", "vinxi/types/client"]
   },
   "extends": "@kurone-kito/typescript-config/tsconfig.json",
-  "include": ["*.config.?s"]
+  "include": ["*.config.?s", "src/**/*"]
 }
