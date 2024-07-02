@@ -29,12 +29,17 @@
   "type": "module",
   "files": [],
   "scripts": {
-    "build": "cpy --flat ../../LICENSE .",
-    "clean": "rimraf -g \"*.tgz\" LICENSE node_modules/.cache",
-    "prepack": "pnpm run clean && pnpm run build"
+    "prebuild": "cpy --flat ../../LICENSE .",
+    "build": "vinxi build",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" .output .vinxi LICENSE node_modules/.cache",
+    "prepack": "pnpm run clean && pnpm run build",
+    "serve": "vinxi start",
+    "start": "vinxi dev"
   },
   "dependencies": {
-    "@kurone-kito/launchpad-icons-solid": "workspace:^"
+    "@kurone-kito/launchpad-icons-solid": "workspace:^",
+    "@solidjs/start": "^1.0.6",
+    "solid-js": "^1.8.22"
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.16.0",
@@ -43,7 +48,8 @@
     "postcss": "^8.4.41",
     "rimraf": "^5.0.10",
     "tailwindcss": "^3.4.10",
-    "typescript": "~5.5.4"
+    "typescript": "~5.5.4",
+    "vinxi": "^0.4.2"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
