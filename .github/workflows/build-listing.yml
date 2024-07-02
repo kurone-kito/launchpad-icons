@@ -66,6 +66,8 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: corepack up
+      - name: Run the build to generate the website
+        run: pnpm run build
       - name: Deploy the global.json file
         run: cp "${{ github.workspace }}/global.json" "${{ env.pathToCi }}/"
       - name: Load cached data from previous runs

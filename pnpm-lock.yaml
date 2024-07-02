@@ -81,6 +81,26 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5(@typescript-eslint/parser@8.4.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)
 
+  nodePackages/builder: {}
+
+  nodePackages/react:
+    devDependencies:
+      '@kurone-kito/launchpad-icons-builder':
+        specifier: workspace:^
+        version: link:../builder
+
+  nodePackages/solid:
+    devDependencies:
+      '@kurone-kito/launchpad-icons-builder':
+        specifier: workspace:^
+        version: link:../builder
+
+  nodePackages/web:
+    dependencies:
+      '@kurone-kito/launchpad-icons-solid':
+        specifier: workspace:^
+        version: link:../solid
+
 packages:
 
   '@babel/code-frame@7.12.11':
