@@ -66,6 +66,8 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: corepack up
+      - name: Run the build to generate the website
+        run: pnpm run build
       - name: Load cached data from previous runs
         uses: actions/cache@v4
         with:

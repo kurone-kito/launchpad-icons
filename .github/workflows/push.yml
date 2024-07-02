@@ -34,6 +34,8 @@ jobs:
         run: pnpm install --prefer-frozen-lockfile
       - name: Run the tests
         run: pnpm run test
+      - name: Run the build
+        run: pnpm run build
     strategy:
       matrix:
         platform:
