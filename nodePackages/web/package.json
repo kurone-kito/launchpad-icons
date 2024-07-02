@@ -28,11 +28,18 @@
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "files": [],
-  "scripts": {},
+  "scripts": {
+    "build": "cpy --flat ../../LICENSE .",
+    "clean": "rimraf -g \"*.tgz\" LICENSE node_modules/.cache",
+    "prepack": "pnpm run clean && pnpm run build"
+  },
   "dependencies": {
     "@kurone-kito/launchpad-icons-solid": "workspace:^"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "rimraf": "^5.0.10"
+  },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
   },
