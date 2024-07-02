@@ -24,6 +24,7 @@
     "*.buildreport": "yaml",
     "*.config": "xml",
     "*.controller": "yaml",
+    "*.css": "tailwindcss",
     "*.dwlt": "yaml",
     "*.info": "json",
     "*.index": "json",
