@@ -41,6 +41,8 @@
   "dependencies": {
     "@kurone-kito/launchpad-icons-solid": "workspace:^",
     "@solid-primitives/i18n": "^2.1.1",
+    "@solid-primitives/media": "^2.2.9",
+    "@solid-primitives/storage": "^4.2.1",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.2",
     "@solidjs/start": "^1.0.10",
