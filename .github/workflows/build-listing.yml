@@ -1,7 +1,8 @@
 name: Build Repo Listing
 
 env:
-  listPublishDirectory: Website
+  listPublishDirectory: nodePackages/web/.output/public
+  jsonGeneratedDirectory: Website
   pathToCi: ci
 
 on:
@@ -66,10 +67,14 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: corepack up
-      - name: Run the build to generate the website
+      - env:
+          BASE_PATH: /launchpad-icons
+        name: Run the build to generate the website
         run: pnpm run build
       - name: Deploy the global.json file
         run: cp "${{ github.workspace }}/global.json" "${{ env.pathToCi }}/"
+      - name: Copy the generated index.json to the publish directory
+        run: cp $GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}/index.json $GITHUB_WORKSPACE/${{ env.listPublishDirectory }}/
       - name: Load cached data from previous runs
         uses: actions/cache@v4
         with:
