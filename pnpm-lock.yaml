@@ -176,7 +176,7 @@ importers:
         version: 0.16.1(@typescript-eslint/parser@8.4.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4))(typescript-eslint-language-service@5.0.5(@typescript-eslint/parser@8.4.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4))(typescript@5.5.4)
       '@solidjs/testing-library':
         specifier: ^0.8.9
-        version: 0.8.9(solid-js@1.8.22)
+        version: 0.8.9(@solidjs/router@0.14.3(solid-js@1.8.22))(solid-js@1.8.22)
       '@testing-library/jest-dom':
         specifier: ^6.5.0
         version: 6.5.0
@@ -216,12 +216,21 @@ importers:
       '@solid-primitives/i18n':
         specifier: ^2.1.1
         version: 2.1.1(solid-js@1.8.22)
+      '@solidjs/meta':
+        specifier: ^0.29.4
+        version: 0.29.4(solid-js@1.8.22)
+      '@solidjs/router':
+        specifier: ^0.14.3
+        version: 0.14.3(solid-js@1.8.22)
       '@solidjs/start':
         specifier: ^1.0.6
         version: 1.0.6(@testing-library/jest-dom@6.5.0)(rollup@4.21.2)(solid-js@1.8.22)(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.32.0))(vite@5.4.3(@types/node@22.5.4)(terser@5.32.0))
       solid-js:
         specifier: ^1.8.22
         version: 1.8.22
+      theme-change:
+        specifier: ^2.5.0
+        version: 2.5.0
     devDependencies:
       '@kurone-kito/typescript-config':
         specifier: ^0.16.0
@@ -250,6 +259,9 @@ importers:
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
+      daisyui:
+        specifier: ^4.12.10
+        version: 4.12.10(postcss@8.4.45)
       postcss:
         specifier: ^8.4.41
         version: 8.4.45
@@ -268,6 +280,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.10
         version: 3.4.10
+      tailwindcss-safe-area:
+        specifier: ^0.6.0
+        version: 0.6.0(tailwindcss@3.4.10)
       typescript:
         specifier: ~5.5.4
         version: 5.5.4
@@ -2000,6 +2015,16 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solidjs/meta@0.29.4':
+    resolution: {integrity: sha512-zdIWBGpR9zGx1p1bzIPqF5Gs+Ks/BH8R6fWhmUa/dcK1L2rUC8BAcZJzNRYBQv74kScf1TSOs0EY//Vd/I0V8g==}
+    peerDependencies:
+      solid-js: '>=1.8.4'
+
+  '@solidjs/router@0.14.3':
+    resolution: {integrity: sha512-9p4k4zL2baK/1XRQALbFcaQ4IikjkWmxqYQtFqLzjONUejhL1uqJHtzxB4tZjmNqtRANVRnTDbJfzjvaD9k+pQ==}
+    peerDependencies:
+      solid-js: ^1.8.6
+
   '@solidjs/start@1.0.6':
     resolution: {integrity: sha512-O5knaeqDBx+nKLJRm5ZJurnXZtIYBOwOreQ10APaVtVjKIKKRC5HxJ1Kwqg7atOQNNDgsF0pzhW218KseaZ1UA==}
 
@@ -3135,6 +3160,9 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
+  css-selector-tokenizer@0.8.0:
+    resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==}
+
   css.escape@1.5.1:
     resolution: {integrity: sha512-YUifsXXuknHlUsmlgyY0PKzgPOr7/FjCePfHNt0jxm83wHZi44VDMQ7/fGNkjY3/jV1MC+1CmZbaHzugyeRtpg==}
 
@@ -3149,6 +3177,14 @@ packages:
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  culori@3.3.0:
+    resolution: {integrity: sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  daisyui@4.12.10:
+    resolution: {integrity: sha512-jp1RAuzbHhGdXmn957Z2XsTZStXGHzFfF0FgIOZj3Wv9sH7OZgLfXTRZNfKVYxltGUOBsG1kbWAdF5SrqjebvA==}
+    engines: {node: '>=16.9.0'}
 
   dargs@8.1.0:
     resolution: {integrity: sha512-wAV9QHOsNbwnWdNW2FYvE1P56wtgSbM+3SZcdGiWQILwVjACCXDCI3Ai8QlCjMDB8YK5zySiXZYBiwGmNY3lnw==}
@@ -3759,6 +3795,9 @@ packages:
 
   fast-uri@3.0.1:
     resolution: {integrity: sha512-MWipKbbYiYI0UC7cl8m/i/IWTqfC8YXsqjzybjddLsFjStroQzsHXkc73JutMvBiXmOvapk+axIl79ig5t55Bw==}
+
+  fastparse@1.1.2:
+    resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==}
 
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
@@ -5957,6 +5996,12 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
+  tailwindcss-safe-area@0.6.0:
+    resolution: {integrity: sha512-5PM3CKquzmaa6mow64zWJ0438/yGSqdPfjaXtwNDb31LezNWqFoGPSbvrW12T8iB4EBjeWot+qAA9nbUqqf3sw==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      tailwindcss: ^2.0.0 || >=3.0.0
+
   tailwindcss@3.4.10:
     resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
     engines: {node: '>=14.0.0'}
@@ -6008,6 +6053,9 @@ packages:
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
+
+  theme-change@2.5.0:
+    resolution: {integrity: sha512-B/UdsgdHAGhSKHTAQnxg/etN0RaMDpehuJmZIjLMDVJ6DGIliRHGD6pODi1CXLQAN9GV0GSyB3G6yCuK05PkPQ==}
 
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
@@ -8370,6 +8418,14 @@ snapshots:
     dependencies:
       solid-js: 1.8.22
 
+  '@solidjs/meta@0.29.4(solid-js@1.8.22)':
+    dependencies:
+      solid-js: 1.8.22
+
+  '@solidjs/router@0.14.3(solid-js@1.8.22)':
+    dependencies:
+      solid-js: 1.8.22
+
   '@solidjs/start@1.0.6(@testing-library/jest-dom@6.5.0)(rollup@4.21.2)(solid-js@1.8.22)(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.32.0))(vite@5.4.3(@types/node@22.5.4)(terser@5.32.0))':
     dependencies:
       '@vinxi/plugin-directives': 0.4.2(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.32.0))
@@ -8396,10 +8452,12 @@ snapshots:
       - vinxi
       - vite
 
-  '@solidjs/testing-library@0.8.9(solid-js@1.8.22)':
+  '@solidjs/testing-library@0.8.9(@solidjs/router@0.14.3(solid-js@1.8.22))(solid-js@1.8.22)':
     dependencies:
       '@testing-library/dom': 10.4.0
       solid-js: 1.8.22
+    optionalDependencies:
+      '@solidjs/router': 0.14.3(solid-js@1.8.22)
 
   '@storybook/addon-actions@8.2.9(storybook@8.2.9(@babel/preset-env@7.25.4(@babel/core@7.25.2)))':
     dependencies:
@@ -9856,6 +9914,11 @@ snapshots:
       semver: 7.6.3
       strip-ansi: 7.1.0
 
+  css-selector-tokenizer@0.8.0:
+    dependencies:
+      cssesc: 3.0.0
+      fastparse: 1.1.2
+
   css.escape@1.5.1: {}
 
   cssesc@3.0.0: {}
@@ -9865,6 +9928,17 @@ snapshots:
       rrweb-cssom: 0.7.1
 
   csstype@3.1.3: {}
+
+  culori@3.3.0: {}
+
+  daisyui@4.12.10(postcss@8.4.45):
+    dependencies:
+      css-selector-tokenizer: 0.8.0
+      culori: 3.3.0
+      picocolors: 1.1.0
+      postcss-js: 4.0.1(postcss@8.4.45)
+    transitivePeerDependencies:
+      - postcss
 
   dargs@8.1.0: {}
 
@@ -10650,6 +10724,8 @@ snapshots:
   fast-levenshtein@2.0.6: {}
 
   fast-uri@3.0.1: {}
+
+  fastparse@1.1.2: {}
 
   fastq@1.17.1:
     dependencies:
@@ -12973,6 +13049,10 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
+  tailwindcss-safe-area@0.6.0(tailwindcss@3.4.10):
+    dependencies:
+      tailwindcss: 3.4.10
+
   tailwindcss@3.4.10:
     dependencies:
       '@alloc/quick-lru': 5.2.0
@@ -13053,6 +13133,8 @@ snapshots:
   text-extensions@2.4.0: {}
 
   text-table@0.2.0: {}
+
+  theme-change@2.5.0: {}
 
   thenify-all@1.6.0:
     dependencies:

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .article-container {
+    @apply px-safe-or-6 lg:px-safe mx-auto lg:container lg:py-6;
+  }
+}
