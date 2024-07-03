@@ -26,6 +26,7 @@ ignoreRegExpList:
 version: '0.2'
 words:
   - atrous
+  - daisyui
   - denoiser
   - dwlt
   - kito
