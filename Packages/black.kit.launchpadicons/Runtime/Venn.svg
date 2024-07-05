@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 121">
+  <defs>
+    <style>
+      .b {
+        fill: #fff;
+      }
+
+      .b, .c {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+
+      .c {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <circle class="c" cx="60.5" cy="60.5" r="53"/>
+  <circle class="b" cx="107.5" cy="60.5" r="53"/>
+</svg>
