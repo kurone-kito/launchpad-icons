@@ -15,4 +15,5 @@
 .github export-ignore
 .gitignore export-ignore
 .gitkeep export-ignore
+.husky/** export-ignore
 .imgbotconfig export-ignore

@@ -1,9 +1,11 @@
 ignores:
   - '**/node_modules/**'
   - .github/CODE_OF_CONDUCT*
+  - .yarn
   - Assets/**
   - Library/**
   - Logs/**
+  - node_modules/**
   - Packages/com.*/**
   - Packages/dev.*/**
   - ProjectSettings/**

@@ -1,0 +1,3 @@
+{
+  "extends": "@kurone-kito/typescript-config/tsconfig.json"
+}
