@@ -1,0 +1,67 @@
+{
+  "name": "@kurone-kito/yarn-project-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The boilerplate project of the Node.js / Yarn",
+  "keywords": [
+    "boilerplate",
+    "template"
+  ],
+  "homepage": "https://github.com/kurone-kito/yarn-project-boilerplate#readme",
+  "bugs": "https://github.com/kurone-kito/yarn-project-boilerplate/issues",
+  "repository": "github:kurone-kito/yarn-project-boilerplate",
+  "license": "MIT",
+  "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
+  "type": "module",
+  "files": [],
+  "scripts": {
+    "clean": "rimraf -g .eslintcache \"*.tgz\" \"*.tsbuildinfo\" \"node_modules/.cache/**/*\"",
+    "lint": "pnpm run \"/lint:.+:check/\"",
+    "lint:cspell:check": "cspell lint --no-progress --show-suggestions -u \"./**/*\"",
+    "lint:eslint:check": "eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy=content -f codeframe \"./**/*\"",
+    "lint:eslint:fix": "pnpm run lint:eslint:check --fix",
+    "lint:fix": "pnpm run lint:cspell:check && pnpm run \"/lint:.+:fix/\"",
+    "lint:markdown:check": "markdownlint-cli2 \"**/*.md\"",
+    "lint:markdown:fix": "markdownlint-cli2 --fix \"**/*.md\"",
+    "lint:oxlint:check": "oxlint",
+    "lint:oxlint:fix": "oxlint --fix",
+    "lint:prettier:check": "pnpm run prettier -cu",
+    "lint:prettier:fix": "pnpm run prettier -uw",
+    "prepare": "husky",
+    "prettier": "prettier --cache --log-level=warn \"./**/*\"",
+    "test": "pnpm run lint"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@cspell/cspell-types": "^8.14.2",
+    "@kurone-kito/commitlint-config": "^0.16.1",
+    "@kurone-kito/cspell-config": "^0.16.1",
+    "@kurone-kito/eslint-config-base": "^0.16.1",
+    "@kurone-kito/lint-staged-config": "^0.16.1",
+    "@kurone-kito/prettier-config": "^0.16.1",
+    "@kurone-kito/typescript-config": "^0.16.1",
+    "@typescript-eslint/parser": "^8.4.0",
+    "cspell": "^8.14.2",
+    "eslint": "^9.10.0",
+    "eslint-formatter-codeframe": "^7.32.1",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "markdownlint-cli2": "^0.14.0",
+    "oxlint": "^0.9.3",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.2",
+    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-sort-json": "^4.0.0",
+    "rimraf": "^5.0.10",
+    "typescript": "~5.5.4",
+    "typescript-eslint-language-service": "^5.0.5"
+  },
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
+  "engines": {
+    "node": ">=18.20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
