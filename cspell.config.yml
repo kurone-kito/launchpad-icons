@@ -1,17 +1,13 @@
-allowCompoundWords: true
+cache:
+  cacheFormat: universal
+  cacheLocation: node_modules/.cache/cspell/.cspell.cache
+  cacheStrategy: metadata
+  useCache: true
 dictionaries:
-  - cpp
-  - csharp
   - css
-  - dotnet
-  - en-gb
-  - en-us
-  - fsharp
   - php
-enableGlobDot: true
-features:
-  weighted-suggestions: true
-globRoot: ${cwd}
+import:
+  - '@kurone-kito/cspell-config'
 ignorePaths:
   - .git
   - .github/CODE_OF_CONDUCT.*
@@ -20,19 +16,19 @@ ignorePaths:
   - Assets/UdonSharp
   - Assets/XR
   - cspell.config.yml
+  - node_modules
   - Packages/com.*
   - Packages/dev.*
   - Packages/*.json
   - ProjectSettings
 ignoreRegExpList:
   - (avtr|wrld)_([0-9a-f]{8})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{4})-([0-9a-f]{12})
-language: en,ja
-useGitignore: true
 version: '0.2'
 words:
   - atrous
   - denoiser
   - dwlt
+  - lanchpadicons
   - kito
   - kuroné
   - Kuron

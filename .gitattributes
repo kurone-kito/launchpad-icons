@@ -13,4 +13,5 @@
 .coderabbit.yaml export-ignore
 .git* export-ignore
 .github/** export-ignore
+.husky/** export-ignore
 .imgbotconfig export-ignore
