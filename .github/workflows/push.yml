@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 jobs:
-  build:
+  build-unity:
     runs-on: ubuntu-latest
     env:
       listPublishDirectory: Website
@@ -47,3 +47,48 @@ jobs:
         run: '"${{ env.pathToCi }}/build.cmd" BuildRepoListing --root "${{ env.pathToCi }}" --list-publish-directory "$GITHUB_WORKSPACE/${{ env.listPublishDirectory }}" --current-package-name "${{ vars.PACKAGE_NAME }}"'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build-web:
+    defaults:
+      run:
+        shell: ${{ matrix.platform.shell }}
+    name: The build process
+    runs-on: ${{ matrix.platform.os }}
+    steps:
+      - name: Set git to use LF
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+      - name: Stages the pushed branch
+        uses: actions/checkout@v4
+      - name: Pre-prepare the Node.js version ${{ matrix.node-version }} environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Enable the corepack because of the pnpm
+        run: corepack enable
+      - name: Post-prepare the Node.js version ${{ matrix.node-version }} environment
+        uses: actions/setup-node@v4
+        with:
+          cache: ${{ !env.ACT && 'pnpm' || '' }}
+          node-version: ${{ matrix.node-version }}
+      - env:
+          HUSKY: 0
+        name: Install the dependencies
+        run: pnpm install --prefer-frozen-lockfile
+      - name: Run the tests
+        run: pnpm run test
+    strategy:
+      matrix:
+        node-version:
+          - 18.x
+          - 20.x
+          - 21.x
+        platform:
+          - os: ubuntu-latest
+            shell: bash
+          - os: windows-latest
+            shell: bash
+          - os: windows-latest
+            shell: powershell
+      fail-fast: false
+    timeout-minutes: 30
