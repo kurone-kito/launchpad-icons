@@ -10,14 +10,15 @@
 - ✅ Bundled by _VPM_ package for use in VRChat
 - ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
 
-![Icons list](https://kurone-kito.github.io/launchpad-icons/icons-1.png)
-![Icons list](https://kurone-kito.github.io/launchpad-icons/icons-2.png)
+![Icons list](Website/icons1.png)
+![Icons list](Website/icons2.png)
 
 ## ▶ Getting Started
 
 ### 1. Import the registry via the VRChat Creator Companion (VCC)
 
-Visit the **[VPM Catalogue page](https://kurone-kito.github.io/vpm/)** and click on the **Add to VCC** button.
+Visit the **[VPM Catalogue page](https://kurone-kito.github.io/vpm/)**
+and click on the **Add to VCC** button.
 
 ### 2. Import the package to your project
 
