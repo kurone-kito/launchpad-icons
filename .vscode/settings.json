@@ -6,7 +6,7 @@
     "*.dll": "${capture}.pdb",
     "*.md": "${capture}.*.md",
     "*.sln": "*.csproj",
-    ".gitattributes": ".gitignore",
+    ".gitconfig": ".gitattributes, .gitignore",
     ".tool-versions": "global.json"
   },
   "files.associations": {
