@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.52 148">
+  <defs>
+    <style>
+      .b {
+        stroke-linejoin: round;
+      }
+
+      .b, .c {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 18px;
+      }
+
+      .c {
+        stroke-miterlimit: 10;
+      }
+
+      .d {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="c" d="M21.87,33.26c11.91-14.79,30.18-24.26,50.65-24.26,35.9,0,65,29.1,65,65s-29.1,65-65,65c-27.1,0-50.32-16.58-60.08-40.15"/>
+    <polygon class="d" points="45.19 42.94 0 60.42 7.45 12.54 45.19 42.94"/>
+  </g>
+  <polyline class="b" points="70.98 38 70.98 79 97.98 79"/>
+</svg>
