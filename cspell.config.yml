@@ -27,6 +27,7 @@ ignoreRegExpList:
 version: '0.2'
 words:
   - atrous
+  - clsx
   - daisyui
   - denoiser
   - dwlt
