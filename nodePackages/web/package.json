@@ -29,12 +29,14 @@
   "type": "module",
   "files": [],
   "scripts": {
-    "prebuild": "cpy --flat ../../LICENSE .",
+    "prebuild": "pnpm run -p \"/prebuild:.+/\"",
     "build": "pnpm run \"/build:.+/\"",
     "build:storybook": "storybook build",
     "build:vinxi": "vinxi build",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" .output .vinxi LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:favicon": "cpy --flat --rename=favicon.svg ../../Packages/black.kit.launchpadicons/Runtime/Cursor.svg ./public/images",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
     "serve": "vinxi start",
     "start": "pnpm run -p \"/start:.+/\"",
     "start:storybook": "storybook dev -p 6006",
@@ -48,7 +50,9 @@
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.14.3",
     "@solidjs/start": "^1.0.6",
+    "clsx": "^2.1.1",
     "solid-js": "^1.8.22",
+    "tailwind-merge": "^2.5.2",
     "theme-change": "^2.5.0"
   },
   "devDependencies": {
