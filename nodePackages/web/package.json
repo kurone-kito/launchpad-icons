@@ -45,6 +45,7 @@
   "dependencies": {
     "@kurone-kito/launchpad-icons-solid": "workspace:^",
     "@solid-primitives/clipboard": "^1.5.10",
+    "@solid-primitives/date": "^2.0.22",
     "@solid-primitives/i18n": "^2.1.1",
     "@solid-primitives/media": "^2.2.9",
     "@solid-primitives/platform": "^0.1.2",
