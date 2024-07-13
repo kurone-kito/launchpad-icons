@@ -1,4 +1,21 @@
 iconsToDo: 160
+newList:
+  - CircleCircle
+  - CircleCross
+  - CircleSquare
+  - EnvelopePlus
+  - EnvelopeQ
+  - FaceMirror
+  - History
+  - HomeReload
+  - Keyboard
+  - KeyboardThin
+  - ListThin
+  - OSC
+  - StarThin
+  - Resolution
+  - Return
+  - ReturnReverse
 npmReact: npm i @kurone-kito/launchpad-icons-react@next
 npmSolid: npm i @kurone-kito/launchpad-icons-solid@next
 vccUrl: vcc://vpm/addRepo?url=

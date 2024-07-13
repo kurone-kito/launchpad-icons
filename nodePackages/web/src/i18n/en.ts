@@ -9,6 +9,9 @@ const en: Resources = {
     'The Launchpad Icons are a collection of VRChat-like icons. All icons are provided in SVG vector format.',
   docs: 'Docs',
   explore: 'Explore',
+  exploreDescription:
+    'The Launchpad Icons provide&nbsp;<strong>{{ num }} icons</strong>. The&nbsp;<marker>highlighted</marker>&nbsp;icons are those added in the latest version.',
+  exploreTitle: 'Icons explorer',
   features: 'Features',
   features1Body: '...and {{ num }}+ icons in the future!',
   features1Heading: '{{ num }} icons',
