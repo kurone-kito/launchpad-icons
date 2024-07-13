@@ -6,4 +6,8 @@
   .article-container {
     @apply px-safe-or-6 lg:px-safe mx-auto lg:container lg:py-6;
   }
+
+  .heading-root {
+    @apply text-base-content py-4 text-3xl font-extrabold;
+  }
 }

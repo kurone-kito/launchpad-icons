@@ -360,6 +360,7 @@ nodePackages/react/assets
 nodePackages/react/src/index.ts?
 nodePackages/solid/assets
 nodePackages/solid/src/index.ts?
+nodePackages/web/public/**/favicon.*
 
 ### Unity ###
 # Example scenes
