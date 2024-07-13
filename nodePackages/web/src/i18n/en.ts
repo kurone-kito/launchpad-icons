@@ -7,6 +7,9 @@ const en: Resources = {
   commandToClipboard: 'Copy the command',
   docs: 'Docs',
   explore: 'Explore',
+  exploreDescription:
+    'The Launchpad Icons provide&nbsp;<strong>{{ num }} icons</strong>. The&nbsp;<marker>highlighted</marker>&nbsp;icons are those added in the latest version.',
+  exploreTitle: 'Icons explorer',
   features: 'Features',
   features1Body: '...and {{ num }}+ icons in the future!',
   features1Heading: '{{ num }} icons',

@@ -9,6 +9,8 @@ export type ResourcesKeys =
   | 'commandToClipboard'
   | 'docs'
   | 'explore'
+  | 'exploreDescription'
+  | 'exploreTitle'
   | 'features'
   | 'features1Body'
   | 'features1Heading'
