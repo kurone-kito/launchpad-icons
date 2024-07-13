@@ -27,6 +27,7 @@ version: '0.2'
 words:
   - atrous
   - clsx
+  - csvg
   - daisyui
   - denoiser
   - dwlt
