@@ -4,7 +4,11 @@
   "explorer.fileNesting.patterns": {
     "*": "${capture}.meta, ${capture}.md5",
     "*.dll": "${capture}.pdb",
-    "LICENSE*": "LICENSE${capture}.meta"
+    "*.md": "${capture}.*.md",
+    "*.sln": "*.csproj",
+    ".gitconfig": ".gitattributes, .gitignore",
+    ".markdownlint.*": ".markdownlint-cli2.*",
+    ".tool-versions": "global.json"
   },
   "files.associations": {
     "*.anim": "yaml",
