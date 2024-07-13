@@ -31,6 +31,7 @@ export type ResourcesKeys =
   | 'planPro1'
   | 'planPro2'
   | 'pricing'
+  | 'pricingTitle'
   | 'sampleWorld'
   | 'subscribe'
   | 'subscribed'
