@@ -213,6 +213,9 @@ importers:
       '@kurone-kito/launchpad-icons-solid':
         specifier: workspace:^
         version: link:../solid
+      '@solid-primitives/i18n':
+        specifier: ^2.1.1
+        version: 2.1.1(solid-js@1.8.22)
       '@solidjs/start':
         specifier: ^1.0.6
         version: 1.0.6(@testing-library/jest-dom@6.5.0)(rollup@4.21.2)(solid-js@1.8.22)(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.32.0))(vite@5.4.3(@types/node@22.5.4)(terser@5.32.0))
@@ -1991,6 +1994,11 @@ packages:
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
+
+  '@solid-primitives/i18n@2.1.1':
+    resolution: {integrity: sha512-1p9B8hveu+gzFRWfXcRtdzzEdr7gw3c8uLXm+2bU33JHgiI8kYJsWvG128sE6vU1ZtYGPrGq980Jd6hxYupyZQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
 
   '@solidjs/start@1.0.6':
     resolution: {integrity: sha512-O5knaeqDBx+nKLJRm5ZJurnXZtIYBOwOreQ10APaVtVjKIKKRC5HxJ1Kwqg7atOQNNDgsF0pzhW218KseaZ1UA==}
@@ -8357,6 +8365,10 @@ snapshots:
   '@sinclair/typebox@0.27.8': {}
 
   '@sindresorhus/merge-streams@2.3.0': {}
+
+  '@solid-primitives/i18n@2.1.1(solid-js@1.8.22)':
+    dependencies:
+      solid-js: 1.8.22
 
   '@solidjs/start@1.0.6(@testing-library/jest-dom@6.5.0)(rollup@4.21.2)(solid-js@1.8.22)(vinxi@0.4.2(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.32.0))(vite@5.4.3(@types/node@22.5.4)(terser@5.32.0))':
     dependencies:
