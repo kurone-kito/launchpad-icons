@@ -78,5 +78,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "18.3.1"
+    }
   }
 }
