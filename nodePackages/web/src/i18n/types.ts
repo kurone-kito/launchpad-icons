@@ -19,6 +19,7 @@ export type ResourcesKeys =
   | 'features4Body'
   | 'features4Heading'
   | 'gettingStarted'
+  | 'gettingStartedTitle'
   | 'language'
   | 'plan'
   | 'planFree1'
