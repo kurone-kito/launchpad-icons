@@ -19,6 +19,7 @@ const ja: Resources = {
   features4Body: 'CC BY-NC 4.0 ライセンス',
   features4Heading: '無料＆OSS！',
   gettingStarted: '始めましょう！',
+  gettingStartedTitle: 'ご利用方法',
   language: '🇯🇵',
   plan: 'プラン',
   planFree1: 'CC BY-NC 4.0 ライセンス下での無制限利用',
