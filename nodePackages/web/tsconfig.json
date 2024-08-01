@@ -9,7 +9,11 @@
     "noEmit": true,
     "skipLibCheck": true,
     "target": "ESNext",
-    "types": ["@solidjs/start/env", "vinxi/types/client"]
+    "types": [
+      "@modyfi/vite-plugin-yaml/modules",
+      "@solidjs/start/env",
+      "vinxi/types/client"
+    ]
   },
   "extends": "@kurone-kito/typescript-config/tsconfig.json",
   "include": ["*.config.?s", "src/**/*"]
