@@ -5,6 +5,7 @@ ignores:
   - Library/**
   - Logs/**
   - node_modules/**
+  - nodePackages/**/docs/**
   - Packages/com.*/**
   - Packages/dev.*/**
   - ProjectSettings/**
