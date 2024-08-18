@@ -11,5 +11,6 @@ export default {
     'prettier-plugin-packagejson',
     'prettier-plugin-sh',
     'prettier-plugin-sort-json',
+    'prettier-plugin-tailwindcss',
   ],
 };
