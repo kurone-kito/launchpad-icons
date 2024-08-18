@@ -6,6 +6,7 @@
     "*": "${capture}.meta, ${capture}.md5, ${capture}-lock",
     "*.db": "${capture}.db.st",
     "*.dll": "${capture}.pdb",
+    "*.js": "${capture}.*",
     "*.md": "${capture}.*.md",
     "*.mjs": "${capture}.*",
     "*.png": "${capture}@*.png",

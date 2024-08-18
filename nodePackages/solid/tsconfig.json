@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "generated-src"
   },
-  "exclude": ["dist", "node_modules"],
-  "extends": "@kurone-kito/typescript-config/tsconfig.json"
+  "exclude": ["dist", "node_modules", "**/*.spec.tsx"],
+  "extends": "@kurone-kito/typescript-config/tsconfig.json",
+  "include": ["generated-src/*.mts", "generated-src/*.tsx"]
 }
