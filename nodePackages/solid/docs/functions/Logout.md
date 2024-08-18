@@ -1,0 +1,17 @@
+[**@kurone-kito/launchpad-icons-solid**](../README.md) • **Docs**
+
+***
+
+[@kurone-kito/launchpad-icons-solid](../globals.md) / Logout
+
+# Function: Logout()
+
+> **Logout**(`props`): `Element`
+
+## Parameters
+
+• **props**: `SvgSVGAttributes`\<`SVGSVGElement`\>
+
+## Returns
+
+`Element`

@@ -1,0 +1,9 @@
+[**@kurone-kito/launchpad-icons-solid**](../README.md) • **Docs**
+
+***
+
+[@kurone-kito/launchpad-icons-solid](../globals.md) / iconNames
+
+# Variable: iconNames
+
+> `const` **iconNames**: readonly [`"Avatars"`, `"BackReturn"`, `"Bell"`, `"Bulb"`, `"Camera"`, `"CameraFlash"`, `"CameraReload"`, `"ChangeMic"`, `"Check"`, `"CheckCircle"`, `"CheckThin"`, `"CircleCircle"`, `"CircleCross"`, `"CircleSquare"`, `"Circleless"`, `"Collapse"`, `"Copy"`, `"Create"`, `"Credits"`, `"Cross"`, `"CrossThin"`, `"Cursor"`, `"Down"`, `"Edit"`, `"Envelope"`, `"EnvelopePlus"`, `"EnvelopeQ"`, `"Expand"`, `"Expandable"`, `"Eye"`, `"EyeMove"`, `"FaceMirror"`, `"Fire"`, `"Forbid"`, `"Friends"`, `"Gear"`, `"Graphics"`, `"Grid"`, `"Group"`, `"Hamburger"`, `"Help"`, `"History"`, `"Home"`, `"HomeReload"`, `"Hourgrass"`, `"IK"`, `"Images"`, `"Info"`, `"InfoLight"`, `"Join"`, `"Keyboard"`, `"KeyboardThin"`, `"List"`, `"ListThin"`, `"Logout"`, `"Material"`, `"Mirror"`, `"Monitor"`, `"Move"`, `"Next"`, `"NextArrow"`, `"NextThin"`, `"NextTri"`, `"Notice"`, `"OSC"`, `"Order"`, `"Pad"`, `"Pin"`, `"Play"`, `"Plus"`, `"PlusThin"`, `"Power"`, `"Previous"`, `"PreviousArrow"`, `"PreviousThin"`, `"PreviousTri"`, `"Progress"`, `"ProgressBack"`, `"RankExcellent"`, `"RankGood"`, `"RankMedium"`, `"RankPoor"`, `"RankVeryPoor"`, `"Reload"`, `"Reset"`, `"Resolution"`, `"Reticule"`, `"Return"`, `"ReturnReverse"`, `"Rocket"`, `"Saturn"`, `"SaturnWithSatellites"`, `"Shield"`, `"ShieldWithGear"`, `"ShieldWithStar"`, `"Shieldless"`, `"Speaker"`, `"Star"`, `"StarThin"`, `"Terminal"`, `"UI"`, `"Up"`, `"User"`, `"UserIcon"`, `"Users2"`, `"Users3"`, `"VCC"`, `"VRC"`, `"VRCPlus"`, `"Venn"`, `"VennColorMM"`, `"VennColorMPc"`, `"VennColorMPcM"`, `"VennColorOnlyM"`, `"VennColorOnlyPc"`, `"VennColorOnlyQ"`, `"VennColorQPc"`, `"VennColorQPcQ"`, `"VennColorQQ"`, `"VennMonoPc"`, `"VennMonoPcQ"`, `"VennMonoQ"`, `"Voice"`, `"Wallpaper"`, `"Warn"`, `"Wave"`, `"WingL"`, `"WingR"`]
