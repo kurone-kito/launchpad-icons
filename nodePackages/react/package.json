@@ -26,20 +26,31 @@
     "dist"
   ],
   "scripts": {
-    "prebuild": "cpy --flat ../../LICENSE .",
+    "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "tsc",
-    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist LICENSE node_modules/.cache",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist generated-src LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:code": "liBuilder react",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "prestart": "pnpm run prebuild",
     "start": "tsc -w",
     "test": "vitest run"
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
     "@kurone-kito/typescript-config": "^0.16.1",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.1",
     "cpy-cli": "^5.0.0",
+    "jsdom": "^25.0.0",
+    "react": "^18.3.1",
     "rimraf": "^5.0.10",
     "typescript": "~5.5.4",
     "vitest": "^2.0.5"
+  },
+  "peerDependencies": {
+    "react": ">=18.x.x"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
