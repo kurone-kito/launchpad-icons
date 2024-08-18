@@ -28,6 +28,7 @@
     "*.asset": "yaml",
     "*.buildreport": "yaml",
     "*.controller": "yaml",
+    "*.css": "tailwindcss",
     "*.dwlt": "yaml",
     "*.exe.config": "xml",
     "*.index": "json",

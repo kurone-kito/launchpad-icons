@@ -59,6 +59,7 @@
     "cspell": "^8.17.1",
     "eslint": "^9.17.0",
     "eslint-formatter-codeframe": "^7.32.1",
+    "eslint-plugin-tailwindcss": "^3.17.5",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
     "markdownlint-cli2": "^0.17.0",
@@ -67,6 +68,7 @@
     "prettier-plugin-packagejson": "^2.5.6",
     "prettier-plugin-sh": "^0.14.0",
     "prettier-plugin-sort-json": "^4.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "rimraf": "^5.0.10",
     "typescript": "~5.7.2",
     "typescript-eslint-language-service": "^5.0.5"

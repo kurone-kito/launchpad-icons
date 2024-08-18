@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "target": "ESNext"
+  },
+  "extends": "@kurone-kito/typescript-config/tsconfig.json",
+  "include": ["*.config.?s"]
+}
