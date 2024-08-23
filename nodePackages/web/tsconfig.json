@@ -9,7 +9,7 @@
     "noEmit": true,
     "skipLibCheck": true,
     "target": "ESNext",
-    "types": ["@solidjs/start/env", "vinxi/types/client"]
+    "types": ["@solidjs/start/env", "vinxi/types/client", "vite/client"]
   },
   "extends": "@kurone-kito/typescript-config/tsconfig.json",
   "include": ["*.config.?s", "src/**/*"]
