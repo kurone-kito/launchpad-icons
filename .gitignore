@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,node,unity,vim,visualstudiocode,windows,yarn
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,node,unity,vim,visualstudiocode,windows,yarn
+# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,node,storybookjs,unity,vim,visualstudiocode,windows,yarn
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,node,storybookjs,unity,vim,visualstudiocode,windows,yarn
 
 ### Linux ###
 *~
@@ -189,6 +189,12 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### StorybookJs ###
+# gitignore template for the Storybook, UI guide for front apps
+# website: https://storybook.js.org/
+
+storybook-static/
+
 ### Unity ###
 # This .gitignore file should be placed at the root of your Unity project directory
 #
@@ -344,7 +350,7 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,macos,node,unity,vim,visualstudiocode,windows,yarn
+# End of https://www.toptal.com/developers/gitignore/api/linux,macos,node,storybookjs,unity,vim,visualstudiocode,windows,yarn
 
 ### THE PROJECT SPECIFIES #################################################
 
