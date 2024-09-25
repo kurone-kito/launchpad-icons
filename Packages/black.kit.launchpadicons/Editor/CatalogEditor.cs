@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -60,10 +61,9 @@ namespace black.kit.launchpadicons.Editor
 
         private static void RemoveAllChildren(Transform parent)
         {
-            foreach (Transform child in parent)
-            {
-                DestroyImmediate(child.gameObject);
-            }
+            Array.ForEach(
+                parent.Cast<Transform>().ToArray(),
+                x => DestroyImmediate(x.gameObject));
         }
 
         private Vector2 GetCatalogRect(int groupsLength)
@@ -131,10 +131,7 @@ namespace black.kit.launchpadicons.Editor
         private void RemoveAllChildren()
         {
             var catalogRect = TypedTarget.GetComponent<RectTransform>();
-            // ! XXX: 一度では完全に消えないので二度消す
             RemoveAllChildren(catalogRect);
-            RemoveAllChildren(catalogRect);
-
         }
     }
 }
