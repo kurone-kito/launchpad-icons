@@ -1,0 +1,43 @@
+{
+  "newIcons": [
+    "CircleCircle",
+    "CircleCross",
+    "CircleSquare",
+    "EnvelopePlus",
+    "EnvelopeQ",
+    "FaceMirror",
+    "History",
+    "HomeReload",
+    "Keyboard",
+    "KeyboardThin",
+    "ListThin",
+    "OSC",
+    "Resolution",
+    "Return",
+    "ReturnReverse",
+    "StarThin"
+  ],
+  "whiteIcons": [
+    "Cursor",
+    "RankExcellent",
+    "RankGood",
+    "RankMedium",
+    "RankPoor",
+    "RankVeryPoor",
+    "VCC",
+    "VennMonoPc",
+    "VennColorMM",
+    "VennColorMPc",
+    "VennColorMPcM",
+    "VennColorOnlyM",
+    "VennColorOnlyPc",
+    "VennColorOnlyQ",
+    "VennColorQPc",
+    "VennColorQPcQ",
+    "VennColorQQ",
+    "VennMonoPc",
+    "VennMonoPcQ",
+    "VennMonoQ",
+    "VRC"
+  ]
+}
