@@ -1,2 +1,6 @@
 [core]
   hideDotFiles = dotGitOnly
+[filter "vrc"]
+	clean = git vrc clean --file %f
+	required = true
+	smudge = git vrc smudge --file %f
