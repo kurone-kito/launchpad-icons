@@ -10,17 +10,17 @@ namespace black.kit.launchpadicons.Editor
         public string[] newIcons;
 
         /// <summary>Preferred the white icons names.</summary>
-        public string[] whiteIcons;
+        public string[] coloredIcons;
 
         /// <summary>
         /// Deconstruct the meta data.
         /// </summary>
         /// <param name="newIcons">New icons names.</param>
-        /// <param name="whiteIcons">Preferred the white icons names.</param>
-        public void Deconstruct(out string[] newIcons, out string[] whiteIcons)
+        /// <param name="coloredIcons">Preferred the white icons names.</param>
+        public void Deconstruct(out string[] newIcons, out string[] coloredIcons)
         {
             newIcons = this.newIcons;
-            whiteIcons = this.whiteIcons;
+            coloredIcons = this.coloredIcons;
         }
     }
 }

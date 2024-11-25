@@ -17,7 +17,7 @@
     "Voice",
     "Wave"
   ],
-  "whiteIcons": [
+  "coloredIcons": [
     "Cursor",
     "RankExcellent",
     "RankGood",
@@ -25,7 +25,6 @@
     "RankPoor",
     "RankVeryPoor",
     "VCC",
-    "VennMonoPc",
     "VennColorMM",
     "VennColorMPc",
     "VennColorMPcM",

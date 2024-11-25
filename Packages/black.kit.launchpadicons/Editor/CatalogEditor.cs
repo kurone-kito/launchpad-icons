@@ -105,7 +105,8 @@ namespace black.kit.launchpadicons.Editor
                 RemoveAllChildren();
                 var catalogRect = TypedTarget.GetComponent<RectTransform>();
                 catalogRect.sizeDelta = GetCatalogRect(iconsByGroups.Length);
-                var (newIcons, whiteIcons) = JsonUtility.FromJson<Meta>(TypedTarget.IconsMeta.text);
+                var (newIcons, coloredIcons) = JsonUtility.FromJson<Meta>(
+                    TypedTarget.IconsMeta.text);
                 Debug.Log($"newIcons: {newIcons.Length}");
                 foreach (var icons in iconsByGroups)
                 {
@@ -115,7 +116,7 @@ namespace black.kit.launchpadicons.Editor
                     foreach (var (guid, name) in icons)
                     {
                         var isNew = newIcons.Contains(name);
-                        var isWhite = whiteIcons.Contains(name);
+                        var isWhite = coloredIcons.Contains(name);
                         var iContainer = Instantiate(container, iGroup.transform);
                         InstantiateIcon(iContainer, guid, name, isNew, isWhite);
                     }
