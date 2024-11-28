@@ -4,8 +4,8 @@
 
 ## ✨ Features
 
-- ✅ 112 Icons like the _VRChat LaunchPad_
-  - ...and 160+ icons in the future!
+- ✅ 144 Icons like the _VRChat LaunchPad_
+  - ...and 190+ icons in the future!
 - ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat
 - ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
