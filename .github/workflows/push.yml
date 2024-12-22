@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Zip the Package for testing
         run: zip -r "${{ github.workspace }}/${{ env.zipFile }}" .
-        working-directory: "${{ env.packagePath }}"
+        working-directory: '${{ env.packagePath }}'
       - name: Build a list of .meta files for future use
         run: find "${{ env.packagePath }}/" -name '*.meta' -type f >> metaList
       - name: Make a UnityPackage version of the Package for release
