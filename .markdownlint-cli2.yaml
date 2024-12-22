@@ -4,6 +4,7 @@ ignores:
   - Assets/**
   - Library/**
   - Logs/**
+  - node_modules/**
   - Packages/com.*/**
   - Packages/dev.*/**
   - ProjectSettings/**
