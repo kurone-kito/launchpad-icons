@@ -1,0 +1,42 @@
+{
+  "name": "@kurone-kito/launchpad-icons-web",
+  "version": "0.8.0-alpha.1",
+  "private": true,
+  "description": "the official website of the Launchpad Icons",
+  "keywords": [
+    "components",
+    "Icons",
+    "LaunchPad",
+    "solid",
+    "Solid.js",
+    "SVG",
+    "Unity",
+    "Unity3D",
+    "VCC",
+    "VPM",
+    "VRChat",
+    "website"
+  ],
+  "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
+  "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurone-kito/launchpad-icons.git",
+    "directory": "nodePackages/web"
+  },
+  "license": "CC-BY-NC-4.0",
+  "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
+  "type": "module",
+  "files": [],
+  "scripts": {},
+  "dependencies": {
+    "@kurone-kito/launchpad-icons-solid": "workspace:^"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "^18.20 || ^20.10 || >=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

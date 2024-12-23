@@ -1,0 +1,35 @@
+{
+  "name": "@kurone-kito/launchpad-icons-solid",
+  "version": "0.8.0-alpha.1",
+  "description": "the icons like the VRChat for Node.js ecosystem with the Solid.js",
+  "keywords": [
+    "components",
+    "icons",
+    "LaunchPad",
+    "solid",
+    "Solid.js",
+    "SVG",
+    "VRChat"
+  ],
+  "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
+  "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurone-kito/launchpad-icons.git",
+    "directory": "nodePackages/solid"
+  },
+  "license": "CC-BY-NC-4.0",
+  "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
+  "type": "module",
+  "files": [],
+  "scripts": {},
+  "devDependencies": {
+    "@kurone-kito/launchpad-icons-builder": "workspace:^"
+  },
+  "engines": {
+    "node": "^18.20 || ^20.10 || >=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

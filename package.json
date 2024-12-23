@@ -1,6 +1,6 @@
 {
-  "name": "@kurone-kito/launchpad-icons",
-  "version": "0.1.0",
+  "name": "@kurone-kito/launchpad-icons-root",
+  "version": "0.8.0-alpha.1",
   "private": true,
   "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
   "keywords": [
@@ -15,8 +15,17 @@
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "files": [],
+  "workspaces": {
+    "packages": [
+      "./nodePackages/*"
+    ]
+  },
   "scripts": {
-    "clean": "rimraf -g .eslintcache \"*.tgz\" \"*.tsbuildinfo\" \"node_modules/.cache/**/*\"",
+    "build": "pnpm run -r build",
+    "build:min": "pnpm --filter \"@kurone-kito/launchpad-icons-web^...\" run build",
+    "clean": "pnpm run --no-bail \"/^clean:.+/\"",
+    "clean:root": "rimraf -g .eslintcache \"*.tgz\" \"*.tsbuildinfo\" node_modules/.cache",
+    "clean:sub": "pnpm run -r clean",
     "lint": "pnpm run \"/lint:.+:check/\"",
     "lint:cspell:check": "cspell lint --no-progress --show-suggestions -u \"./**/*\"",
     "lint:eslint:check": "eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy=content -f codeframe \"./**/*\"",
@@ -30,7 +39,11 @@
     "lint:prettier:fix": "pnpm run prettier -uw",
     "prepare": "husky",
     "prettier": "prettier --cache --log-level=warn \"./**/*\"",
-    "test": "pnpm run lint"
+    "publish": "pnpm --filter '*builder' run build && pnpm -r publish",
+    "publish:next": "pnpm run publish --no-git-check --tag next",
+    "prestart": "pnpm --filter='!*web' run build",
+    "start": "pnpm run --parallel -r start",
+    "test": "pnpm run -r test"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
