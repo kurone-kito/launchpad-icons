@@ -60,17 +60,17 @@ jobs:
           git config --global core.eol lf
       - name: Stages the pushed branch
         uses: actions/checkout@v4
-      - name: Pre-prepare the Node.js version ${{ matrix.node-version }} environment
+      - name: Pre-prepare the Node.js environment
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .node-version
       - name: Enable the corepack because of the pnpm
         run: corepack enable
-      - name: Post-prepare the Node.js version ${{ matrix.node-version }} environment
+      - name: Post-prepare the Node.js environment
         uses: actions/setup-node@v4
         with:
           cache: ${{ !env.ACT && 'pnpm' || '' }}
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .node-version
       - env:
           HUSKY: 0
         name: Install the dependencies
@@ -79,10 +79,6 @@ jobs:
         run: pnpm run test
     strategy:
       matrix:
-        node-version:
-          - 18.x
-          - 20.x
-          - 21.x
         platform:
           - os: ubuntu-latest
             shell: bash

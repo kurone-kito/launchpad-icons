@@ -39,6 +39,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Set git to use LF
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
       - name: Checkout Local Repository
         uses: actions/checkout@v4
       - name: Checkout Automation Repository without removing prior checkouts
@@ -47,6 +51,21 @@ jobs:
           repository: vrchat-community/package-list-action
           path: ${{ env.pathToCi }}
           clean: false
+      - name: Pre-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Enable the corepack because of the pnpm
+        run: corepack enable
+      - name: Post-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          cache: ${{ !env.ACT && 'pnpm' || '' }}
+          node-version-file: .node-version
+      - env:
+          HUSKY: 0
+        name: Install the dependencies
+        run: corepack up
       - name: Deploy the global.json file
         run: cp "${{ github.workspace }}/global.json" "${{ env.pathToCi }}/"
       - name: Load cached data from previous runs
