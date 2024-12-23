@@ -348,6 +348,9 @@ $RECYCLE.BIN/
 
 ### THE PROJECT SPECIFIES #################################################
 
+### Node ###
+nodePackages/*/LICENSE
+
 ### Unity ###
 # Example scenes
 [Aa]ssets/Scenes*
