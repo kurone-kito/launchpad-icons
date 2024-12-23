@@ -21,16 +21,24 @@
   "license": "CC-BY-NC-4.0",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
-  "files": [],
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "cpy --flat ../../LICENSE .",
-    "clean": "rimraf -g \"*.tgz\" LICENSE node_modules/.cache",
-    "prepack": "pnpm run clean && pnpm run build"
+    "prebuild": "cpy --flat ../../LICENSE .",
+    "build": "tsc",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist LICENSE node_modules/.cache",
+    "prepack": "pnpm run clean && pnpm run build",
+    "start": "tsc -w"
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
+    "@kurone-kito/typescript-config": "^0.17.2",
     "cpy-cli": "^5.0.0",
-    "rimraf": "^5.0.10"
+    "rimraf": "^5.0.10",
+    "typescript": "~5.7.2"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
