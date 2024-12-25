@@ -350,6 +350,8 @@ $RECYCLE.BIN/
 
 ### Node ###
 nodePackages/*/LICENSE
+nodePackages/builder/assets
+nodePackages/*/generated-src
 
 ### Unity ###
 # Example scenes

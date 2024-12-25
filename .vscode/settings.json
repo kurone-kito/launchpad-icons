@@ -7,6 +7,7 @@
     "*.db": "${capture}.db.st",
     "*.dll": "${capture}.pdb",
     "*.md": "${capture}.*.md",
+    "*.mjs": "${capture}.*",
     "*.png": "${capture}@*.png",
     "*.sln": "*.csproj",
     "*.xml": "${capture}.dll",

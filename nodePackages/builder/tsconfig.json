@@ -4,7 +4,8 @@
     "declaration": false,
     "declarationMap": false,
     "outDir": "dist",
-    "sourceRoot": "src"
+    "sourceRoot": "src",
+    "types": ["node"]
   },
   "exclude": ["dist", "node_modules"],
   "extends": "@kurone-kito/typescript-config/tsconfig.json"
