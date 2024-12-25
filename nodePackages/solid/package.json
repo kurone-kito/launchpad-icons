@@ -27,20 +27,30 @@
     "dist"
   ],
   "scripts": {
-    "prebuild": "cpy --flat ../../LICENSE .",
+    "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "tsc",
-    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist LICENSE node_modules/.cache",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist generated-src LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:code": "liBuilder solid-js",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "prestart": "pnpm run prebuild",
     "start": "tsc -w",
     "test": "vitest run"
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
     "@kurone-kito/typescript-config": "^0.17.2",
+    "@solidjs/testing-library": "^0.8.10",
     "cpy-cli": "^5.0.0",
+    "jsdom": "^25.0.1",
     "rimraf": "^5.0.10",
+    "solid-js": "^1.9.3",
     "typescript": "~5.7.2",
+    "vite-plugin-solid": "^2.11.0",
     "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.x.x"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
