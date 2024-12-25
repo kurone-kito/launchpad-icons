@@ -28,7 +28,9 @@
   ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
-    "build": "tsc",
+    "build": "pnpm run \"/^build:.+/\"",
+    "build:jsdoc": "rimraf docs && typedoc",
+    "build:ts": "tsc",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist generated-src LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
     "prebuild:code": "liBuilder solid-js",
@@ -45,6 +47,8 @@
     "jsdom": "^25.0.1",
     "rimraf": "^5.0.10",
     "solid-js": "^1.9.3",
+    "typedoc": "^0.27.5",
+    "typedoc-plugin-markdown": "^4.3.3",
     "typescript": "~5.7.2",
     "vite-plugin-solid": "^2.11.0",
     "vitest": "^2.1.8"

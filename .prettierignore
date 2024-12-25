@@ -34,5 +34,6 @@ pnpm-lock.yaml
 Packages/*.json
 
 ### Others ###
+nodePackages/**/docs
 Website/app.js
 Website/index.html
