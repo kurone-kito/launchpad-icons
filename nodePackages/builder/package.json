@@ -45,7 +45,7 @@
     "@kurone-kito/typescript-config": "^0.17.2",
     "@types/node": "^22.10.2",
     "cpy-cli": "^5.0.0",
-    "rimraf": "^5.0.10",
+    "rimraf": "^6.0.1",
     "symlink-dir": "^6.0.3",
     "typescript": "~5.7.2",
     "vitest": "^2.1.8"
