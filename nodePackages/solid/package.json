@@ -45,7 +45,7 @@
     "@solidjs/testing-library": "^0.8.10",
     "cpy-cli": "^5.0.0",
     "jsdom": "^25.0.1",
-    "rimraf": "^5.0.10",
+    "rimraf": "^6.0.1",
     "solid-js": "^1.9.3",
     "typedoc": "^0.27.5",
     "typedoc-plugin-markdown": "^4.3.3",
