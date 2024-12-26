@@ -1,22 +1,4 @@
 {
-  "newIcons": [
-    "Caution",
-    "CircleHandle",
-    "CircleMinus",
-    "CirclePlus",
-    "CircleStar",
-    "Document",
-    "InfoBlock",
-    "Mic",
-    "MoveCircle",
-    "MoveSquare",
-    "NextTriThin",
-    "Portraits",
-    "PreviousTriThin",
-    "PreviousTriW",
-    "Pulse",
-    "Tip"
-  ],
   "coloredIcons": [
     "CircleHandle",
     "Cursor",
@@ -39,5 +21,23 @@
     "VennMonoPcQ",
     "VennMonoQ",
     "VRC"
+  ],
+  "newIcons": [
+    "Caution",
+    "CircleHandle",
+    "CircleMinus",
+    "CirclePlus",
+    "CircleStar",
+    "Document",
+    "InfoBlock",
+    "Mic",
+    "MoveCircle",
+    "MoveSquare",
+    "NextTriThin",
+    "Portraits",
+    "PreviousTriThin",
+    "PreviousTriW",
+    "Pulse",
+    "Tip"
   ]
 }

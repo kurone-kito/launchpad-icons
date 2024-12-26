@@ -1,17 +1,25 @@
 {
+  "dotnet.preferCSharpExtension": true,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "*": "${capture}.meta, ${capture}.md5, ${capture}-lock",
     "*.db": "${capture}.db.st",
     "*.dll": "${capture}.pdb",
+    "*.js": "${capture}.*",
+    "*.jsx": "${capture}.*",
     "*.md": "${capture}.*.md",
+    "*.mjs": "${capture}.*",
     "*.png": "${capture}@*.png",
     "*.sln": "*.csproj",
     "*.xml": "${capture}.dll",
+    ".eslintrc*": ".eslintignore",
     ".gitconfig": ".gitattributes, .gitignore",
     ".markdownlint.*": ".markdownlint-cli2.*",
-    ".tool-versions": "global.json"
+    ".prettierrc.*": ".prettierignore",
+    ".tool-versions": ".node-version, .nvmrc, global.json",
+    "package.json": ".npmrc, pnpm-lock.yaml, pnpm-workspace.yaml",
+    "tsconfig.json": "*.tsbuildinfo"
   },
   "files.associations": {
     "*.anim": "yaml",
@@ -55,13 +63,16 @@
     "XRSettings.asset": "json"
   },
   "files.readonlyInclude": {
+    "**/node_modules/**/*": true,
     "Packages/com.*/**": true,
     "Packages/dev.*/**": true,
     "Packages/*.json": true,
     "ProjectSettings/**": true
   },
   "files.watcherExclude": {
+    "**/.eslintcache": true,
     "**/*.suo": true,
+    "**/node_modules/**/*": true,
     "Build/": true,
     "Library/**": true,
     "Logs/**": true,
@@ -72,6 +83,7 @@
   "git.branchProtection": ["main"],
   "search.exclude": {
     "**/*.suo": true,
+    "**/node_modules/**/*": true,
     "Build/": true,
     "Library/**": true,
     "Logs/**": true,
@@ -79,6 +91,7 @@
     "Temp/": true,
     "UserSettings/**": true
   },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "yaml.customTags": [
     "tag:unity3d.com,2011:1 mapping",
     "tag:unity3d.com,2011:4 mapping",

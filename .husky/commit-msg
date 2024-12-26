@@ -1,0 +1,5 @@
+#!/bin/sh
+# -*- mode: sh -*-
+# vim: set ft=sh :
+
+pnpm exec commitlint --edit "${1}"

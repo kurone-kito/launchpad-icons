@@ -5,6 +5,7 @@ on:
 
 jobs:
   config:
+    name: configuration
     runs-on: ubuntu-latest
     outputs:
       config_package: ${{ steps.config_package.outputs.configPackage }}
@@ -18,7 +19,36 @@ jobs:
             echo "configPackage=false" >> $GITHUB_OUTPUT;
           fi
 
-  build:
+  build-npm:
+    name: build the NPM package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Stages the pushed branch
+        uses: actions/checkout@v4
+      - name: Pre-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Enable the corepack because of the pnpm
+        run: corepack enable
+      - name: Post-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          cache: ${{ !env.ACT && 'pnpm' || '' }}
+          node-version-file: .node-version
+      - env:
+          HUSKY: 0
+        name: Install the dependencies
+        run: pnpm install --prefer-frozen-lockfile
+      - env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        name: Publish the packages
+        run: pnpm run publish
+
+  build-upm:
+    name: build the UPM package
     needs: config
     runs-on: ubuntu-latest
     permissions:
@@ -64,7 +94,7 @@ jobs:
           echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
           echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.zip" >> $GITHUB_ENV
       - name: Zip the Package for release
-        working-directory: "${{ env.packagePath }}"
+        working-directory: '${{ env.packagePath }}'
         run: zip -r -9 "${{ github.workspace }}/${{ env.zipFile }}" .
       - name: Build a list of .meta files for future use
         run: find "${{ env.packagePath }}/" -name '*.meta' -type f >> metaList
@@ -87,7 +117,7 @@ jobs:
         # cspell: disable-next-line
         uses: rickstaa/action-create-tag@v1
         with:
-          tag: "${{ env.version }}"
+          tag: '${{ env.version }}'
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
       - name: Publish the Release to GitHub
