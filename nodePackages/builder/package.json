@@ -27,13 +27,13 @@
   ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
+    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
     "build": "tsc",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" assets dist LICENSE node_modules/.cache",
     "preinstall": "pnpm dlx mkdirp dist && pnpm dlx touch dist/index.mjs",
     "liBuilder": "node dist/index.mjs",
     "prepack": "pnpm run clean && pnpm run build",
-    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
     "start": "tsc -w",
     "test": "vitest run"
   },
@@ -43,11 +43,11 @@
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.17.2",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.13.0",
     "cpy-cli": "^5.0.0",
     "rimraf": "^5.0.10",
-    "symlink-dir": "^6.0.3",
-    "typescript": "~5.7.2",
+    "symlink-dir": "^6.0.4",
+    "typescript": "~5.7.3",
     "vitest": "^2.1.8"
   },
   "engines": {
