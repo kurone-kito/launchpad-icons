@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  react: 18.3.1
+
 importers:
 
   .:
@@ -128,7 +131,7 @@ importers:
         version: 0.17.2(@typescript-eslint/parser@8.22.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(typescript-eslint-language-service@5.0.5(@typescript-eslint/parser@8.22.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3))(typescript@5.7.3)
       '@testing-library/react':
         specifier: ^16.2.0
-        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react@19.0.8)(react-dom@18.3.1(react@19.0.0))(react@19.0.0)
+        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react@19.0.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/react':
         specifier: ^19.0.8
         version: 19.0.8
@@ -142,8 +145,8 @@ importers:
         specifier: ^26.0.0
         version: 26.0.0
       react:
-        specifier: ^19.0.0
-        version: 19.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       rimraf:
         specifier: ^5.0.10
         version: 5.0.10
@@ -207,6 +210,9 @@ importers:
       '@kurone-kito/launchpad-icons-solid':
         specifier: workspace:^
         version: link:../solid
+      '@solid-primitives/i18n':
+        specifier: ^2.2.0
+        version: 2.2.0(solid-js@1.9.4)
       '@solidjs/start':
         specifier: ^1.0.11
         version: 1.0.11(@testing-library/jest-dom@6.6.3)(solid-js@1.9.4)(vinxi@0.5.1(@types/node@22.13.0)(db0@0.2.3)(ioredis@5.4.2)(jiti@2.4.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.7.0))(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))
@@ -1396,7 +1402,7 @@ packages:
     resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
     peerDependencies:
       '@types/react': '>=16'
-      react: '>=16'
+      react: 18.3.1
 
   '@netlify/functions@2.8.2':
     resolution: {integrity: sha512-DeoAQh8LuNPvBE4qsKlezjKj0PyXDryOFJfJKo3Z1qZLKzQ21sT314KQKPVjfvw6knqijj+IO+0kHXy/TJiqNA==}
@@ -1764,6 +1770,11 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
+  '@solid-primitives/i18n@2.2.0':
+    resolution: {integrity: sha512-OY1IvGNefg4espiv3JL7gi38rcOaDdgRsderms6cHboDfHdye6HGI1mLkdrQxonN9TrsOBHeWtP/ptLBgSevfQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solidjs/start@1.0.11':
     resolution: {integrity: sha512-ZkrHtwxnmaVGItah13BtmST6rh3PtATcj0RyXM19Shj6MK/cIpDBBsDTsgwqCbZoa/AT8/JLM5xUHFjQyBjRCA==}
 
@@ -1815,7 +1826,7 @@ packages:
   '@storybook/addon-links@8.5.2':
     resolution: {integrity: sha512-eDKOQoAKKUQo0JqeLNzMLu6fm1s3oxwZ6O+rAWS6n5bsrjZS2Ul8esKkRriFVwHtDtqx99wneqOscS8IzE/ENw==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      react: 18.3.1
       storybook: ^8.5.2
     peerDependenciesMeta:
       react:
@@ -1844,7 +1855,7 @@ packages:
   '@storybook/blocks@8.5.2':
     resolution: {integrity: sha512-C6Bz/YTG5ZuyAzglqgqozYUWaS39j1PnkVuMNots6S3Fp8ZJ6iZOlQ+rpumiuvnbfD5rkEZG+614RWNyNlFy7g==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      react: 18.3.1
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       storybook: ^8.5.2
     peerDependenciesMeta:
@@ -1895,7 +1906,7 @@ packages:
     resolution: {integrity: sha512-t3xcbCKkPvqyef8urBM0j/nP6sKtnlRkVgC+8JTbTAZQjaTmOjes3byEgzs89p4B/K6cJsg9wLW2k3SknLtYJw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      react: 18.3.1
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
 
   '@storybook/instrumenter@8.5.2':
@@ -1906,7 +1917,7 @@ packages:
   '@storybook/react-dom-shim@8.5.2':
     resolution: {integrity: sha512-lt7XoaeWI8iPlWnWzIm/Wam9TpRFhlqP0KZJoKwDyHiCByqkeMrw5MJREyWq626nf34bOW8D6vkuyTzCHGTxKg==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      react: 18.3.1
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       storybook: ^8.5.2
 
@@ -1945,7 +1956,7 @@ packages:
       '@testing-library/dom': ^10.0.0
       '@types/react': ^18.0.0 || ^19.0.0
       '@types/react-dom': ^18.0.0 || ^19.0.0
-      react: ^18.0.0 || ^19.0.0
+      react: 18.3.1
       react-dom: ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -4945,7 +4956,7 @@ packages:
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.3.1
+      react: 18.3.1
 
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -4956,10 +4967,6 @@ packages:
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
-    engines: {node: '>=0.10.0'}
-
-  react@19.0.0:
-    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -7363,6 +7370,10 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
+  '@solid-primitives/i18n@2.2.0(solid-js@1.9.4)':
+    dependencies:
+      solid-js: 1.9.4
+
   '@solidjs/start@1.0.11(@testing-library/jest-dom@6.6.3)(solid-js@1.9.4)(vinxi@0.5.1(@types/node@22.13.0)(db0@0.2.3)(ioredis@5.4.2)(jiti@2.4.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.7.0))(vite@6.0.11(@types/node@22.13.0)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))':
     dependencies:
       '@vinxi/plugin-directives': 0.4.3(vinxi@0.5.1(@types/node@22.13.0)(db0@0.2.3)(ioredis@5.4.2)(jiti@2.4.2)(terser@5.37.0)(typescript@5.7.3)(yaml@2.7.0))
@@ -7625,12 +7636,12 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react@19.0.8)(react-dom@18.3.1(react@19.0.0))(react@19.0.0)':
+  '@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react@19.0.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@testing-library/dom': 10.4.0
-      react: 19.0.0
-      react-dom: 18.3.1(react@19.0.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
       '@types/react': 19.0.8
 
@@ -11173,12 +11184,6 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-dom@18.3.1(react@19.0.0):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 19.0.0
-      scheduler: 0.23.2
-
   react-is@17.0.2: {}
 
   react-refresh@0.14.2: {}
@@ -11186,8 +11191,6 @@ snapshots:
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
-
-  react@19.0.0: {}
 
   read-cache@1.0.0:
     dependencies:
