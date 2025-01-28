@@ -31,10 +31,12 @@
   "scripts": {
     "prebuild": "cpy --flat ../../LICENSE .",
     "build": "vinxi build",
+    "build:storybook": "storybook build",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" .output .vinxi LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
     "serve": "vinxi start",
-    "start": "vinxi dev"
+    "start": "vinxi dev",
+    "start:storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@kurone-kito/launchpad-icons-solid": "workspace:^",
@@ -43,13 +45,24 @@
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.17.2",
+    "@storybook/addon-essentials": "^8.5.2",
+    "@storybook/addon-interactions": "^8.5.2",
+    "@storybook/addon-links": "^8.5.2",
+    "@storybook/blocks": "^8.5.2",
+    "@storybook/docs-tools": "^8.5.2",
+    "@storybook/types": "^8.5.2",
     "autoprefixer": "^10.4.20",
     "cpy-cli": "^5.0.0",
     "postcss": "^8.5.1",
     "rimraf": "^5.0.10",
+    "storybook": "^8.5.2",
+    "storybook-solidjs": "1.0.0-beta.6",
+    "storybook-solidjs-vite": "1.0.0-beta.6",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.7.2",
-    "vinxi": "^0.5.1"
+    "vinxi": "^0.5.1",
+    "vite": "^6.0.6",
+    "vite-plugin-solid": "^2.11.0"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
