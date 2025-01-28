@@ -349,6 +349,11 @@ $RECYCLE.BIN/
 ### THE PROJECT SPECIFIES #################################################
 
 ### Node ###
+# Solid.js
+.output
+.vinxi
+app.config.timestamp_*.js
+
 nodePackages/*/LICENSE
 nodePackages/builder/assets
 nodePackages/*/generated-src

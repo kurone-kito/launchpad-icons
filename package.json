@@ -51,7 +51,7 @@
     "@cspell/cspell-types": "^8.17.3",
     "@kurone-kito/commitlint-config": "^0.17.2",
     "@kurone-kito/cspell-config": "^0.17.2",
-    "@kurone-kito/eslint-config-base": "^0.17.2",
+    "@kurone-kito/eslint-config-solid": "^0.17.2",
     "@kurone-kito/lint-staged-config": "^0.17.2",
     "@kurone-kito/prettier-config": "^0.17.2",
     "@kurone-kito/typescript-config": "^0.17.2",
