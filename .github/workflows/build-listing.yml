@@ -1,7 +1,8 @@
 name: Build Repo Listing
 
 env:
-  listPublishDirectory: Website
+  listPublishDirectory: nodePackages/web/.output/public
+  jsonGeneratedDirectory: Website
   pathToCi: ci
 
 on:
@@ -66,7 +67,9 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: corepack up
-      - name: Run the build to generate the website
+      - env:
+          BASE_PATH: /launchpad-icons
+        name: Run the build to generate the website
         run: pnpm run build
       - name: Deploy the global.json file
         run: cp "${{ github.workspace }}/global.json" "${{ env.pathToCi }}/"
@@ -78,9 +81,11 @@ jobs:
             ${{ env.pathToCi }}/.nuke/temp
             ~/.nuget/packages
       - name: Build Package Version Listing with Nuke
-        run: '"${{ env.pathToCi }}/build.cmd" BuildRepoListing --root "${{ env.pathToCi }}" --list-publish-directory "$GITHUB_WORKSPACE/${{ env.listPublishDirectory }}" --current-package-name "${{ vars.PACKAGE_NAME }}"'
+        run: '"${{ env.pathToCi }}/build.cmd" BuildRepoListing --root "${{ env.pathToCi }}" --list-publish-directory "$GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}" --current-package-name "${{ vars.PACKAGE_NAME }}"'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copy the generated index.json to the publish directory
+        run: cp $GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}/index.json $GITHUB_WORKSPACE/${{ env.listPublishDirectory }}/
       - name: Prepare for GitHub Pages deployment
         uses: actions/configure-pages@v5
         with:
