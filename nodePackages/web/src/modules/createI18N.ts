@@ -4,6 +4,7 @@ import type {
   Translator as I18NTranslator,
 } from '@solid-primitives/i18n';
 import { flatten, resolveTemplate, translator } from '@solid-primitives/i18n';
+import { useParams } from '@solidjs/router';
 import { createMemo } from 'solid-js';
 import en from '../i18n/en.js';
 import ja from '../i18n/ja.js';
@@ -41,3 +42,18 @@ export const createI18NFromCustomDict = <T extends BaseDict>(
   dict: T,
 ): I18NTranslator<Flatten<T, {}>, string> =>
   translator(createMemo(() => flatten(dict)));
+
+/**
+ * Uses the language from dynamic route.
+ * @returns The language.
+ */
+export const useLanguage = (): Language => {
+  const { language = 'en' } = useParams();
+  return language as Language;
+};
+
+/**
+ * Uses the translator.
+ * @returns The translator.
+ */
+export const useTranslator = (): Translator => createI18N(useLanguage());
