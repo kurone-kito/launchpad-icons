@@ -42,8 +42,10 @@
   },
   "dependencies": {
     "@kurone-kito/launchpad-icons-solid": "workspace:^",
+    "@solid-primitives/clipboard": "^1.6.0",
     "@solid-primitives/i18n": "^2.2.0",
     "@solid-primitives/media": "^2.3.0",
+    "@solid-primitives/platform": "^0.2.0",
     "@solid-primitives/storage": "^4.3.1",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.3",
@@ -66,6 +68,7 @@
     "daisyui": "^4.12.23",
     "postcss": "^8.5.1",
     "rimraf": "^5.0.10",
+    "solid-icons": "^1.1.0",
     "storybook": "^8.5.2",
     "storybook-solidjs": "1.0.0-beta.6",
     "storybook-solidjs-vite": "1.0.0-beta.6",

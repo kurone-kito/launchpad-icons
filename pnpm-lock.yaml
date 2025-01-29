@@ -210,12 +210,18 @@ importers:
       '@kurone-kito/launchpad-icons-solid':
         specifier: workspace:^
         version: link:../solid
+      '@solid-primitives/clipboard':
+        specifier: ^1.6.0
+        version: 1.6.0(solid-js@1.9.4)
       '@solid-primitives/i18n':
         specifier: ^2.2.0
         version: 2.2.0(solid-js@1.9.4)
       '@solid-primitives/media':
         specifier: ^2.3.0
         version: 2.3.0(solid-js@1.9.4)
+      '@solid-primitives/platform':
+        specifier: ^0.2.0
+        version: 0.2.0(solid-js@1.9.4)
       '@solid-primitives/storage':
         specifier: ^4.3.1
         version: 4.3.1(solid-js@1.9.4)
@@ -277,6 +283,9 @@ importers:
       rimraf:
         specifier: ^5.0.10
         version: 5.0.10
+      solid-icons:
+        specifier: ^1.1.0
+        version: 1.1.0(solid-js@1.9.4)
       storybook:
         specifier: ^8.5.2
         version: 8.5.2(prettier@3.4.2)
@@ -1797,6 +1806,11 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
+  '@solid-primitives/clipboard@1.6.0':
+    resolution: {integrity: sha512-mZQVAqyXt1Cp9zZieGhKwSRMoNQg9z3ErqtnVxAxw5LAheAC09Z5OHr1Ln0kLjRDhC+r6GiNzOKzFVuTH+ERyQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
   '@solid-primitives/event-listener@2.4.0':
     resolution: {integrity: sha512-TSfR1PNTfojFEYGSxSMCnUhXsaYWBo4p+cm73QmWODa9YnaQAk6PB7VjzG2bOT2D817VlvuOqTj0Qdq+MZrdGg==}
     peerDependencies:
@@ -1809,6 +1823,11 @@ packages:
 
   '@solid-primitives/media@2.3.0':
     resolution: {integrity: sha512-7+C3wfbWnGE/WPoNsqcp/EeOP2aNNB92RCpsWhBth8E5lZo/J+rK6jMb7umVsK0zguT8HBpeXp1pFyFbcsHStA==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/platform@0.2.0':
+    resolution: {integrity: sha512-x5Tmed85MxRYMNy7LKV88JBjR7ju7Vd8a56Q7CcyMN0i2sPY8/VB82uT/SFD4ncWDxYWOs5zmwBPQBDPHUNOsw==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -5347,6 +5366,11 @@ packages:
   smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
 
+  solid-icons@1.1.0:
+    resolution: {integrity: sha512-IesTfr/F1ElVwH2E1110s2RPXH4pujKfSs+koT8rwuTAdleO5s26lNSpqJV7D1+QHooJj18mcOiz2PIKs0ic+A==}
+    peerDependencies:
+      solid-js: '*'
+
   solid-js@1.9.4:
     resolution: {integrity: sha512-ipQl8FJ31bFUoBNScDQTG3BjN6+9Rg+Q+f10bUbnO6EOTTf5NGerJeHc7wyu5I4RMHEl/WwZwUmy/PTRgxxZ8g==}
 
@@ -7474,6 +7498,11 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
+  '@solid-primitives/clipboard@1.6.0(solid-js@1.9.4)':
+    dependencies:
+      '@solid-primitives/utils': 6.3.0(solid-js@1.9.4)
+      solid-js: 1.9.4
+
   '@solid-primitives/event-listener@2.4.0(solid-js@1.9.4)':
     dependencies:
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.4)
@@ -7489,6 +7518,10 @@ snapshots:
       '@solid-primitives/rootless': 1.5.0(solid-js@1.9.4)
       '@solid-primitives/static-store': 0.1.0(solid-js@1.9.4)
       '@solid-primitives/utils': 6.3.0(solid-js@1.9.4)
+      solid-js: 1.9.4
+
+  '@solid-primitives/platform@0.2.0(solid-js@1.9.4)':
+    dependencies:
       solid-js: 1.9.4
 
   '@solid-primitives/rootless@1.5.0(solid-js@1.9.4)':
@@ -11704,6 +11737,10 @@ snapshots:
       is-fullwidth-code-point: 5.0.0
 
   smob@1.5.0: {}
+
+  solid-icons@1.1.0(solid-js@1.9.4):
+    dependencies:
+      solid-js: 1.9.4
 
   solid-js@1.9.4:
     dependencies:
