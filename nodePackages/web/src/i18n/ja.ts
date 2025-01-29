@@ -1,5 +1,42 @@
 import type { Resources } from './types.js';
 
-const ja: Resources = { language: '🇯🇵' };
+const ja: Resources = {
+  addToVcc: 'VCC に追加',
+  author: '黒音キト',
+  catchPhrase: 'VRChatライクな<strong>SVG</strong>アイコン集',
+  commandToClipboard: 'コマンドをコピー',
+  description:
+    'Launchpad IconsはVRChatライクなアイコン集です。全アイコンをSVGベクター形式で提供しています。',
+  docs: 'ドキュメント',
+  explore: 'アイコンを探す',
+  features: '特徴',
+  features1Body: '今後{{ num }}個以上のアイコンを予定！',
+  features1Heading: '{{ num }}個のアイコン',
+  features2Body: '全アイコンをSVGベクター形式で再描画',
+  features2Heading: 'SVGアイコン',
+  features3Body: 'VRChat以外でも使用可能',
+  features3Heading: '生SVGファイル',
+  features4Body: 'CC BY-NC 4.0 ライセンス',
+  features4Heading: '無料＆公開リポジトリ！',
+  gettingStarted: '始めましょう！',
+  language: '🇯🇵',
+  plan: 'プラン',
+  planFree1: 'CC BY-NC 4.0 ライセンス下での無制限利用',
+  planFree2: 'コミュニティベースのサポート',
+  planBasic1: 'Freeプランの全機能',
+  planBasic2: 'Launchpad Iconsをより活用する意思',
+  planPro1: 'Basicプランの全機能',
+  planPro2: 'プロユーザーとしての自覚',
+  pricing: '価格とFAQ',
+  sampleWorld: 'サンプルワールドに行く',
+  subscribe: '気持ちだけいただきます',
+  subscribed: '既定のプラン',
+  subtitle: 'あなたのWebアプリ、VRChatワールドなどに。',
+  term: '年',
+  toDarkTheme: 'ダークモードに切り替え',
+  toLightTheme: 'ライトモードに切り替え',
+  toggleTheme: 'ダークモード切り替え',
+  urlToClipboard: 'URLをコピー',
+};
 
 export default ja;
