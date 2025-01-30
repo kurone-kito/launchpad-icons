@@ -19,6 +19,7 @@ const en: Resources = {
   features4Body: 'CC BY-NC 4.0 License.',
   features4Heading: 'Free & Public repo!',
   gettingStarted: 'Getting Started',
+  gettingStartedTitle: 'Getting Started',
   language: '🇬🇧',
   plan: 'plan',
   planFree1: 'Unrestricted use under CC BY-NC 4.0 license',
