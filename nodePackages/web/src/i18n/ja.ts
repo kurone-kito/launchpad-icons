@@ -9,6 +9,9 @@ const ja: Resources = {
     'Launchpad IconsはVRChatライクなアイコン集です。全アイコンをSVGベクター形式で提供しています。',
   docs: 'ドキュメント',
   explore: 'アイコンを探す',
+  exploreDescription:
+    'Launchpad Iconsは<strong>{{ num }}個</strong>のアイコンを提供しています。最新バージョンで新規追加したアイコンは<marker>ハイライト</marker>表示しています。',
+  exploreTitle: 'アイコンを探す',
   features: '特徴',
   features1Body: '今後{{ num }}個以上のアイコンを予定！',
   features1Heading: '{{ num }}個のアイコン',
