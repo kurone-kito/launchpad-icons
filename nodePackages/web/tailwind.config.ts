@@ -1,3 +1,4 @@
+import typography from '@tailwindcss/typography';
 import daisyui from 'daisyui';
 import type { Config } from 'tailwindcss';
 // @ts-ignore
@@ -18,7 +19,7 @@ const sans = [
 /** The Tailwind CSS configuration. */
 const config: Config = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
-  plugins: [daisyui, safeArea],
+  plugins: [daisyui, safeArea, typography],
   theme: { extend: { fontFamily: { sans } } },
 };
 

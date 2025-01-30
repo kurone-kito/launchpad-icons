@@ -10,4 +10,12 @@
   .heading-root {
     @apply text-base-content py-4 text-3xl font-extrabold;
   }
+
+  .prose-article {
+    @apply article-container prose prose-hr:my-8 prose-hr:mx-16 prose-pre:shadow-lg leading-loose;
+  }
+
+  .prose-anchor {
+    @apply prose-a:link prose-a:link-info [&[href^='vcc://']]:prose-a:btn [&[href^='vcc://']]:prose-a:btn-accent [&[href^='https://']]:prose-a:after:bg-info [&[href^='https://']]:prose-a:after:relative [&[href^='https://']]:prose-a:after:-top-1 [&[href^='https://']]:prose-a:after:ml-0.5 [&[href^='https://']]:prose-a:after:inline-block [&[href^='https://']]:prose-a:after:h-2 [&[href^='https://']]:prose-a:after:w-2 [&[href^='https://']]:prose-a:after:[mask-image:var(--image-external-url)] [&[href^='https://']]:prose-a:after:[mask-position:top_right] [&[href^='https://']]:prose-a:after:[mask-repeat:no-repeat] [&[href^='https://']]:prose-a:after:[mask-size:cover];
+  }
 }
