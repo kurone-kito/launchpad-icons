@@ -32,6 +32,7 @@ const en: Resources = {
   planPro1: 'All features from the Basic plan',
   planPro2: 'Awareness as a professional user',
   pricing: 'Pricing',
+  pricingTitle: 'Pricing',
   sampleWorld: 'Sample VRChat world',
   subscribe: "It's the thought that counts",
   subscribed: 'Default plan',

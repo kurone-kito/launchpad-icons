@@ -32,6 +32,7 @@ const ja: Resources = {
   planPro1: 'Basicプランの全機能',
   planPro2: 'プロユーザーとしての自覚',
   pricing: '価格とFAQ',
+  pricingTitle: '価格',
   sampleWorld: 'サンプルワールドに行く',
   subscribe: '気持ちだけいただきます',
   subscribed: '既定のプラン',
