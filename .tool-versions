@@ -1,2 +1,2 @@
-dotnet 8.0.404
-nodejs 18.20.4 ref:v18.20.4 lts-hydrogen lts latest system
+dotnet 8.0.405
+nodejs 18.20.6 ref:v18.20.6 lts-hydrogen lts latest system

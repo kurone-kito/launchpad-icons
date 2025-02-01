@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-web",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "private": true,
   "description": "the official website of the Launchpad Icons",
   "keywords": [
@@ -29,16 +29,63 @@
   "type": "module",
   "files": [],
   "scripts": {
-    "build": "cpy --flat ../../LICENSE .",
-    "clean": "rimraf -g \"*.tgz\" LICENSE node_modules/.cache",
-    "prepack": "pnpm run clean && pnpm run build"
+    "prebuild": "pnpm run -p \"/prebuild:.+/\"",
+    "prebuild:favicon": "cpy --flat --rename=favicon.svg ../../Packages/black.kit.launchpadicons/Runtime/Cursor.svg ./public/images",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "build": "vinxi build",
+    "build:storybook": "storybook build",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" .output .vinxi LICENSE node_modules/.cache",
+    "prepack": "pnpm run clean && pnpm run build",
+    "serve": "vinxi start",
+    "start": "vinxi dev",
+    "start:storybook": "storybook dev -p 6006"
   },
   "dependencies": {
-    "@kurone-kito/launchpad-icons-solid": "workspace:^"
+    "@kurone-kito/launchpad-icons-solid": "workspace:^",
+    "@solid-primitives/clipboard": "^1.6.0",
+    "@solid-primitives/date": "^2.1.0",
+    "@solid-primitives/i18n": "^2.2.0",
+    "@solid-primitives/media": "^2.3.0",
+    "@solid-primitives/platform": "^0.2.0",
+    "@solid-primitives/storage": "^4.3.1",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.3",
+    "@solidjs/start": "^1.0.11",
+    "clsx": "^2.1.1",
+    "solid-js": "^1.9.4",
+    "tailwind-merge": "^2.6.0",
+    "theme-change": "^2.5.0"
   },
   "devDependencies": {
+    "@kurone-kito/typescript-config": "^0.17.2",
+    "@modyfi/vite-plugin-yaml": "^1.1.0",
+    "@storybook/addon-essentials": "^8.5.2",
+    "@storybook/addon-interactions": "^8.5.2",
+    "@storybook/addon-links": "^8.5.2",
+    "@storybook/blocks": "^8.5.2",
+    "@storybook/docs-tools": "^8.5.2",
+    "@storybook/types": "^8.5.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/markdown-it": "^14.1.2",
+    "@types/markdown-it-link-attributes": "^3.0.5",
+    "autoprefixer": "^10.4.20",
     "cpy-cli": "^5.0.0",
-    "rimraf": "^5.0.10"
+    "daisyui": "^4.12.23",
+    "markdown-it": "^14.1.0",
+    "markdown-it-link-attributes": "^4.0.1",
+    "postcss": "^8.5.1",
+    "rimraf": "^5.0.10",
+    "solid-icons": "^1.1.0",
+    "storybook": "^8.5.2",
+    "storybook-solidjs": "1.0.0-beta.6",
+    "storybook-solidjs-vite": "1.0.0-beta.6",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-safe-area": "^0.6.0",
+    "typescript": "~5.7.2",
+    "vinxi": "^0.5.1",
+    "vite": "^6.0.6",
+    "vite-plugin-markdown": "^2.2.0",
+    "vite-plugin-solid": "^2.11.0"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"

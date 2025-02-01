@@ -1,1 +1,1 @@
-export { default } from '@kurone-kito/eslint-config-base';
+export { default } from '@kurone-kito/eslint-config-solid';

@@ -1,0 +1,47 @@
+import type { Resources } from './types.js';
+
+const en: Resources = {
+  addToVcc: 'Add to VCC',
+  author: 'Kuroné Kito',
+  catchPhrase: 'VRChat-like icons are now in <strong>SVG</strong>.',
+  commandToClipboard: 'Copy the command',
+  description:
+    'The Launchpad Icons are a collection of VRChat-like icons. All icons are provided in SVG vector format.',
+  docs: 'Docs',
+  explore: 'Explore',
+  exploreDescription:
+    'The Launchpad Icons provide&nbsp;<strong>{{ num }} icons</strong>. The&nbsp;<marker>highlighted</marker>&nbsp;icons are those added in the latest version.',
+  exploreTitle: 'Icons explorer',
+  features: 'Features',
+  features1Body: '...and {{ num }}+ icons in the future!',
+  features1Heading: '{{ num }} icons',
+  features2Body: 'All icons redrawn in SVG vector format.',
+  features2Heading: 'SVG Icons',
+  features3Body: 'You can also use outside of VRChat.',
+  features3Heading: 'Raw SVG files',
+  features4Body: 'CC BY-NC 4.0 License.',
+  features4Heading: 'Free & Public repo!',
+  gettingStarted: 'Getting Started',
+  gettingStartedTitle: 'Getting Started',
+  language: '🇬🇧',
+  plan: 'plan',
+  planFree1: 'Unrestricted use under CC BY-NC 4.0 license',
+  planFree2: 'Community based support',
+  planBasic1: 'All features from the Free plan',
+  planBasic2: 'Willingness to make more use of the Launchpad Icons',
+  planPro1: 'All features from the Basic plan',
+  planPro2: 'Awareness as a professional user',
+  pricing: 'Pricing',
+  pricingTitle: 'Pricing',
+  sampleWorld: 'Sample VRChat world',
+  subscribe: "It's the thought that counts",
+  subscribed: 'Default plan',
+  subtitle: 'for your web app, VRChat worlds, and more.',
+  term: 'year',
+  toDarkTheme: 'Switch to dark theme',
+  toLightTheme: 'Switch to light theme',
+  toggleTheme: 'Toggle the dark / light mode',
+  urlToClipboard: 'Copy the URL',
+};
+
+export default en;

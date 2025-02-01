@@ -11,6 +11,7 @@ reviews:
     - '!Assets/XR/**/*'
     - '!Packages/com.vrchat.core.*/**/*'
     - '!ProjectSettings/**/*'
+    - '!nodePackages/**/docs/**/*'
   path_instructions:
     - instructions: This folder contains C# files, but these are UdonSharp and have different restrictions than standard C#. Please review with this in mind.
       path: Assets/black.kit.*/Runtime/**/*

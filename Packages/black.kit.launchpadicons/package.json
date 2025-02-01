@@ -1,7 +1,7 @@
 {
   "name": "black.kit.launchpadicons",
   "displayName": "LaunchPad Icons",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat",
   "keywords": [
     "icons",
@@ -19,6 +19,7 @@
     "com.unity.vectorgraphics": "2.0.0-preview.24"
   },
   "changelogUrl": "https://github.com/kurone-kito/launchpad-icons/releases",
+  "documentationUrl": "https://kurone-kito.github.io/launchpad-icons/",
   "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
   "unity": "2022.3",
   "unityRelease": "22f1",
