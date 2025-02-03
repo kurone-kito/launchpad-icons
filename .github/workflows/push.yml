@@ -52,6 +52,8 @@ jobs:
     defaults:
       run:
         shell: ${{ matrix.platform.shell }}
+    env:
+      COREPACK_INTEGRITY_KEYS: 0
     name: The build process for the NPM packages and the website
     runs-on: ${{ matrix.platform.os }}
     steps:
@@ -65,6 +67,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
+      - name: Install the latest corepack explicitly
+        run: npm install --force -g corepack@latest
       - name: Enable the corepack because of the pnpm
         run: corepack enable
       - name: Post-prepare the Node.js environment
