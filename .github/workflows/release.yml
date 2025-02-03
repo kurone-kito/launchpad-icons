@@ -46,6 +46,14 @@ jobs:
         run: pnpm install --prefer-frozen-lockfile
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        name: Sets the token to deploying the NPM packages
+        run: |
+          cat << EOF > "${HOME}/.npmrc"
+            @kurone-kito:registry=https://registry.npmjs.org/
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+      - env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         name: Publish the packages
         run: pnpm run publish
 
