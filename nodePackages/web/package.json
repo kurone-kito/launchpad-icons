@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-web",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "private": true,
   "description": "the official website of the Launchpad Icons",
   "keywords": [
@@ -59,12 +59,12 @@
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.17.2",
     "@modyfi/vite-plugin-yaml": "^1.1.0",
-    "@storybook/addon-essentials": "^8.5.2",
-    "@storybook/addon-interactions": "^8.5.2",
-    "@storybook/addon-links": "^8.5.2",
-    "@storybook/blocks": "^8.5.2",
-    "@storybook/docs-tools": "^8.5.2",
-    "@storybook/types": "^8.5.2",
+    "@storybook/addon-essentials": "^8.5.3",
+    "@storybook/addon-interactions": "^8.5.3",
+    "@storybook/addon-links": "^8.5.3",
+    "@storybook/blocks": "^8.5.3",
+    "@storybook/docs-tools": "^8.5.3",
+    "@storybook/types": "^8.5.3",
     "@tailwindcss/typography": "^0.5.16",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-link-attributes": "^3.0.5",
@@ -76,16 +76,16 @@
     "postcss": "^8.5.1",
     "rimraf": "^5.0.10",
     "solid-icons": "^1.1.0",
-    "storybook": "^8.5.2",
+    "storybook": "^8.5.3",
     "storybook-solidjs": "1.0.0-beta.6",
     "storybook-solidjs-vite": "1.0.0-beta.6",
     "tailwindcss": "^3.4.17",
     "tailwindcss-safe-area": "^0.6.0",
     "typescript": "~5.7.2",
-    "vinxi": "^0.5.1",
-    "vite": "^6.0.6",
+    "vinxi": "^0.5.3",
+    "vite": "^6.1.0",
     "vite-plugin-markdown": "^2.2.0",
-    "vite-plugin-solid": "^2.11.0"
+    "vite-plugin-solid": "^2.11.1"
   },
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"

@@ -47,7 +47,7 @@
 #### 3. パッケージをプロジェクトにインポートする
 
 1. Unityプロジェクトを開きます。
-2. ダウンロードしたパッケージを <span translate="no">Unity Editior</span>
+2. ダウンロードしたパッケージを <span translate="no">Unity Editor</span>
    にドラッグ＆ドロップします。
 3. “インポート” ボタンを押下します。
 

@@ -31,6 +31,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
+      - name: Install the latest corepack explicitly
+        run: npm install --force -g corepack@latest
       - name: Enable the corepack because of the pnpm
         run: corepack enable
       - name: Post-prepare the Node.js environment
@@ -42,6 +44,14 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: pnpm install --prefer-frozen-lockfile
+      - env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        name: Sets the token to deploying the NPM packages
+        run: |
+          cat << EOF > "${HOME}/.npmrc"
+            @kurone-kito:registry=https://registry.npmjs.org/
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         name: Publish the packages

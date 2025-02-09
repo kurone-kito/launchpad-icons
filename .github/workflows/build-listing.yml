@@ -56,6 +56,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
+      - name: Install the latest corepack explicitly
+        run: npm install --force -g corepack@latest
       - name: Enable the corepack because of the pnpm
         run: corepack enable
       - name: Post-prepare the Node.js environment
@@ -66,7 +68,7 @@ jobs:
       - env:
           HUSKY: 0
         name: Install the dependencies
-        run: corepack up
+        run: pnpm install --prefer-frozen-lockfile
       - env:
           BASE_PATH: /launchpad-icons
         name: Run the build to generate the website

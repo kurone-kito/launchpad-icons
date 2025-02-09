@@ -12,7 +12,7 @@
 
 ### props
 
-`SVGProps`\<`SVGSVGElement`\>
+`SVGProps`
 
 ## Returns
 
