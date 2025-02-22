@@ -5,7 +5,16 @@ cache:
   useCache: true
 dictionaries:
   - css
+  - dotnet
+  - en_us
+  - en-gb
+  - game-development
+  - gaming-terms
+  - git
+  - markdown
   - php
+  - softwareTerms
+  - unity
 import:
   - '@kurone-kito/cspell-config'
 ignorePaths:
@@ -17,6 +26,7 @@ ignorePaths:
   - Assets/XR
   - cspell.config.yml
   - node_modules
+  - npm
   - Packages/com.*
   - Packages/dev.*
   - Packages/*.json
@@ -27,9 +37,6 @@ ignoreRegExpList:
 version: '0.2'
 words:
   - atrous
-  - clsx
-  - csvg
-  - daisyui
   - denoiser
   - dwlt
   - lanchpadicons
@@ -37,16 +44,11 @@ words:
   - kuroné
   - Kuron
   - MSAA
-  - nunit
-  - occludee
-  - occluder
   - scriban
   - solidjs
-  - spatialize
   - udon
-  - ugui
   - vinxi
-  - vrcsdk
   - vrchat
+  - vrcsdk
   - vstuc
   - waivable
