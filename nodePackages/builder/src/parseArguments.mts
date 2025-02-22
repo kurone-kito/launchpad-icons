@@ -17,14 +17,14 @@ export interface ParsedArguments {
   readonly help: boolean;
 
   /** the target framework */
-  readonly target?: (typeof supportedFrameworks)[number] | undefined;
+  readonly target?: (typeof supportedFrameworks)[number] | 'web' | undefined;
 }
 
 /** The usage message that should be displayed when the user requests help. */
 export const usage = `${chalk.bold('Usage:')} liBuilder [options] <react|solid-js>
 
 ${chalk.bold('Arguments:')}
-  <react|solid-js>  the target framework
+  <react|solid-js|web>  the target framework
 
 ${chalk.bold('Options:')}
   -h, --help  display this help message`;
@@ -40,6 +40,8 @@ export const ParsedArguments = (): ParsedArguments => {
   });
   const [argTarget] = positionals;
   const { help = false } = values;
-  const target = supportedFrameworks.find((fw) => fw === argTarget);
+  const target = ([...supportedFrameworks, 'web'] as const).find(
+    (fw) => fw === argTarget,
+  );
   return { help, target };
 };
