@@ -1,5 +1,4 @@
 import { VRC } from '@kurone-kito/launchpad-icons-solid';
-import clsx from 'clsx';
 import { FaBrandsGithub } from 'solid-icons/fa';
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
@@ -29,10 +28,8 @@ export const Navbar: Component = () => {
         />
       </nav>
       <nav
-        class={clsx(
-          'flex grow-0 flex-col items-stretch lg:flex lg:grow lg:flex-row lg:justify-between',
-          { hidden: !expanded() },
-        )}
+        class="flex grow-0 flex-col items-stretch lg:flex lg:grow lg:flex-row lg:justify-between"
+        classList={{ hidden: !expanded() }}
       >
         <ul class="menu lg:menu-horizontal items-stretch pb-1 pt-4">
           <li>
