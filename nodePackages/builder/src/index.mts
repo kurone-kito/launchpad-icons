@@ -1,3 +1,5 @@
+#!/usr/bin/env node --enable-source-maps
+
 import chalk from 'chalk';
 import { ParsedArguments, usage } from './parseArguments.mjs';
 import { getAssetsDir, getSvgNames, getSvgPathes } from './getIconsList.mjs';

@@ -37,6 +37,7 @@
     "lint:oxlint:fix": "oxlint --fix",
     "lint:prettier:check": "pnpm run prettier -cu",
     "lint:prettier:fix": "pnpm run prettier -uw",
+    "pnpm:devPreinstall": "pnpm dlx mkdirp nodePackages/builder/dist && pnpm dlx shx head -n 1 nodePackages/builder/src/index.mts > nodePackages/builder/dist/index.mjs",
     "prepare": "husky",
     "prettier": "prettier --cache --log-level=warn \"./**/*\"",
     "publish": "pnpm --filter '*builder' run build && pnpm -r publish",
