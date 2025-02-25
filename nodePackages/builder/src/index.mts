@@ -1,4 +1,7 @@
+#!/usr/bin/env node --enable-source-maps
+
 import chalk from 'chalk';
+import { copyToMeta } from './copyToMeta.mjs';
 import { ParsedArguments, usage } from './parseArguments.mjs';
 import { getAssetsDir, getSvgNames, getSvgPathes } from './getIconsList.mjs';
 import { svgToContentStream } from './svgToContent.mjs';
@@ -21,9 +24,14 @@ if (!target) {
   process.exit(1);
 }
 
-const src = await initializeSourceDir();
-const icons = await getSvgPathes(getAssetsDir());
-const names = getSvgNames(icons);
-await writeNamesList(src, names);
-await svgToContentStream(target, icons).pipeTo(writeToSourceStream(src));
-await writeToIndex(src, names, target);
+const assetsDir = getAssetsDir();
+if (target === 'web') {
+  await copyToMeta(assetsDir);
+} else {
+  const src = await initializeSourceDir();
+  const icons = await getSvgPathes(assetsDir);
+  const names = getSvgNames(icons);
+  await writeNamesList(src, names);
+  await svgToContentStream(target, icons).pipeTo(writeToSourceStream(src));
+  await writeToIndex(src, names, target);
+}

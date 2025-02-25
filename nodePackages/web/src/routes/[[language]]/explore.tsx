@@ -5,12 +5,12 @@ import { themeChange } from 'theme-change';
 import { IconItem } from '../../components/atoms/IconItem.js';
 import { Head } from '../../components/organisms/Head.js';
 import { DefaultTemplate } from '../../components/templates/DefaultTemplate.js';
-import Constants from '../../constants.yml';
+import metaJson from '../../meta.json';
 import { useTranslator } from '../../modules/createI18N.js';
 
 const { iconNames } = icons;
 const iconsLength = iconNames.length;
-const newList = Constants['newList'] as readonly string[];
+const newList = Object.freeze(metaJson['newIcons']);
 
 /**
  * The explore page.

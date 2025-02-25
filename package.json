@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-root",
-  "version": "0.8.3",
+  "version": "0.9.0",
   "private": true,
   "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
   "keywords": [
@@ -37,6 +37,7 @@
     "lint:oxlint:fix": "oxlint --fix",
     "lint:prettier:check": "pnpm run prettier -cu",
     "lint:prettier:fix": "pnpm run prettier -uw",
+    "pnpm:devPreinstall": "pnpm dlx mkdirp nodePackages/builder/dist && pnpm dlx shx head -n 1 nodePackages/builder/src/index.mts > nodePackages/builder/dist/index.mjs",
     "prepare": "husky",
     "prettier": "prettier --cache --log-level=warn \"./**/*\"",
     "publish": "pnpm --filter '*builder' run build && pnpm -r publish",
@@ -48,32 +49,32 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@cspell/cspell-types": "^8.17.3",
+    "@cspell/cspell-types": "^8.17.5",
     "@kurone-kito/commitlint-config": "^0.17.4-alpha.1",
     "@kurone-kito/cspell-config": "^0.17.4-alpha.1",
     "@kurone-kito/eslint-config-solid": "^0.17.2",
     "@kurone-kito/lint-staged-config": "^0.17.4-alpha.1",
     "@kurone-kito/prettier-config": "^0.17.4-alpha.1",
     "@kurone-kito/typescript-config": "^0.17.4-alpha.1",
-    "@typescript-eslint/parser": "^8.23.0",
-    "cspell": "^8.17.3",
-    "eslint": "^9.20.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "cspell": "^8.17.5",
+    "eslint": "^9.21.0",
     "eslint-formatter-codeframe": "^7.32.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "markdownlint-cli2": "^0.17.2",
-    "oxlint": "^0.15.10",
-    "prettier": "^3.5.0",
+    "oxlint": "^0.15.12",
+    "prettier": "^3.5.2",
     "prettier-plugin-packagejson": "^2.5.8",
-    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-sh": "^0.15.0",
     "prettier-plugin-sort-json": "^4.1.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "rimraf": "^5.0.10",
     "typescript": "~5.7.3",
     "typescript-eslint-language-service": "^5.0.5"
   },
-  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92",
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
   "engines": {
     "node": "^18.20 || ^20.10 || >=22"
   },
@@ -81,8 +82,12 @@
     "access": "public"
   },
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ],
     "overrides": {
-      "react": "18.3.1"
+      "react": "^18.3.1"
     }
   }
 }

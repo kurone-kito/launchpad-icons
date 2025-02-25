@@ -1,21 +1,4 @@
 iconsToDo: 190
-newList:
-  - Caution
-  - CircleHandle
-  - CircleMinus
-  - CirclePlus
-  - CircleStar
-  - Document
-  - InfoBlock
-  - Mic
-  - MoveCircle
-  - MoveSquare
-  - NextTriThin
-  - Portraits
-  - PreviousTriThin
-  - PreviousTriW
-  - Pulse
-  - Tip
 npmReact: npm i @kurone-kito/launchpad-icons-react
 npmSolid: npm i @kurone-kito/launchpad-icons-solid
 vccUrl: vcc://vpm/addRepo?url=

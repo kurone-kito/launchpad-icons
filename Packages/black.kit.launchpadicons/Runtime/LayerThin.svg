@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242.3 242.1">
+  <defs>
+    <style>.b{fill:#fff;}</style>
+  </defs>
+  <path class="b" d="M194.6,61.4v-14H54.7v-18.9h-7v18.9H0v194.6h194.6v-47.5h19.1v-7h-19.1V61.4ZM14,235.1c-3.8,0-7-3.1-7-7V61.4c0-3.8,3.1-7,7-7h166.7c3.8,0,7,3.1,7,7v166.7c0,3.8-3.1,7-7,7H14Z"/>
+  <polygon class="b" points="235.3 187.6 225.3 187.6 225.3 194.6 242.3 194.6 242.3 177.6 235.3 177.6 235.3 187.6"/>
+  <rect class="b" x="76.3" y="187.6" width="25.6" height="7"/>
+  <rect class="b" x="150.8" y="187.6" width="25.6" height="7"/>
+  <rect class="b" x="113.6" y="187.6" width="25.6" height="7"/>
+  <polygon class="b" points="54.7 177.6 47.7 177.6 47.7 194.6 64.7 194.6 64.7 187.6 54.7 187.6 54.7 177.6"/>
+  <rect class="b" x="47.7" y="103.1" width="7" height="25.6"/>
+  <rect class="b" x="47.7" y="140.4" width="7" height="25.6"/>
+  <rect class="b" x="47.7" y="65.9" width="7" height="25.6"/>
+  <polygon class="b" points="54.7 7 64.7 7 64.7 0 47.7 0 47.7 17 54.7 17 54.7 7"/>
+  <rect class="b" x="113.6" width="25.6" height="7"/>
+  <rect class="b" x="150.8" width="25.6" height="7"/>
+  <rect class="b" x="76.3" width="25.6" height="7"/>
+  <rect class="b" x="188.1" width="25.6" height="7"/>
+  <polygon class="b" points="225.3 0 225.3 7 235.3 7 235.3 17 242.3 17 242.3 0 225.3 0"/>
+  <rect class="b" x="235.3" y="28.6" width="7" height="25.6"/>
+  <rect class="b" x="235.3" y="140.4" width="7" height="25.6"/>
+  <rect class="b" x="235.3" y="65.9" width="7" height="25.6"/>
+  <rect class="b" x="235.3" y="103.1" width="7" height="25.6"/>
+</svg>
