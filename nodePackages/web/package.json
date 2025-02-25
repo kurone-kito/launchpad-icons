@@ -72,7 +72,7 @@
     "@types/markdown-it-link-attributes": "^3.0.5",
     "autoprefixer": "^10.4.20",
     "cpy-cli": "^5.0.0",
-    "daisyui": "^4.12.23",
+    "daisyui": "^4.12.24",
     "markdown-it": "^14.1.0",
     "markdown-it-link-attributes": "^4.0.1",
     "postcss": "^8.5.3",
