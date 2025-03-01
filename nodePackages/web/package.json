@@ -62,7 +62,7 @@
     "@kurone-kito/typescript-config": "^0.17.2",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@storybook/addon-essentials": "^8.6.0",
-    "@storybook/addon-interactions": "^8.6.0",
+    "@storybook/addon-interactions": "^8.6.2",
     "@storybook/addon-links": "^8.6.0",
     "@storybook/blocks": "^8.6.0",
     "@storybook/docs-tools": "^8.6.0",
