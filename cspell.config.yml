@@ -25,6 +25,7 @@ ignorePaths:
   - Assets/UdonSharp
   - Assets/XR
   - cspell.config.yml
+  - Library
   - node_modules
   - npm
   - Packages/com.*
@@ -47,6 +48,7 @@ words:
   - scriban
   - solidjs
   - udon
+  - unityyamlmerge
   - vinxi
   - vrchat
   - vrcsdk
