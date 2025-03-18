@@ -21,11 +21,11 @@
     ]
   },
   "scripts": {
-    "build": "pnpm run -r build",
+    "build": "pnpm run --workspace-concurrency=Infinity -r build",
     "build:min": "pnpm --filter \"@kurone-kito/launchpad-icons-web^...\" run build",
     "clean": "pnpm run --no-bail \"/^clean:.+/\"",
     "clean:root": "rimraf -g .eslintcache \"*.tgz\" \"*.tsbuildinfo\" node_modules/.cache",
-    "clean:sub": "pnpm run -r clean",
+    "clean:sub": "pnpm run --parallel --workspace-concurrency=Infinity -r clean",
     "lint": "pnpm run \"/lint:.+:check/\"",
     "lint:cspell:check": "cspell lint --no-progress --show-suggestions -u \"./**/*\"",
     "lint:eslint:check": "eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy=content -f codeframe \"./**/*\"",
@@ -43,8 +43,8 @@
     "publish": "pnpm --filter '*builder' run build && pnpm -r publish",
     "publish:next": "pnpm run publish --no-git-check --tag next",
     "prestart": "pnpm --filter='!*web' run build",
-    "start": "pnpm run --parallel -r start",
-    "test": "pnpm run -r test"
+    "start": "pnpm run --parallel --workspace-concurrency=Infinity -r start",
+    "test": "pnpm run --workspace-concurrency=Infinity -r test"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
