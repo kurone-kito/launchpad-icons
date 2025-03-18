@@ -27,13 +27,13 @@
   ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
-    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
     "build": "tsc",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" assets dist LICENSE node_modules/.cache",
     "preinstall": "pnpm dlx mkdirp dist && pnpm dlx touch dist/index.mjs",
     "liBuilder": "node dist/index.mjs",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
     "start": "tsc -w",
     "test": "vitest run"
   },

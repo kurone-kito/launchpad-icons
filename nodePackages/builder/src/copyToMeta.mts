@@ -17,7 +17,9 @@ const SRC_FILE = '_Meta.json';
  */
 export const copyToMeta = async (path: string): Promise<void> => {
   const fullPath = pathToFileURL(join(path, SRC_FILE));
-  const { default: json } = await import(fullPath.href, { with: { type: 'json' } });
+  const { default: json } = await import(fullPath.href, {
+    with: { type: 'json' },
+  });
   const str = JSON.stringify(json, null, 2);
   await writeFile(join(DIST_DIR, DIST_NAME), str);
 };

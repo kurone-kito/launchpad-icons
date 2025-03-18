@@ -28,13 +28,13 @@
   ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
-    "prebuild:code": "liBuilder solid-js",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
     "build": "pnpm run \"/^build:.+/\"",
     "build:jsdoc": "rimraf docs && typedoc",
     "build:ts": "tsc",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist generated-src LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:code": "liBuilder solid-js",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
     "prestart": "pnpm run prebuild",
     "start": "tsc -w",
     "test": "vitest run"

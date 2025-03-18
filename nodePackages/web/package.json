@@ -30,13 +30,13 @@
   "files": [],
   "scripts": {
     "prebuild": "pnpm run -p \"/prebuild:.+/\"",
-    "prebuild:favicon": "cpy --flat --rename=favicon.svg ../../Packages/black.kit.launchpadicons/Runtime/Cursor.svg ./public/images",
-    "prebuild:json": "liBuilder web",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
     "build": "vinxi build",
     "build:storybook": "storybook build",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" .output .vinxi LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:favicon": "cpy --flat --rename=favicon.svg ../../Packages/black.kit.launchpadicons/Runtime/Cursor.svg ./public/images",
+    "prebuild:json": "liBuilder web",
+    "prebuild:license": "cpy --flat ../../LICENSE .",
     "serve": "vinxi start",
     "start": "vinxi dev",
     "start:storybook": "storybook dev -p 6006"
