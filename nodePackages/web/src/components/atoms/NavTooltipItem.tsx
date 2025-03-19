@@ -16,10 +16,7 @@ export interface NavTooltipItemProps extends Readonly<ParentProps> {
 export const NavTooltipItem: Component<NavTooltipItemProps> = (props) => (
   <li
     class="tooltip"
-    classList={{
-      'tooltip-primary': props.top,
-      'tooltip-secondary': !props.top,
-    }}
+    classList={{ 'tooltip-top': props.top, 'tooltip-bottom': !props.top }}
     data-tip={props.tooltip}
   >
     {props.children}
