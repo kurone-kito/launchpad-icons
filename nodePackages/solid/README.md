@@ -1,4 +1,6 @@
-# 🚀 VRC Icons for Solid
+# ![VRC Icons by Kuroné Kito](https://kurone-kito.github.io/launchpad-icons/images/banner.webp)
+
+🚀 Unofficial VRC like icons for [Solid.js](https://www.solidjs.com)
 
 ## Usage
 

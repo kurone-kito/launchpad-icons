@@ -1,4 +1,6 @@
-# 🚀 VRC Icons for React
+# ![VRC Icons by Kuroné Kito](https://kurone-kito.github.io/launchpad-icons/images/banner.webp)
+
+🚀 Unofficial VRC like icons for [React.js](https://react.dev)
 
 ## Usage
 

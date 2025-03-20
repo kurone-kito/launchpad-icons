@@ -1,4 +1,4 @@
-# ![VRC Icons by Kuroné Kito](Website/banner.png)
+# ![VRC Icons by Kuroné Kito](https://kurone-kito.github.io/launchpad-icons/images/banner.webp)
 
 🚀 Icons pack for VRChat/Web, like VRChat. Former name: _Launchpad Icons_
 
