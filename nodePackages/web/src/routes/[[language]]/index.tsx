@@ -52,7 +52,7 @@ const Index: Component = () => {
   const tSvg = rawSvgTranslator(lang);
   return (
     <DefaultTemplate>
-      <Head next="./docs" pagePath="" title="Launchpad Icons" />
+      <Head next="./docs" pagePath="" title="VRC Icons" />
       <CompositedHero />
       <Features iconsLength={iconsLength} iconsToDo={maxIcons} />
       <FeatureDetail

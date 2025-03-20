@@ -6,11 +6,11 @@ const ja: Resources = {
   catchPhrase: 'VRChatライクな<strong>SVG</strong>アイコン集',
   commandToClipboard: 'コマンドをコピー',
   description:
-    'Launchpad IconsはVRChatライクなアイコン集です。全アイコンをSVGベクター形式で提供しています。',
+    'VRC IconsはVRChatライクなアイコン集です。全アイコンをSVGベクター形式で提供しています。',
   docs: 'ドキュメント',
   explore: 'アイコンを探す',
   exploreDescription:
-    'Launchpad Iconsは<strong>{{ num }}個</strong>のアイコンを提供しています。最新バージョンで新規追加したアイコンは<marker>ハイライト</marker>表示しています。',
+    'VRC Iconsは<strong>{{ num }}個</strong>のアイコンを提供しています。最新バージョンで新規追加したアイコンは<marker>ハイライト</marker>表示しています。',
   exploreTitle: 'アイコンを探す',
   features: '特徴',
   features1Body: '今後{{ num }}個以上のアイコンを予定！',
@@ -28,7 +28,7 @@ const ja: Resources = {
   planFree1: 'CC BY-NC 4.0 ライセンス下での無制限利用',
   planFree2: 'コミュニティベースのサポート',
   planBasic1: 'Freeプランの全機能',
-  planBasic2: 'Launchpad Iconsをより活用する意思',
+  planBasic2: 'VRC Iconsをより活用する意思',
   planPro1: 'Basicプランの全機能',
   planPro2: 'プロユーザーとしての自覚',
   pricing: '価格とFAQ',

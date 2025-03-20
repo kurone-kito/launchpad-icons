@@ -27,7 +27,7 @@ export const Hero: Component<HeroProps> = (props) => (
             innerHTML={props.catchPhrase}
           />
           <p class="max-w-sm text-2xl font-thin">
-            <strong class="font-bold">Launchpad Icons</strong>: {props.subTitle}
+            <strong class="font-bold">VRC Icons</strong>: {props.subTitle}
           </p>
           <ul class="flex gap-2 py-6">
             <li>

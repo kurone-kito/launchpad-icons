@@ -1,11 +1,11 @@
-# ![LaunchPad Icons by Kuroné Kito](Website/banner.png)
+# ![VRC Icons by Kuroné Kito](Website/banner.png)
 
-🚀 Icons pack for VRChat/Web, like VRChat LaunchPad.
+🚀 Icons pack for VRChat/Web, like VRChat. Former name: _Launchpad Icons_
 
 ## ✨ Features
 
-- ✅ 144 Icons like the _VRChat LaunchPad_
-  - ...and 190+ icons in the future!
+- ✅ 168 Icons like the VRChat
+  - ...and 300+ icons in the future!
 - ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat
 - ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
@@ -23,7 +23,7 @@ and click on the **Add to VCC** button.
 ### 2. Import the package to your project
 
 1. Click on the "Manage Project" button in the VCC
-2. Find the "LaunchPad Icons" package and click on the "(+) Add package" button
+2. Find the "VRC Icons" package and click on the "(+) Add package" button
 
 ### 3. Use the package, enjoy :D
 

@@ -2,7 +2,7 @@
 
 ***
 
-# 🚀 LaunchPad Icons for React
+# 🚀 VRC Icons for React
 
 ## Usage
 

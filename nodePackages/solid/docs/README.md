@@ -2,7 +2,7 @@
 
 ***
 
-# 🚀 LaunchPad Icons for Solid
+# 🚀 VRC Icons for Solid
 
 ## Usage
 

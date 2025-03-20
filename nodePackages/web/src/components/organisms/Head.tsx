@@ -27,7 +27,7 @@ export const Head: Component<HeadProps> = (props) => {
       language={language()}
       next={props.next}
       prev={props.prev}
-      siteName="Launchpad Icons"
+      siteName="VRC Icons"
       title={props.title}
       url={`https://kurone-kito.github.io/launchpad-icons/${props.pagePath}`}
     />

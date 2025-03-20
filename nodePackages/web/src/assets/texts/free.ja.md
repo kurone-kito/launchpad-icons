@@ -2,7 +2,7 @@
 
 ### 無料 ＆ ソースコードも公開
 
-<span translate="no">LaunchPad Icons</span> は、
+<span translate="no">VRC Icons</span> は、
 [クリエイティブ・コモンズ 4.0 (BY-NC) ライセンス](https://creativecommons.org/licenses/by-nc/4.0/)
 の下、無料で提供されています。非商用目的であれば、著作権表示をした上で、
 制限なく利用できます。

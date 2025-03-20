@@ -1,4 +1,4 @@
-# 🚀 Website for LaunchPad Icons
+# 🚀 Website for VRC Icons
 
 ## Usage
 

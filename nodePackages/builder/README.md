@@ -1,4 +1,4 @@
-# 🚀 Builder for LaunchPad Icons
+# 🚀 Builder for VRC Icons
 
 LIB: _LunchPad Icons Builder_
 

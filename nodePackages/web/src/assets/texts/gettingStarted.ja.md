@@ -17,7 +17,7 @@
 
 1. <abbr translate="no">VCC</abbr> で“<span translate="no">Manage Project</span>”
    ボタンを押下します。
-2. “<span translate="no">LaunchPad Icons</span>” パッケージを探し、
+2. “<span translate="no">VRC Icons</span>” パッケージを探し、
    “<span translate="no">(+) Add package</span>” ボタンを押下します。
 
 #### 3. パッケージを使用して楽しみましょう！ :D
