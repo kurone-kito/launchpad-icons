@@ -1,14 +1,17 @@
 {
   "name": "@kurone-kito/launchpad-icons-react",
   "version": "0.9.0",
-  "description": "the icons like the VRChat for Node.js ecosystem with the React",
+  "description": "the icons like the VRChat icons for Node.js ecosystem with the React",
   "keywords": [
     "components",
     "icons",
-    "LaunchPad",
-    "React",
-    "SVG",
-    "VRChat"
+    "launchpad",
+    "launchPad icons",
+    "library",
+    "react",
+    "svg",
+    "vector",
+    "vrchat"
   ],
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",

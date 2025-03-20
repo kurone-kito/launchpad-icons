@@ -4,10 +4,12 @@
   "private": true,
   "description": "the builder for the LaunchPad icons NPM packages",
   "keywords": [
-    "Icons",
-    "LaunchPad",
-    "SVG",
-    "VRChat"
+    "icons",
+    "launchpad",
+    "launchPad icons",
+    "svg",
+    "vector",
+    "vrchat"
   ],
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",

@@ -2,11 +2,19 @@
   "name": "@kurone-kito/launchpad-icons-root",
   "version": "0.9.0",
   "private": true,
-  "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
+  "description": "the icons like the VRChat icons for the VRChat and Web",
   "keywords": [
-    "Icons",
-    "LaunchPad",
-    "VRChat"
+    "icons",
+    "launchPad",
+    "launchPad icons",
+    "library",
+    "react",
+    "solid",
+    "svg",
+    "vcc",
+    "vector",
+    "vpm",
+    "vrchat"
   ],
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",

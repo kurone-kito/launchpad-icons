@@ -2,12 +2,14 @@
   "name": "black.kit.launchpadicons",
   "displayName": "LaunchPad Icons",
   "version": "0.9.0",
-  "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat",
+  "description": "the icons asset like the VRChat for the VRChat icons",
   "keywords": [
     "icons",
-    "Launchpad",
-    "SVG",
-    "VRChat"
+    "launchpad",
+    "launchPad icons",
+    "svg",
+    "vector",
+    "vrchat"
   ],
   "license": "CC-BY-NC-4.0",
   "author": {
