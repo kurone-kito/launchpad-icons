@@ -19,7 +19,7 @@
     "url": "https://github.com/kurone-kito/launchpad-icons.git",
     "directory": "nodePackages/builder"
   },
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "bin": {
@@ -36,7 +36,7 @@
     "liBuilder": "node dist/index.mjs",
     "prepack": "pnpm run clean && pnpm run build",
     "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "prebuild:license": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
     "start": "tsc -w",
     "test": "vitest run"
   },

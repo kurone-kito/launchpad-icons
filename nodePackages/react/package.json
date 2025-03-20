@@ -21,7 +21,7 @@
     "url": "https://github.com/kurone-kito/launchpad-icons.git",
     "directory": "nodePackages/react"
   },
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "main": "dist/index.mjs",
@@ -37,7 +37,7 @@
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist generated-src LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
     "prebuild:code": "liBuilder react",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "prebuild:license": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
     "prestart": "pnpm run prebuild",
     "start": "tsc -w",
     "test": "vitest run"

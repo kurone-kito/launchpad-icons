@@ -20,7 +20,7 @@
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
   "repository": "github:kurone-kito/launchpad-icons",
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "files": [],

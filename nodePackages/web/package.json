@@ -28,7 +28,7 @@
     "url": "https://github.com/kurone-kito/launchpad-icons.git",
     "directory": "nodePackages/web"
   },
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "files": [],
@@ -40,7 +40,7 @@
     "prepack": "pnpm run clean && pnpm run build",
     "prebuild:favicon": "cpy --flat --rename=favicon.svg ../../Packages/black.kit.launchpadicons/Runtime/Cursor.svg ./public/images",
     "prebuild:json": "liBuilder web",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
+    "prebuild:license": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
     "serve": "vinxi start",
     "start": "vinxi dev",
     "start:storybook": "storybook dev -p 6006"
