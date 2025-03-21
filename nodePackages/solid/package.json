@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
-    "@kurone-kito/typescript-config": "^0.17.2",
+    "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
     "@solidjs/testing-library": "^0.8.10",
     "@testing-library/jest-dom": "^6.6.3",
     "cpy-cli": "^5.0.0",
@@ -55,10 +55,10 @@
     "rimraf": "^5.0.10",
     "solid-js": "^1.9.5",
     "typedoc": "^0.27.9",
-    "typedoc-plugin-markdown": "^4.4.2",
-    "typescript": "~5.7.3",
-    "vite-plugin-solid": "^2.11.2",
-    "vitest": "^2.1.8"
+    "typedoc-plugin-markdown": "~4.4.2",
+    "typescript": "~5.8.2",
+    "vite-plugin-solid": "^2.11.6",
+    "vitest": "^3.0.9"
   },
   "peerDependencies": {
     "solid-js": ">=1.x.x"

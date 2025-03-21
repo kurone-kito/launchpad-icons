@@ -6,7 +6,7 @@
 
 # Function: Next2()
 
-> **Next2**(`props`): `ReactNode` \| `Promise`\<`ReactNode`\>
+> **Next2**(`props`, `deprecatedLegacyContext`?): `ReactNode`
 
 ## Parameters
 
@@ -14,6 +14,16 @@
 
 `SVGProps`
 
+### deprecatedLegacyContext?
+
+`any`
+
+**Deprecated**
+
+**See**
+
+[React Docs](https://legacy.reactjs.org/docs/legacy-context.html#referencing-context-in-lifecycle-methods)
+
 ## Returns
 
-`ReactNode` \| `Promise`\<`ReactNode`\>
+`ReactNode`

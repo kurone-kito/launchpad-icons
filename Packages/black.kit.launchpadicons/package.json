@@ -19,7 +19,7 @@
     "url": "https://kit.black/"
   },
   "dependencies": {
-    "com.unity.vectorgraphics": "2.0.0-preview.24"
+    "com.unity.vectorgraphics": "2.0.0-preview.25"
   },
   "changelogUrl": "https://github.com/kurone-kito/launchpad-icons/releases",
   "documentationUrl": "https://kurone-kito.github.io/launchpad-icons/",

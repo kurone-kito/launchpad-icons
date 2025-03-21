@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.unity.vectorgraphics": "2.0.0-preview.24"
+        "com.unity.vectorgraphics": "2.0.0-preview.25"
       }
     },
     "com.mimylab.penoptimizationutility": {
@@ -135,7 +135,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.7.6",
+      "version": "1.7.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -156,7 +156,7 @@
       }
     },
     "com.unity.vectorgraphics": {
-      "version": "2.0.0-preview.24",
+      "version": "2.0.0-preview.25",
       "depth": 1,
       "source": "registry",
       "dependencies": {
