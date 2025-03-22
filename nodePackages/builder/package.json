@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-builder",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "description": "the builder for the VRC icons NPM packages",
   "keywords": [
