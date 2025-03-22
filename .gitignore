@@ -344,6 +344,7 @@ $RECYCLE.BIN/
 app.config.timestamp_*.js
 
 nodePackages/*/LICENSE
+nodePackages/*/LICENSE.*.txt
 nodePackages/builder/assets
 nodePackages/*/generated-src
 nodePackages/web/public/**/favicon.*

@@ -1,14 +1,18 @@
 {
   "name": "@kurone-kito/launchpad-icons-react",
-  "version": "0.9.0",
-  "description": "the icons like the VRChat for Node.js ecosystem with the React",
+  "version": "0.10.0",
+  "description": "the icons like the VRChat icons for Node.js ecosystem with the React",
   "keywords": [
     "components",
     "icons",
-    "LaunchPad",
-    "React",
-    "SVG",
-    "VRChat"
+    "launchpad",
+    "launchPad icons",
+    "library",
+    "react",
+    "svg",
+    "vector",
+    "vrchat",
+    "vrc icons"
   ],
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
@@ -17,7 +21,7 @@
     "url": "https://github.com/kurone-kito/launchpad-icons.git",
     "directory": "nodePackages/react"
   },
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "main": "dist/index.mjs",
@@ -27,37 +31,37 @@
   ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
-    "prebuild:code": "liBuilder react",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
     "build": "pnpm run \"/^build:.+/\"",
     "build:jsdoc": "rimraf docs && typedoc",
     "build:ts": "tsc",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist generated-src LICENSE node_modules/.cache",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:code": "liBuilder react",
+    "prebuild:license": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
     "prestart": "pnpm run prebuild",
     "start": "tsc -w",
     "test": "vitest run"
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
-    "@kurone-kito/typescript-config": "^0.17.2",
+    "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
     "@testing-library/react": "^16.2.0",
-    "@types/react": "^19.0.10",
+    "@types/react": "^18.3.19",
     "@vitejs/plugin-react": "^4.3.4",
     "cpy-cli": "^5.0.0",
     "jsdom": "^26.0.0",
     "react": "^18.3.1",
     "rimraf": "^5.0.10",
-    "typedoc": "^0.27.9",
-    "typedoc-plugin-markdown": "^4.4.2",
-    "typescript": "~5.7.3",
-    "vitest": "^2.1.8"
+    "typedoc": "^0.28.1",
+    "typedoc-plugin-markdown": "~4.5.2",
+    "typescript": "~5.8.2",
+    "vitest": "^3.0.9"
   },
   "peerDependencies": {
     "react": "^18.3.1"
   },
   "engines": {
-    "node": "^18.20 || ^20.10 || >=22"
+    "node": "^18.20 || ^20.11 || >=22"
   },
   "publishConfig": {
     "access": "public"

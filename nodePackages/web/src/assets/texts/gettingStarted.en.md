@@ -17,7 +17,7 @@
 
 1. Click on the “<span translate="no">Manage Project</span>” button in the
    <abbr translate="no">VCC</abbr>
-2. Find the “<span translate="no">LaunchPad Icons</span>” package and
+2. Find the “<span translate="no">VRC Icons</span>” package and
    click on the “<span translate="no">(+) Add package</span>” button
 
 #### 3. Use the package, enjoy :D

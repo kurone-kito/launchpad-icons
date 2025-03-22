@@ -2,7 +2,7 @@
 
 ### {{ icons }} <abbr translate="no">SVG</abbr> Icons
 
-<span translate="no">LaunchPad Icons</span> provide {{ icons }} icons that
+<span translate="no">VRC Icons</span> provide {{ icons }} icons that
 **look like VRChat icons**, and we plan to have more than {{ maxIcons }}
 in the future.
 

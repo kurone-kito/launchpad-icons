@@ -1,17 +1,26 @@
 {
   "name": "@kurone-kito/launchpad-icons-root",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
-  "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat and Web",
+  "description": "the icons like the VRChat icons for the VRChat and Web",
   "keywords": [
-    "Icons",
-    "LaunchPad",
-    "VRChat"
+    "icons",
+    "launchPad",
+    "launchPad icons",
+    "library",
+    "react",
+    "solid",
+    "svg",
+    "vcc",
+    "vector",
+    "vpm",
+    "vrchat",
+    "vrc icons"
   ],
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
   "repository": "github:kurone-kito/launchpad-icons",
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "files": [],
@@ -21,11 +30,11 @@
     ]
   },
   "scripts": {
-    "build": "pnpm run -r build",
+    "build": "pnpm run --workspace-concurrency=Infinity -r build",
     "build:min": "pnpm --filter \"@kurone-kito/launchpad-icons-web^...\" run build",
     "clean": "pnpm run --no-bail \"/^clean:.+/\"",
     "clean:root": "rimraf -g .eslintcache \"*.tgz\" \"*.tsbuildinfo\" node_modules/.cache",
-    "clean:sub": "pnpm run -r clean",
+    "clean:sub": "pnpm run --parallel --workspace-concurrency=Infinity -r clean",
     "lint": "pnpm run \"/lint:.+:check/\"",
     "lint:cspell:check": "cspell lint --no-progress --show-suggestions -u \"./**/*\"",
     "lint:eslint:check": "eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy=content -f codeframe \"./**/*\"",
@@ -43,50 +52,47 @@
     "publish": "pnpm --filter '*builder' run build && pnpm -r publish",
     "publish:next": "pnpm run publish --no-git-check --tag next",
     "prestart": "pnpm --filter='!*web' run build",
-    "start": "pnpm run --parallel -r start",
-    "test": "pnpm run -r test"
+    "start": "pnpm run --parallel --workspace-concurrency=Infinity -r start",
+    "test": "pnpm run --workspace-concurrency=Infinity -r test"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@cspell/cspell-types": "^8.17.5",
-    "@kurone-kito/commitlint-config": "^0.17.4-alpha.1",
-    "@kurone-kito/cspell-config": "^0.17.4-alpha.1",
-    "@kurone-kito/eslint-config-solid": "^0.17.2",
-    "@kurone-kito/lint-staged-config": "^0.17.4-alpha.1",
-    "@kurone-kito/prettier-config": "^0.17.4-alpha.1",
-    "@kurone-kito/typescript-config": "^0.17.4-alpha.1",
-    "@typescript-eslint/parser": "^8.25.0",
+    "@kurone-kito/commitlint-config": "^0.18.0-alpha.1",
+    "@kurone-kito/cspell-config": "^0.18.0-alpha.1",
+    "@kurone-kito/eslint-config-solid": "^0.18.0-alpha.1",
+    "@kurone-kito/lint-staged-config": "^0.18.0-alpha.1",
+    "@kurone-kito/prettier-config": "^0.18.0-alpha.1",
+    "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
+    "@typescript-eslint/parser": "^8.27.0",
     "cspell": "^8.17.5",
-    "eslint": "^9.21.0",
+    "eslint": "^9.23.0",
     "eslint-formatter-codeframe": "^7.32.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
+    "lint-staged": "^15.5.0",
     "markdownlint-cli2": "^0.17.2",
-    "oxlint": "^0.15.12",
-    "prettier": "^3.5.2",
-    "prettier-plugin-packagejson": "^2.5.8",
+    "oxlint": "^0.16.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.10",
     "prettier-plugin-sh": "^0.15.0",
     "prettier-plugin-sort-json": "^4.1.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "rimraf": "^5.0.10",
-    "typescript": "~5.7.3",
+    "typescript": "~5.8.2",
     "typescript-eslint-language-service": "^5.0.5"
   },
-  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+  "packageManager": "pnpm@10.6.5+sha512.cdf928fca20832cd59ec53826492b7dc25dc524d4370b6b4adbf65803d32efaa6c1c88147c0ae4e8d579a6c9eec715757b50d4fa35eea179d868eada4ed043af",
   "engines": {
-    "node": "^18.20 || ^20.10 || >=22"
+    "node": "^18.20 || ^20.11 || >=22"
   },
   "publishConfig": {
     "access": "public"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild"
-    ],
     "overrides": {
+      "@stylistic/eslint-plugin": "^3.1.0",
       "react": "^18.3.1"
     }
   }

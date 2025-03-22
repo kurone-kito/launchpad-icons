@@ -1,2 +1,5 @@
 packages:
   - nodePackages/*
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild

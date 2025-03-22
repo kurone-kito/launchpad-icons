@@ -1,17 +1,19 @@
-# ![LaunchPad Icons by Kuroné Kito](Website/banner.png)
+# ![VRC Icons by Kuroné Kito](https://kurone-kito.github.io/launchpad-icons/images/banner.webp)
 
-🚀 Icons pack for VRChat/Web, like VRChat LaunchPad.
+🚀 Icons pack for VRChat/Web, like VRChat. Former name: _Launchpad Icons_
 
 ## ✨ Features
 
-- ✅ 144 Icons like the _VRChat LaunchPad_
-  - ...and 190+ icons in the future!
+- ✅ 192 Icons like the VRChat
+  - ...and 300+ icons in the future!
 - ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat
 - ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
 
-![Icons list](Website/icons1.png)
-![Icons list](Website/icons2.png)
+|                                                                            |                                                                            |
+| :------------------------------------------------------------------------: | :------------------------------------------------------------------------: |
+| ![Icons](https://kurone-kito.github.io/launchpad-icons/images/icons1.webp) | ![Icons](https://kurone-kito.github.io/launchpad-icons/images/icons2.webp) |
+| ![Icons](https://kurone-kito.github.io/launchpad-icons/images/icons3.webp) |                                                                            |
 
 ## ▶ Getting Started
 
@@ -23,7 +25,7 @@ and click on the **Add to VCC** button.
 ### 2. Import the package to your project
 
 1. Click on the "Manage Project" button in the VCC
-2. Find the "LaunchPad Icons" package and click on the "(+) Add package" button
+2. Find the "VRC Icons" package and click on the "(+) Add package" button
 
 ### 3. Use the package, enjoy :D
 
@@ -34,4 +36,15 @@ please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ## License
 
-This repository is licensed under the [CC-BY-NC 4.0](LICENSE).
+Copyright (c) Kuroné Kito (黒音キト)
+
+This project is a dual license with the following options:
+
+- [MIT License](https://opensource.org/licenses/MIT)
+- [Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+**The DEFAULT LICENSE applied is MIT**. You can use it under the CC BY 4.0
+license by opting in in any way when incorporating it into your work.
+
+The CC BY 4.0 license is a remnant from when this library was distributed
+under the CC BY-NC 4.0 license and is retained for compatibility.

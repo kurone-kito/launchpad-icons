@@ -18,6 +18,7 @@
     ".markdownlint.*": ".markdownlint-cli2.*",
     ".prettierrc.*": ".prettierignore",
     ".tool-versions": ".node-version, .nvmrc, global.json",
+    "LICENSE": "LICENSE.*.txt",
     "package.json": ".npmrc, pnpm-lock.yaml, pnpm-workspace.yaml",
     "tsconfig.json": "*.tsbuildinfo"
   },
@@ -47,7 +48,7 @@
     "*.signal": "yaml",
     "*.terrainlayer": "yaml",
     "*.tlh": "cpp",
-    "*.traceevents": "jsonl",
+    "*.traceevents": "json",
     "*.unity": "yaml",
     "*.uss": "css",
     "*.uxml": "xml",

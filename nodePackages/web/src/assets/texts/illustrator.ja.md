@@ -2,7 +2,7 @@
 
 ### {{ icons }} 個の <abbr translate="no">SVG</abbr> アイコン
 
-<span translate="no">Launchpad Icons</span> では、{{ icons }} 種類の
+<span translate="no">VRC Icons</span> では、{{ icons }} 種類の
 **VRChat 風アイコン**を提供しています。  
 (将来的には {{ maxIcons }} 種類まで拡大予定です)
 

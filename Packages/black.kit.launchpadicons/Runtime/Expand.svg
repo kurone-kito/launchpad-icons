@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 118.5">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 118">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: white;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-        stroke-width: 12px;
-      }
-
-      .c {
-        fill: white;
-        stroke-width: 0px;
-      }
-    </style>
+    <style>.b{fill:#fff;}</style>
   </defs>
-  <rect class="c" x=".5" y="66.5" width="52" height="52" rx="9.6" ry="9.6"/>
-  <polyline class="b" points="70 26 92 26 92 48"/>
-  <line class="b" x1="59.3" y1="60.3" x2="92.3" y2="26.3"/>
-  <polyline class="b" points="6 52 6 6 114 6 114 112 68 112"/>
+  <rect class="b" x="0" y="66" width="52" height="52" rx="9.6" ry="9.6"/>
+  <path class="b" d="M86,40.65v7.12c0,3.07,2.2,5.81,5.25,6.18,3.65.44,6.75-2.39,6.75-5.95v-28h-27.77c-3.07,0-5.81,2.2-6.18,5.25-.44,3.65,2.39,6.75,5.95,6.75h7.68l-22.49,22.93c-1.97,2.01-2.38,5.62-.71,7.88,1.22,1.65,3.04,2.47,4.86,2.47,1.55,0,3.11-.6,4.28-1.8l22.38-22.83Z"/>
+  <path class="b" d="M0,0v51.52c0,3.07,2.2,5.81,5.25,6.18,3.65.44,6.75-2.39,6.75-5.95V12h96v94h-39.77c-3.07,0-5.81,2.2-6.18,5.25-.44,3.65,2.39,6.75,5.95,6.75h52V0H0Z"/>
 </svg>

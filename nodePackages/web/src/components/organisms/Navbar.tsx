@@ -1,4 +1,4 @@
-import { VRC } from '@kurone-kito/launchpad-icons-solid';
+import { Join } from '@kurone-kito/launchpad-icons-solid';
 import { FaBrandsGithub } from 'solid-icons/fa';
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
@@ -57,7 +57,7 @@ export const Navbar: Component = () => {
             href="https://vrchat.com/home/launch?worldId=wrld_30b17c73-5085-4ed3-b5fc-2fb9bbff7ae0"
             tooltip={t('sampleWorld')}
           >
-            <VRC class="h-6 w-6" />
+            <Join class="[&_*]:!fill-base-content h-6 w-6" />
           </NavIconItem>
           <NavIconItem
             tooltip="Booth"

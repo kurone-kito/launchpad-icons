@@ -1,13 +1,16 @@
 {
   "name": "@kurone-kito/launchpad-icons-builder",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
-  "description": "the builder for the LaunchPad icons NPM packages",
+  "description": "the builder for the VRC icons NPM packages",
   "keywords": [
-    "Icons",
-    "LaunchPad",
-    "SVG",
-    "VRChat"
+    "icons",
+    "launchpad",
+    "launchPad icons",
+    "svg",
+    "vector",
+    "vrchat",
+    "vrc icons"
   ],
   "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
   "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
@@ -16,7 +19,7 @@
     "url": "https://github.com/kurone-kito/launchpad-icons.git",
     "directory": "nodePackages/builder"
   },
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
   "bin": {
@@ -27,31 +30,31 @@
   ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
-    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
-    "prebuild:license": "cpy --flat ../../LICENSE .",
     "build": "tsc",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" assets dist LICENSE node_modules/.cache",
     "preinstall": "pnpm dlx mkdirp dist && pnpm dlx touch dist/index.mjs",
     "liBuilder": "node dist/index.mjs",
     "prepack": "pnpm run clean && pnpm run build",
+    "prebuild:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime assets",
+    "prebuild:license": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
     "start": "tsc -w",
     "test": "vitest run"
   },
   "dependencies": {
     "chalk": "^5.4.1",
-    "prettier": "^3.5.2"
+    "prettier": "^3.5.3"
   },
   "devDependencies": {
-    "@kurone-kito/typescript-config": "^0.17.2",
-    "@types/node": "^22.13.5",
+    "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
+    "@types/node": "^22.13.11",
     "cpy-cli": "^5.0.0",
     "rimraf": "^5.0.10",
-    "symlink-dir": "^6.0.4",
-    "typescript": "~5.7.3",
-    "vitest": "^2.1.8"
+    "symlink-dir": "^6.0.5",
+    "typescript": "~5.8.2",
+    "vitest": "^3.0.9"
   },
   "engines": {
-    "node": "^18.20 || ^20.10 || >=22"
+    "node": "^18.20 || ^20.11 || >=22"
   },
   "publishConfig": {
     "access": "public"

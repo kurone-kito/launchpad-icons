@@ -1,22 +1,25 @@
 {
   "name": "black.kit.launchpadicons",
-  "displayName": "LaunchPad Icons",
-  "version": "0.9.0",
-  "description": "the icons VPM asset like the VRChat LaunchPad for the VRChat",
+  "displayName": "VRC Icons",
+  "version": "0.10.0",
+  "description": "the icons asset like the VRChat for the VRChat icons",
   "keywords": [
     "icons",
-    "Launchpad",
-    "SVG",
-    "VRChat"
+    "launchpad",
+    "launchPad icons",
+    "svg",
+    "vector",
+    "vrchat",
+    "vrc icons"
   ],
-  "license": "CC-BY-NC-4.0",
+  "license": "MIT",
   "author": {
     "name": "Kuroné Kito",
     "email": "krone@kit.black",
     "url": "https://kit.black/"
   },
   "dependencies": {
-    "com.unity.vectorgraphics": "2.0.0-preview.24"
+    "com.unity.vectorgraphics": "2.0.0-preview.25"
   },
   "changelogUrl": "https://github.com/kurone-kito/launchpad-icons/releases",
   "documentationUrl": "https://kurone-kito.github.io/launchpad-icons/",
