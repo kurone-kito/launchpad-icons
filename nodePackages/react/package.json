@@ -52,8 +52,8 @@
     "jsdom": "^26.0.0",
     "react": "^18.3.1",
     "rimraf": "^5.0.10",
-    "typedoc": "^0.27.9",
-    "typedoc-plugin-markdown": "~4.4.2",
+    "typedoc": "^0.28.1",
+    "typedoc-plugin-markdown": "~4.5.2",
     "typescript": "~5.8.2",
     "vitest": "^3.0.9"
   },
