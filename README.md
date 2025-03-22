@@ -4,14 +4,16 @@
 
 ## ✨ Features
 
-- ✅ 168 Icons like the VRChat
+- ✅ 192 Icons like the VRChat
   - ...and 300+ icons in the future!
 - ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat
 - ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
 
-![Icons list](Website/icons1.png)
-![Icons list](Website/icons2.png)
+|                                                                            |                                                                            |
+| :------------------------------------------------------------------------: | :------------------------------------------------------------------------: |
+| ![Icons](https://kurone-kito.github.io/launchpad-icons/images/icons1.webp) | ![Icons](https://kurone-kito.github.io/launchpad-icons/images/icons2.webp) |
+| ![Icons](https://kurone-kito.github.io/launchpad-icons/images/icons3.webp) |                                                                            |
 
 ## ▶ Getting Started
 
