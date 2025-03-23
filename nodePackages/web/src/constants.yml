@@ -3,3 +3,4 @@ npmReact: npm i @kurone-kito/launchpad-icons-react
 npmSolid: npm i @kurone-kito/launchpad-icons-solid
 vccUrl: vcc://vpm/addRepo?url=
 vpmUrl: https://kurone-kito.github.io/vpm/index.json
+webUrl: https://kurone-kito.github.io/launchpad-icons/

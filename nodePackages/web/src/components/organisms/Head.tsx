@@ -1,4 +1,5 @@
 import type { Component } from 'solid-js';
+import Constants from '../../constants.yml';
 import type { HeadProps as InternalHeadProps } from '../molecules/Head.js';
 import { Head as InternalHead } from '../molecules/Head.js';
 import { useLanguage, useTranslator } from '../../modules/createI18N';
@@ -8,6 +9,13 @@ export interface HeadProps
   /** The path of the page. */
   readonly pagePath: string;
 }
+
+/**
+ * Creates the web URL.
+ * @param path The path from the root.
+ * @returns The web URL.
+ */
+const webUrl = (path: string) => `${Constants['webUrl']}${path}`;
 
 /**
  * The head component.
@@ -21,15 +29,15 @@ export const Head: Component<HeadProps> = (props) => {
     <InternalHead
       author={t('author')}
       description={t('description')}
-      images={['./images/illustrator.png', './images/icons-unity.png']}
-      imagesAlt="Illustrator and Unity icons"
+      images={[webUrl('images/banner.webp')]}
+      imagesAlt="VRC Icons by Kuroné Kito: It's a collection of UNOFFICIAL icons, such as the VRChat icons. It provides icons in SVG vector format."
       keywords="SVG,icons,design,illustration,icon,pack,VRChat"
       language={language()}
       next={props.next}
       prev={props.prev}
       siteName="VRC Icons"
       title={props.title}
-      url={`https://kurone-kito.github.io/launchpad-icons/${props.pagePath}`}
+      url={webUrl(props.pagePath)}
     />
   );
 };
