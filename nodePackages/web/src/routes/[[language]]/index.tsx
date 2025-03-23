@@ -2,7 +2,7 @@ import { iconNames } from '@kurone-kito/launchpad-icons-solid';
 import type { Component } from 'solid-js';
 import { onMount } from 'solid-js';
 import { themeChange } from 'theme-change';
-import ccByNc from '../../assets/images/by-nc.svg';
+import thumbnail from '../../assets/images/thumbnail.webp';
 import { html as enFree } from '../../assets/texts/free.en.md';
 import { html as jaFree } from '../../assets/texts/free.ja.md';
 import { html as enIllustrator } from '../../assets/texts/illustrator.en.md';
@@ -65,7 +65,7 @@ const Index: Component = () => {
         image={`${base}/images/icons-unity.png`}
         innerHTML={tSvg('text')}
       />
-      <FeatureDetail image={ccByNc} innerHTML={tFree('text')} />
+      <FeatureDetail image={thumbnail} innerHTML={tFree('text')} />
       <p class="article-container px-4 py-20 sm:px-8 md:px-16">
         <WideAnchorButton url="./docs">{t('gettingStarted')}</WideAnchorButton>
       </p>
