@@ -53,7 +53,7 @@
     "react": "^18.3.1",
     "rimraf": "^5.0.10",
     "typedoc": "^0.28.1",
-    "typedoc-plugin-markdown": "~4.5.2",
+    "typedoc-plugin-markdown": "~4.6.0",
     "typescript": "~5.8.2",
     "vitest": "^3.0.9"
   },
