@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-root",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "private": true,
   "description": "the icons like the VRChat icons for the VRChat and Web",
   "keywords": [
@@ -65,7 +65,7 @@
     "@kurone-kito/lint-staged-config": "^0.18.0-alpha.1",
     "@kurone-kito/prettier-config": "^0.18.0-alpha.1",
     "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
-    "@typescript-eslint/parser": "^8.27.0",
+    "@typescript-eslint/parser": "^8.28.0",
     "cspell": "^8.17.5",
     "eslint": "^9.23.0",
     "eslint-formatter-codeframe": "^7.32.1",

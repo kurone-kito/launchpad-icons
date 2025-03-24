@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-solid",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "the icons like the VRChat icons for Node.js ecosystem with the Solid.js",
   "keywords": [
     "components",
@@ -55,7 +55,7 @@
     "rimraf": "^5.0.10",
     "solid-js": "^1.9.5",
     "typedoc": "^0.28.1",
-    "typedoc-plugin-markdown": "~4.5.2",
+    "typedoc-plugin-markdown": "~4.6.0",
     "typescript": "~5.8.2",
     "vite-plugin-solid": "^2.11.6",
     "vitest": "^3.0.9"

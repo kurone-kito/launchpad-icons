@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-builder",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "private": true,
   "description": "the builder for the VRC icons NPM packages",
   "keywords": [
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
-    "@types/node": "^22.13.11",
+    "@types/node": "^22.13.13",
     "cpy-cli": "^5.0.0",
     "rimraf": "^5.0.10",
     "symlink-dir": "^6.0.5",
