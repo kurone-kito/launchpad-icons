@@ -94,7 +94,7 @@
     "vite-plugin-solid": "^2.11.6"
   },
   "engines": {
-    "node": "^18.20 || ^20.11 || >=22"
+    "node": "^20.11 || >=22"
   },
   "publishConfig": {
     "access": "public"
