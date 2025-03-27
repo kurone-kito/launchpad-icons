@@ -35,7 +35,7 @@ export const svgToContent = (
   const importsLine = `import type { ${imports.join(', ')} } from '${framework}';`;
   return (name, svgContent) => {
     const body = svgContent
-      .replaceAll('<?xml version="1.0" encoding="UTF-8"?>\n', '')
+      .replaceAll('<?xml version="1.0" encoding="UTF-8" ?>\n', '')
       .replace(/<style>([\s\S]+)<\/style>/gm, '<style>{`$1`}</style>')
       .replace(/\.([a-m])/g, `.${name}-$1`)
       .replace(/class="([a-m])"/g, `class="${name}-$1"`)
