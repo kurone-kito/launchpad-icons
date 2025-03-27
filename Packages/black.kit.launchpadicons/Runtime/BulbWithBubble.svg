@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.1 223.4">
+  <defs>
+    <style>
+      .b {
+        fill: #dbdbdb;
+        stroke: #474747;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+    </style>
+  </defs>
+  <circle class="b" cx="31.3" cy="22.4" r="17.9" />
+  <circle class="b" cx="31.5" cy="191.9" r="27" />
+  <circle class="b" cx="218.8" cy="156.3" r="25.8" />
+  <path
+    class="b"
+    d="M120.1,26c-32.3,0-58.5,26.2-58.5,58.6s11.4,42,28.4,53.6v27.3c0,2.6,2.1,4.7,4.7,4.7h51.5c2.6,0,4.7-2.1,4.7-4.7v-27.8c16.5-11.7,27.6-32,27.6-53,0-32.4-26.2-58.6-58.5-58.6Z"
+  />
+  <rect class="b" x="90.6" y="177.2" width="60.3" height="24" rx="12" ry="12" />
+</svg>

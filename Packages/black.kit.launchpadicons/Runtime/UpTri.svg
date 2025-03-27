@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 243.4 214.2">
   <defs>
     <style>.b{fill:#fff;}</style>
   </defs>
-  <path class="b" d="M124.6,1.7l118.3,207.5c1.3,2.2-.3,5-2.9,5H3.3c-2.6,0-4.2-2.8-2.9-5L118.8,1.7c1.3-2.2,4.5-2.2,5.8,0Z"/>
+  <path
+    class="b"
+    d="M124.6,1.7l118.3,207.5c1.3,2.2-.3,5-2.9,5H3.3c-2.6,0-4.2-2.8-2.9-5L118.8,1.7c1.3-2.2,4.5-2.2,5.8,0Z"
+  />
 </svg>

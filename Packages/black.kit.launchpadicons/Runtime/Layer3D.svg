@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.7 249.8">
+  <defs>
+    <style>
+      .b {
+        fill: #474747;
+      }
+
+      .b, .c, .d {
+        stroke: #474747;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .c {
+        fill: #5d5d5d;
+      }
+
+      .d {
+        fill: #dbdbdb;
+      }
+    </style>
+  </defs>
+  <polygon
+    class="b"
+    points="108.6 244.1 6.5 143 107.9 81.6 209 142.7 108.6 244.1"
+  />
+  <polygon
+    class="c"
+    points="108.8 204.6 6.7 103.5 108.1 42.1 209.2 103.2 108.8 204.6"
+  />
+  <polygon
+    class="d"
+    points="108.6 167.2 6.5 66.1 107.9 4.7 209 65.8 108.6 167.2"
+  />
+</svg>

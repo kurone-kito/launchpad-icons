@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.6 83">
   <defs>
     <style>
@@ -15,6 +15,6 @@
       }
     </style>
   </defs>
-  <line class="b" x1="40.8" y1="47.7" x2="40.8"/>
-  <polygon class="c" points="0 42.2 81.6 42.2 40.8 83 0 42.2"/>
+  <line class="b" x1="40.8" y1="47.7" x2="40.8" />
+  <polygon class="c" points="0 42.2 81.6 42.2 40.8 83 0 42.2" />
 </svg>

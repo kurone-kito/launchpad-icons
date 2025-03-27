@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.7 68.8">
   <defs>
     <style>
@@ -10,6 +10,6 @@
       }
     </style>
   </defs>
-  <polyline class="b" points="37.7 4.9 9.7 33.9 37.7 63.9"/>
-  <polyline class="b" points="75.6 5 47.6 34 75.6 64"/>
+  <polyline class="b" points="37.7 4.9 9.7 33.9 37.7 63.9" />
+  <polyline class="b" points="75.6 5 47.6 34 75.6 64" />
 </svg>

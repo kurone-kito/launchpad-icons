@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 235">
   <defs>
     <style>
@@ -8,8 +8,8 @@
       .d { opacity:.2; }
     </style>
   </defs>
-  <circle class="d" cx="117.5" cy="117.5" r="113"/>
-  <circle class="b" cx="117.5" cy="117.5" r="113"/>
-  <circle class="c" cx="117.5" cy="117.5" r="79"/>
-  <circle class="c" cx="117.5" cy="117.5" r="37"/>
+  <circle class="d" cx="117.5" cy="117.5" r="113" />
+  <circle class="b" cx="117.5" cy="117.5" r="113" />
+  <circle class="c" cx="117.5" cy="117.5" r="79" />
+  <circle class="c" cx="117.5" cy="117.5" r="37" />
 </svg>

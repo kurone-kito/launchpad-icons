@@ -1,8 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207.5 241.8">
   <defs>
     <style>.b{fill:#fff;}</style>
   </defs>
-  <polygon class="b" points="124.9 0 144.4 20 40.3 121.8 144.3 221.5 125 241.8 0 122 124.9 0"/>
-  <polygon class="b" points="187.9 0 207.5 20 103.4 121.8 207.4 221.5 188 241.8 63.1 122 187.9 0"/>
+  <polygon
+    class="b"
+    points="124.9 0 144.4 20 40.3 121.8 144.3 221.5 125 241.8 0 122 124.9 0"
+  />
+  <polygon
+    class="b"
+    points="187.9 0 207.5 20 103.4 121.8 207.4 221.5 188 241.8 63.1 122 187.9 0"
+  />
 </svg>

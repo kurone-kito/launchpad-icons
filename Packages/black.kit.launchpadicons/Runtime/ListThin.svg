@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197 170">
   <defs>
     <style>
@@ -16,10 +16,10 @@
       }
     </style>
   </defs>
-  <line class="b" x1="73" y1="18" x2="179" y2="18"/>
-  <line class="b" x1="73" y1="85" x2="178" y2="85"/>
-  <line class="b" x1="73" y1="152" x2="178" y2="152"/>
-  <circle class="c" cx="17.5" cy="18.5" r="17.5"/>
-  <circle class="c" cx="17.5" cy="87.5" r="17.5"/>
-  <circle class="c" cx="17.5" cy="152.5" r="17.5"/>
+  <line class="b" x1="73" y1="18" x2="179" y2="18" />
+  <line class="b" x1="73" y1="85" x2="178" y2="85" />
+  <line class="b" x1="73" y1="152" x2="178" y2="152" />
+  <circle class="c" cx="17.5" cy="18.5" r="17.5" />
+  <circle class="c" cx="17.5" cy="87.5" r="17.5" />
+  <circle class="c" cx="17.5" cy="152.5" r="17.5" />
 </svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 190">
+  <defs>
+    <style>
+      .b {
+        fill: #dbdbdb;
+        stroke: #474747;
+        stroke-linejoin: round;
+        stroke-width: 11px;
+      }
+    </style>
+  </defs>
+  <polygon class="b" points="139.4 13.9 14.7 98.5 245.7 175.6 139.4 13.9" />
+  <rect class="b" x="123.5" y="5.5" width="29" height="29" rx="3" ry="3" />
+  <rect class="b" x="5.5" y="80.5" width="29" height="29" rx="3" ry="3" />
+  <rect class="b" x="219.5" y="155.5" width="29" height="29" rx="3" ry="3" />
+</svg>

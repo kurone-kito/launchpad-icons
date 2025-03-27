@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 80">
   <defs>
     <style>
@@ -8,6 +8,6 @@
       }
     </style>
   </defs>
-  <polygon class="b" points="0 0 12 0 50 68 45 80 0 0"/>
-  <polygon class="b" points="24 0 36 0 54 33 66 0 78 0 56 55 24 0"/>
+  <polygon class="b" points="0 0 12 0 50 68 45 80 0 0" />
+  <polygon class="b" points="24 0 36 0 54 33 66 0 78 0 56 55 24 0" />
 </svg>
