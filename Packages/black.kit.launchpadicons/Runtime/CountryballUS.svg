@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 73">
   <defs>
     <style>
@@ -13,38 +13,68 @@
       .o{clip-path:url(#b);}
     </style>
     <clipPath id="b">
-      <circle class="g" cx="42" cy="37" r="36"/>
+      <circle class="g" cx="42" cy="37" r="36" />
     </clipPath>
-    <pattern id="c" x="0" y="0" width="81.9" height="21.9" patternTransform="translate(-86 -87)" patternUnits="userSpaceOnUse" viewBox="0 0 81.9 21.9">
-      <rect class="g" x="0" width="81.9" height="21.9"/>
-      <rect class="k" x="0" width="81.9" height="11"/>
-      <rect class="j" x="0" y="11" width="81.9" height="11"/>
+    <pattern
+      id="c"
+      x="0"
+      y="0"
+      width="81.9"
+      height="21.9"
+      patternTransform="translate(-86 -87)"
+      patternUnits="userSpaceOnUse"
+      viewBox="0 0 81.9 21.9"
+    >
+      <rect class="g" x="0" width="81.9" height="21.9" />
+      <rect class="k" x="0" width="81.9" height="11" />
+      <rect class="j" x="0" y="11" width="81.9" height="11" />
     </pattern>
     <clipPath id="d">
-      <rect class="g" x="31.6" y="2.5" width="10.5" height="40.9"/>
+      <rect class="g" x="31.6" y="2.5" width="10.5" height="40.9" />
     </clipPath>
     <clipPath id="e">
-      <rect class="g" x="11.2" y="16.7" width="10.5" height="27.3"/>
+      <rect class="g" x="11.2" y="16.7" width="10.5" height="27.3" />
     </clipPath>
     <clipPath id="f">
-      <rect class="g" x="21.1" y="9.6" width="10.5" height="27.3"/>
+      <rect class="g" x="21.1" y="9.6" width="10.5" height="27.3" />
     </clipPath>
   </defs>
   <g class="o">
-    <rect class="h" x="5" y="1" width="75" height="72"/>
-    <rect class="i" width="44" height="44.4"/>
+    <rect class="h" x="5" y="1" width="75" height="72" />
+    <rect class="i" width="44" height="44.4" />
     <g class="m">
-      <polygon class="k" points="36 4.5 37 7.6 40.4 7.6 37.7 9.6 38.7 12.8 36 10.8 33.3 12.8 34.3 9.6 31.6 7.6 34.9 7.6 36 4.5"/>
-      <polygon class="k" points="36 18.8 37 22 40.4 22 37.7 23.9 38.7 27.1 36 25.2 33.3 27.1 34.3 23.9 31.6 22 34.9 22 36 18.8"/>
-      <polygon class="k" points="36 33.1 37 36.3 40.4 36.3 37.7 38.3 38.7 41.5 36 39.5 33.3 41.5 34.3 38.3 31.6 36.3 34.9 36.3 36 33.1"/>
+      <polygon
+        class="k"
+        points="36 4.5 37 7.6 40.4 7.6 37.7 9.6 38.7 12.8 36 10.8 33.3 12.8 34.3 9.6 31.6 7.6 34.9 7.6 36 4.5"
+      />
+      <polygon
+        class="k"
+        points="36 18.8 37 22 40.4 22 37.7 23.9 38.7 27.1 36 25.2 33.3 27.1 34.3 23.9 31.6 22 34.9 22 36 18.8"
+      />
+      <polygon
+        class="k"
+        points="36 33.1 37 36.3 40.4 36.3 37.7 38.3 38.7 41.5 36 39.5 33.3 41.5 34.3 38.3 31.6 36.3 34.9 36.3 36 33.1"
+      />
     </g>
     <g class="l">
-      <polygon class="k" points="15.6 18.7 16.6 21.9 20 21.9 17.3 23.9 18.3 27.1 15.6 25.1 12.9 27.1 13.9 23.9 11.2 21.9 14.5 21.9 15.6 18.7"/>
-      <polygon class="k" points="15.6 33.1 16.6 36.2 20 36.2 17.3 38.2 18.3 41.4 15.6 39.4 12.9 41.4 13.9 38.2 11.2 36.2 14.5 36.2 15.6 33.1"/>
+      <polygon
+        class="k"
+        points="15.6 18.7 16.6 21.9 20 21.9 17.3 23.9 18.3 27.1 15.6 25.1 12.9 27.1 13.9 23.9 11.2 21.9 14.5 21.9 15.6 18.7"
+      />
+      <polygon
+        class="k"
+        points="15.6 33.1 16.6 36.2 20 36.2 17.3 38.2 18.3 41.4 15.6 39.4 12.9 41.4 13.9 38.2 11.2 36.2 14.5 36.2 15.6 33.1"
+      />
     </g>
     <g class="n">
-      <polygon class="k" points="25.5 11.6 26.6 14.8 29.9 14.8 27.2 16.7 28.2 19.9 25.5 18 22.8 19.9 23.9 16.7 21.1 14.8 24.5 14.8 25.5 11.6"/>
-      <polygon class="k" points="25.5 25.9 26.6 29.1 29.9 29.1 27.2 31.1 28.2 34.3 25.5 32.3 22.8 34.3 23.9 31.1 21.1 29.1 24.5 29.1 25.5 25.9"/>
+      <polygon
+        class="k"
+        points="25.5 11.6 26.6 14.8 29.9 14.8 27.2 16.7 28.2 19.9 25.5 18 22.8 19.9 23.9 16.7 21.1 14.8 24.5 14.8 25.5 11.6"
+      />
+      <polygon
+        class="k"
+        points="25.5 25.9 26.6 29.1 29.9 29.1 27.2 31.1 28.2 34.3 25.5 32.3 22.8 34.3 23.9 31.1 21.1 29.1 24.5 29.1 25.5 25.9"
+      />
     </g>
   </g>
 </svg>

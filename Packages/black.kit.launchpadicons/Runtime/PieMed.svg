@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.5 253.5">
+  <defs>
+    <style>
+    .b {
+      fill: #dfd35e;
+    }
+
+    .b, .c {
+      stroke: #4a4a4a;
+      stroke-miterlimit: 10;
+      stroke-width: 10px;
+    }
+
+    .c {
+      fill: #dbdbdb;
+    }
+    </style>
+  </defs>
+  <circle class="c" cx="126.7" cy="126.7" r="121.7" />
+  <path
+    class="b"
+    d="M126.7,126.7V9.4c64.4,0,117.3,53,117.3,117.3s-53,117.3-117.3,117.3v-117.3Z"
+  />
+</svg>

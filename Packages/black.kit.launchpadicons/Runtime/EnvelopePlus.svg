@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 139">
   <defs>
     <style>
@@ -17,10 +17,13 @@
     </style>
   </defs>
   <g>
-    <polyline class="b" points="135 65.6 135 133 6 133 6 65.6"/>
-    <rect class="c" x="129.1" y="60" width="11.9" height="11.9"/>
-    <rect class="c" x="0" y="60" width="11.9" height="11.9"/>
+    <polyline class="b" points="135 65.6 135 133 6 133 6 65.6" />
+    <rect class="c" x="129.1" y="60" width="11.9" height="11.9" />
+    <rect class="c" x="0" y="60" width="11.9" height="11.9" />
   </g>
-  <path class="c" d="M135,60l-65,47L6,60,70,6l65,54ZM89.5,52.5h-13v-13c0-.6-.5-1-1-1h-11c-.6,0-1,.5-1,1v13h-13c-.6,0-1,.5-1,1v11c0,.6.5,1,1,1h13v13c0,.6.5,1,1,1h11c.6,0,1-.5,1-1v-13h13c.6,0,1-.5,1-1v-11c0-.6-.5-1-1-1Z"/>
-  <polygon class="b" points="135 60 70 107 6 60 70 6 135 60"/>
+  <path
+    class="c"
+    d="M135,60l-65,47L6,60,70,6l65,54ZM89.5,52.5h-13v-13c0-.6-.5-1-1-1h-11c-.6,0-1,.5-1,1v13h-13c-.6,0-1,.5-1,1v11c0,.6.5,1,1,1h13v13c0,.6.5,1,1,1h11c.6,0,1-.5,1-1v-13h13c.6,0,1-.5,1-1v-11c0-.6-.5-1-1-1Z"
+  />
+  <polygon class="b" points="135 60 70 107 6 60 70 6 135 60" />
 </svg>

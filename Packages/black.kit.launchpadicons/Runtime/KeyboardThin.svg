@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 107">
   <defs>
     <style>
@@ -15,18 +15,21 @@
       }
     </style>
   </defs>
-  <rect class="c" x="51" y="74" width="84" height="10" rx="2" ry="2"/>
-  <rect class="c" x="22" y="49" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="22" y="26" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="47" y="26" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="73" y="26" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="100" y="26" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="125" y="26" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="151" y="26" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="47" y="49" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="73" y="49" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="100" y="49" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="125" y="49" width="10" height="10" rx="2" ry="2"/>
-  <rect class="c" x="151" y="49" width="10" height="10" rx="2" ry="2"/>
-  <path class="b" d="M21,7h139c8.3,0,15,6.7,15,15v63c0,8.3-6.7,15-15,15H22c-8.3,0-15-6.7-15-15V21c0-7.7,6.3-14,14-14Z"/>
+  <rect class="c" x="51" y="74" width="84" height="10" rx="2" ry="2" />
+  <rect class="c" x="22" y="49" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="22" y="26" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="47" y="26" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="73" y="26" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="100" y="26" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="125" y="26" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="151" y="26" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="47" y="49" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="73" y="49" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="100" y="49" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="125" y="49" width="10" height="10" rx="2" ry="2" />
+  <rect class="c" x="151" y="49" width="10" height="10" rx="2" ry="2" />
+  <path
+    class="b"
+    d="M21,7h139c8.3,0,15,6.7,15,15v63c0,8.3-6.7,15-15,15H22c-8.3,0-15-6.7-15-15V21c0-7.7,6.3-14,14-14Z"
+  />
 </svg>

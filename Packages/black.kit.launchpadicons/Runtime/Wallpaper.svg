@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 139">
   <defs>
     <style>
@@ -15,8 +15,14 @@
       }
     </style>
   </defs>
-  <rect class="c" x="7.5" y="7.5" width="145" height="80" rx="3" ry="3"/>
-  <path class="b" d="M120.5,139H39.5c15.1-13,22.8-26,23-39h33c-1.7,13,6.7,26,25,39Z"/>
-  <polygon class="b" points="21 76 32 55 48 71 76 29 103 72 124 51 141.2 76 21 76"/>
-  <circle class="b" cx="115" cy="31" r="12"/>
+  <rect class="c" x="7.5" y="7.5" width="145" height="80" rx="3" ry="3" />
+  <path
+    class="b"
+    d="M120.5,139H39.5c15.1-13,22.8-26,23-39h33c-1.7,13,6.7,26,25,39Z"
+  />
+  <polygon
+    class="b"
+    points="21 76 32 55 48 71 76 29 103 72 124 51 141.2 76 21 76"
+  />
+  <circle class="b" cx="115" cy="31" r="12" />
 </svg>

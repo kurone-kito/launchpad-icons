@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 156">
   <defs>
     <style>
@@ -10,13 +10,23 @@
         stroke-width: 14px;
       }
     </style>
-    <filter id="b" x="0" y="0" width="160" height="156" filterUnits="userSpaceOnUse">
-      <feOffset dx="2" dy="2"/>
-      <feGaussianBlur result="c" stdDeviation="5"/>
-      <feFlood flood-color="#000" flood-opacity=".8"/>
-      <feComposite in2="c" operator="in"/>
-      <feComposite in="SourceGraphic"/>
+    <filter
+      id="b"
+      x="0"
+      y="0"
+      width="160"
+      height="156"
+      filterUnits="userSpaceOnUse"
+    >
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur result="c" stdDeviation="5" />
+      <feFlood flood-color="#000" flood-opacity=".8" />
+      <feComposite in2="c" operator="in" />
+      <feComposite in="SourceGraphic" />
     </filter>
   </defs>
-  <path class="d" d="M22.19,22.06c9.03-9.98,114.29,25.94,113,44-1,14-27.5,23.5-34,30-7.5,7.5-18,35.2-32.5,35.6-14.5.4-56-99.1-46.5-109.6Z"/>
+  <path
+    class="d"
+    d="M22.19,22.06c9.03-9.98,114.29,25.94,113,44-1,14-27.5,23.5-34,30-7.5,7.5-18,35.2-32.5,35.6-14.5.4-56-99.1-46.5-109.6Z"
+  />
 </svg>

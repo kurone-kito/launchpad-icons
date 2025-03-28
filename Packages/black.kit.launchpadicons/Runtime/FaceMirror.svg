@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 167">
   <defs>
     <style>
@@ -16,8 +16,11 @@
       }
     </style>
   </defs>
-  <rect class="b" x="5" y="5" width="130" height="157" rx="5" ry="5"/>
-  <circle class="c" cx="35" cy="45" r="9"/>
-  <circle class="c" cx="104" cy="45" r="9"/>
-  <path class="c" d="M48,65c-1.8,0-3.2,1.6-3,3.4,1.7,12.8,12.6,22.6,25.8,22.6s24.1-9.9,25.8-22.6c.2-1.8-1.2-3.4-3-3.4h-45.6Z"/>
+  <rect class="b" x="5" y="5" width="130" height="157" rx="5" ry="5" />
+  <circle class="c" cx="35" cy="45" r="9" />
+  <circle class="c" cx="104" cy="45" r="9" />
+  <path
+    class="c"
+    d="M48,65c-1.8,0-3.2,1.6-3,3.4,1.7,12.8,12.6,22.6,25.8,22.6s24.1-9.9,25.8-22.6c.2-1.8-1.2-3.4-3-3.4h-45.6Z"
+  />
 </svg>

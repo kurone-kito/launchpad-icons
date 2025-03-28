@@ -1,10 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.9 234.7">
   <defs>
     <style>.b{fill:#fff;}</style>
   </defs>
-  <rect class="b" x="140.8" y="19.9" width="52.7" height="37.5" rx="4" ry="4" transform="translate(-4.3 32.4) rotate(-10.9)"/>
-  <polygon class="b" points="111.8 33 117.9 64.6 136.8 55.7 132.6 34.1 111.8 33"/>
-  <circle class="b" cx="40.4" cy="36.5" r="36.5"/>
-  <path class="b" d="M0,128.1v106.6s40-35.6,40-35.6l40,35.6v-107.3c0-22.9-19.3-41.3-42.5-39.9C16.9,88.7,0,107.4,0,128.1Z"/>
+  <rect
+    class="b"
+    x="140.8"
+    y="19.9"
+    width="52.7"
+    height="37.5"
+    rx="4"
+    ry="4"
+    transform="translate(-4.3 32.4) rotate(-10.9)"
+  />
+  <polygon
+    class="b"
+    points="111.8 33 117.9 64.6 136.8 55.7 132.6 34.1 111.8 33"
+  />
+  <circle class="b" cx="40.4" cy="36.5" r="36.5" />
+  <path
+    class="b"
+    d="M0,128.1v106.6s40-35.6,40-35.6l40,35.6v-107.3c0-22.9-19.3-41.3-42.5-39.9C16.9,88.7,0,107.4,0,128.1Z"
+  />
 </svg>

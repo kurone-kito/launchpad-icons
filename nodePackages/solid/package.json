@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-solid",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "description": "the icons like the VRChat icons for Node.js ecosystem with the Solid.js",
   "keywords": [
     "components",

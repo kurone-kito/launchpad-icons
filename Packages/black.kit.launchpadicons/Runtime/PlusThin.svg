@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 163">
   <defs>
     <style>
@@ -11,6 +11,6 @@
       }
     </style>
   </defs>
-  <line class="b" x1="81" y1="12" x2="81" y2="151"/>
-  <line class="b" x1="12" y1="82" x2="151" y2="82"/>
+  <line class="b" x1="81" y1="12" x2="81" y2="151" />
+  <line class="b" x1="12" y1="82" x2="151" y2="82" />
 </svg>
