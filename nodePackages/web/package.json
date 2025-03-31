@@ -89,7 +89,7 @@
     "tailwindcss-safe-area": "^0.6.0",
     "typescript": "~5.8.2",
     "vinxi": "^0.5.3",
-    "vite": "^6.2.3",
+    "vite": "^6.2.4",
     "vite-plugin-markdown": "^2.2.0",
     "vite-plugin-solid": "^2.11.6"
   },
