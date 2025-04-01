@@ -1,6 +1,6 @@
 {
   "coloredIcons": [
-    "Audio",
+    "AudioLegacy",
     "Bubble",
     "BulbWithBubble",
     "CircleHandle",
@@ -49,7 +49,7 @@
     "Calendar",
     "CameraPin",
     "CameraThin",
-    "CineCamera",
+    "CineCameraLegacy",
     "CircleReset",
     "Earth",
     "Key",
