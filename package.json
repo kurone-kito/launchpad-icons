@@ -58,7 +58,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@cspell/cspell-types": "^8.18.0",
+    "@cspell/cspell-types": "^8.18.1",
     "@kurone-kito/commitlint-config": "^0.18.0-alpha.1",
     "@kurone-kito/cspell-config": "^0.18.0-alpha.1",
     "@kurone-kito/eslint-config-solid": "^0.18.0-alpha.1",

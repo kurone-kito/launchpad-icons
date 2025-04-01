@@ -19,8 +19,8 @@ importers:
         specifier: ^19.8.0
         version: 19.8.0
       '@cspell/cspell-types':
-        specifier: ^8.18.0
-        version: 8.18.0
+        specifier: ^8.18.1
+        version: 8.18.1
       '@kurone-kito/commitlint-config':
         specifier: ^0.18.0-alpha.1
         version: 0.18.0-alpha.1(@commitlint/config-conventional@19.8.0)
@@ -583,6 +583,10 @@ packages:
 
   '@cspell/cspell-types@8.18.0':
     resolution: {integrity: sha512-z7ETwulTCAHpSNBqwD5d3Uoui4ClD+tfREoD0cKd9uMbLtN9W/WMVQAGDWJpOCUFrWsGYYM3/3/ob2oZhwdQag==}
+    engines: {node: '>=18'}
+
+  '@cspell/cspell-types@8.18.1':
+    resolution: {integrity: sha512-d/nMG+qnMbI/1JPm+lD0KcKpgtEHMRsHxkdtGyNCDgvHL/JOGaSHc5ERS3IUgBW0Dfya/3z9wPdaMcHEzt7YCQ==}
     engines: {node: '>=18'}
 
   '@cspell/dict-ada@4.1.0':
@@ -2129,11 +2133,11 @@ packages:
       react-dom:
         optional: true
 
-  '@storybook/builder-vite@9.0.0-alpha.11':
-    resolution: {integrity: sha512-yAboTqP1lxZiy7id5o8V2oyaPl7rkRgKzNArDI8nO5Qamie9cOwgORP6r0pOExw6PM/ClskSJRFOCrE5uoHN8Q==}
+  '@storybook/builder-vite@9.0.0-alpha.12':
+    resolution: {integrity: sha512-2WKp7lACRl5rC9beW/ZPP47bs7HZ1BmPMbiPnrMMh8yPmgYoK1UQYgUZS6ocUV2APORuO+W5Cgkw2PCcZB5IFA==}
     peerDependencies:
-      storybook: ^9.0.0-alpha.11
-      vite: ^4.0.0 || ^5.0.0 || ^6.0.0
+      storybook: ^9.0.0-alpha.12
+      vite: ^5.0.0 || ^6.0.0
 
   '@storybook/core@8.6.9':
     resolution: {integrity: sha512-psYxJAlj34ZaDAk+OvT/He6ZuUh0eGiHVtZNe0xWbNp5pQvOBjf+dg48swdI6KEbVs3aeU+Wnyra/ViU2RtA+Q==}
@@ -2148,10 +2152,10 @@ packages:
     peerDependencies:
       storybook: ^8.6.9
 
-  '@storybook/csf-plugin@9.0.0-alpha.11':
-    resolution: {integrity: sha512-SxLvKUlcJkpBTRP4/PHNlRZWPFrTmOWDpr3ZKdIhEkEC+KI97+SWNNps3SlV2BX4gDUl4JekFGrCH+ekbmJ7OQ==}
+  '@storybook/csf-plugin@9.0.0-alpha.12':
+    resolution: {integrity: sha512-8//eKRj7BGzpZJ5UygA/wGNKxy+s1UyIzT7ruGowyDfzbd0tAvbm7RBxDYvB/UdbOIoD4DDxbODtEDRNYbRqKg==}
     peerDependencies:
-      storybook: ^9.0.0-alpha.11
+      storybook: ^9.0.0-alpha.12
 
   '@storybook/csf@0.1.13':
     resolution: {integrity: sha512-7xOOwCLGB3ebM87eemep89MYRFTko+D8qE7EdAAq74lgdqRR5cOUtYWJLjO2dLtP94nqoOdHJo6MdLLKzg412Q==}
@@ -7114,6 +7118,8 @@ snapshots:
 
   '@cspell/cspell-types@8.18.0': {}
 
+  '@cspell/cspell-types@8.18.1': {}
+
   '@cspell/dict-ada@4.1.0': {}
 
   '@cspell/dict-al@1.1.0': {}
@@ -8390,9 +8396,9 @@ snapshots:
       react: 18.3.1
       react-dom: 19.0.0(react@18.3.1)
 
-  '@storybook/builder-vite@9.0.0-alpha.11(storybook@8.6.9(prettier@3.5.3))(vite@6.2.3(@types/node@22.13.13)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))':
+  '@storybook/builder-vite@9.0.0-alpha.12(storybook@8.6.9(prettier@3.5.3))(vite@6.2.3(@types/node@22.13.13)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))':
     dependencies:
-      '@storybook/csf-plugin': 9.0.0-alpha.11(storybook@8.6.9(prettier@3.5.3))
+      '@storybook/csf-plugin': 9.0.0-alpha.12(storybook@8.6.9(prettier@3.5.3))
       browser-assert: 1.2.1
       storybook: 8.6.9(prettier@3.5.3)
       ts-dedent: 2.2.0
@@ -8424,7 +8430,7 @@ snapshots:
       storybook: 8.6.9(prettier@3.5.3)
       unplugin: 1.16.1
 
-  '@storybook/csf-plugin@9.0.0-alpha.11(storybook@8.6.9(prettier@3.5.3))':
+  '@storybook/csf-plugin@9.0.0-alpha.12(storybook@8.6.9(prettier@3.5.3))':
     dependencies:
       storybook: 8.6.9(prettier@3.5.3)
       unplugin: 1.16.1
@@ -12926,7 +12932,7 @@ snapshots:
 
   storybook-solidjs-vite@1.0.0-beta.6(@testing-library/jest-dom@6.6.3)(solid-js@1.9.5)(storybook@8.6.9(prettier@3.5.3))(vite@6.2.3(@types/node@22.13.13)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0)):
     dependencies:
-      '@storybook/builder-vite': 9.0.0-alpha.11(storybook@8.6.9(prettier@3.5.3))(vite@6.2.3(@types/node@22.13.13)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))
+      '@storybook/builder-vite': 9.0.0-alpha.12(storybook@8.6.9(prettier@3.5.3))(vite@6.2.3(@types/node@22.13.13)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))
       magic-string: 0.30.17
       vite-plugin-solid: 2.11.6(@testing-library/jest-dom@6.6.3)(solid-js@1.9.5)(vite@6.2.3(@types/node@22.13.13)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))
     transitivePeerDependencies:
