@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.2 88">
   <defs>
-    <style>.b{fill:#fff;}</style>
+    <style>.b{fill:white;}</style>
   </defs>
   <rect class="b" x="9.6" width="22" height="36" rx="10" ry="10" />
   <path

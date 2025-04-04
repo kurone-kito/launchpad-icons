@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.7 68.8">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: white;
-        stroke-miterlimit: 10;
-        stroke-width: 14px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <polyline class="b" points="37.7 4.9 9.7 33.9 37.7 63.9" />
-  <polyline class="b" points="75.6 5 47.6 34 75.6 64" />
+  <polygon
+    class="b"
+    points="32.5 68.6 0 33.8 32.6 0 42.7 9.7 19.3 33.9 42.8 59.1 32.5 68.6"
+  />
+  <polygon
+    class="b"
+    points="70.4 68.8 37.9 33.9 70.5 .2 80.6 9.9 57.2 34.1 80.7 59.2 70.4 68.8"
+  />
 </svg>

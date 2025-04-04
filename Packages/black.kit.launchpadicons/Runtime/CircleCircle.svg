@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91 91">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: #fff;
-        stroke-miterlimit: 10;
-        stroke-width: 14px;
-      }
-
-      .c {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <circle class="c" cx="45.5" cy="45.5" r="24" />
-  <circle class="b" cx="45.5" cy="45.5" r="38.5" />
+  <circle class="b" cx="45.5" cy="45.5" r="24" />
+  <path
+    class="b"
+    d="M45.5,91C20.4,91,0,70.6,0,45.5S20.4,0,45.5,0s45.5,20.4,45.5,45.5-20.4,45.5-45.5,45.5ZM45.5,14c-17.4,0-31.5,14.1-31.5,31.5s14.1,31.5,31.5,31.5,31.5-14.1,31.5-31.5-14.1-31.5-31.5-31.5Z"
+  />
 </svg>

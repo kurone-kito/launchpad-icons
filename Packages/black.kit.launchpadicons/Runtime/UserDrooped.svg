@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.9 87.88">
   <defs>
-    <style>.b{fill:#fff;}</style>
+    <style>.b{fill:white;}</style>
   </defs>
   <circle class="b" cx="39.95" cy="28.86" r="28.86" />
   <path

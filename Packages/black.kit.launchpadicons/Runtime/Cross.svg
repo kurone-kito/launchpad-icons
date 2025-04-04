@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.5 89.5">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: white;
-        stroke-miterlimit: 10;
-        stroke-width: 24px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <line class="b" x1="8.5" y1="8.5" x2="81" y2="81" />
-  <line class="b" x1="8.5" y1="81" x2="81" y2="8.5" />
+  <polygon
+    class="b"
+    points="89.5 17 72.5 0 44.7 27.8 17 0 0 17 27.8 44.7 0 72.5 17 89.5 44.7 61.7 72.5 89.5 89.5 72.5 61.7 44.7 89.5 17"
+  />
 </svg>
