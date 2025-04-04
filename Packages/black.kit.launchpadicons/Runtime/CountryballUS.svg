@@ -6,7 +6,7 @@
       .h{fill:url(#c);}
       .i{fill:#003260;}
       .j{fill:#a43138;}
-      .k{fill:#fff;}
+      .k{fill:white;}
       .l{clip-path:url(#e);}
       .m{clip-path:url(#d);}
       .n{clip-path:url(#f);}

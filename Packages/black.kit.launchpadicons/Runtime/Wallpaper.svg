@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 139">
   <defs>
-    <style>
-      .b {
-        fill: white;
-        stroke-width: 0px;
-      }
-
-      .c {
-        fill: none;
-        stroke: white;
-        stroke-miterlimit: 10;
-        stroke-width: 15px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <rect class="c" x="7.5" y="7.5" width="145" height="80" rx="3" ry="3" />
+  <path
+    class="b"
+    d="M149.5,95H10.5c-5.8,0-10.5-4.7-10.5-10.5V10.5C0,4.7,4.7,0,10.5,0h139c5.8,0,10.5,4.7,10.5,10.5v74c0,5.8-4.7,10.5-10.5,10.5ZM15,80h130V15H15v65Z"
+  />
   <path
     class="b"
     d="M120.5,139H39.5c15.1-13,22.8-26,23-39h33c-1.7,13,6.7,26,25,39Z"

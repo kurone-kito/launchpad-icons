@@ -3,7 +3,7 @@
   <defs>
     <style>
       .b{fill:#ad2333;}
-      .c{fill:#fff;}
+      .c{fill:white;}
     </style>
   </defs>
   <circle class="c" cx="42" cy="42" r="42" />
