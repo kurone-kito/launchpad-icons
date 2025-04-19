@@ -54,7 +54,13 @@ jobs:
           EOF
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        name: Publish the packages
+        if: ${{ env.stableVersion == '' }}
+        name: Publish the packages for pre-release
+        run: pnpm run publish:next
+      - env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ env.stableVersion != '' }}
+        name: Publish the packages for release
         run: pnpm run publish
 
   build-upm:
