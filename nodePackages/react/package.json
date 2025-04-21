@@ -45,17 +45,17 @@
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
     "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
-    "@testing-library/react": "^16.2.0",
+    "@testing-library/react": "^16.3.0",
     "@types/react": "^18.3.19",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^4.4.1",
     "cpy-cli": "^5.0.0",
-    "jsdom": "^26.0.0",
+    "jsdom": "^26.1.0",
     "react": "^18.3.1",
-    "rimraf": "^5.0.10",
-    "typedoc": "^0.28.1",
-    "typedoc-plugin-markdown": "~4.6.0",
-    "typescript": "~5.8.2",
-    "vitest": "^3.0.9"
+    "rimraf": "^6.0.1",
+    "typedoc": "^0.28.3",
+    "typedoc-plugin-markdown": "~4.6.2",
+    "typescript": "~5.8.3",
+    "vitest": "^3.1.2"
   },
   "peerDependencies": {
     "react": "^18.3.1"
