@@ -71,10 +71,10 @@ jobs:
       contents: write
     env:
       packagePath: Packages/${{ vars.PACKAGE_NAME }}
-      stableVersion:
-      unityPackage:
-      version:
-      zipFile:
+      stableVersion: ''
+      unityPackage: ''
+      version: ''
+      zipFile: ''
     if: needs.config.outputs.config_package == 'true'
     steps:
       - id: gpg
@@ -120,7 +120,7 @@ jobs:
           include-files: metaList
           package-path: ${{ env.unityPackage }}
       - name: Zip the UnityPackage for release
-        run: zip -r -9 "${{ env.unityPackage }}.zip" ${{ env.unityPackage }} LICENSE README.md
+        run: zip -r -9 "${{ env.unityPackage }}.zip" "${{ env.unityPackage }}" LICENSE README.md
       - env:
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         name: Sign the artifacts
@@ -133,9 +133,9 @@ jobs:
         # cspell: disable-next-line
         uses: rickstaa/action-create-tag@v1
         with:
-          tag: '${{ env.version }}'
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          tag: "${{ env.version }}"
       - name: Publish the Release to GitHub
         uses: softprops/action-gh-release@v2
         with:

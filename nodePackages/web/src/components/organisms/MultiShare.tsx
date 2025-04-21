@@ -1,5 +1,5 @@
 import type { Component } from 'solid-js';
-import { createSignal, For, Show } from 'solid-js';
+import { For, Show, createSignal } from 'solid-js';
 import type { ValueShareProps } from '../molecules/ValueShare.js';
 import { ValueShare } from '../molecules/ValueShare.js';
 

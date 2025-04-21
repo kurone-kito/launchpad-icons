@@ -1,6 +1,6 @@
 import type { Component } from 'solid-js';
-import { PricingCard } from '../atoms/PricingCard.js';
 import { useTranslator } from '../../modules/createI18N.js';
+import { PricingCard } from '../atoms/PricingCard.js';
 
 export const PricingTable: Component = () => {
   const t = useTranslator();

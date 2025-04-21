@@ -4,7 +4,7 @@ import ViteYaml from '@modyfi/vite-plugin-yaml';
 import { defineConfig } from '@solidjs/start/config';
 import md from 'markdown-it';
 import linkAttributes from 'markdown-it-link-attributes';
-import { plugin as mdPlugin, Mode } from 'vite-plugin-markdown';
+import { Mode, plugin as mdPlugin } from 'vite-plugin-markdown';
 
 /** The base URL. */
 const baseURL = process.env?.['BASE_PATH'];

@@ -25,9 +25,7 @@
   "bin": {
     "liBuilder": "./dist/index.mjs"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "tsc",

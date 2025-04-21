@@ -26,9 +26,7 @@
   "type": "module",
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "pnpm run \"/^build:.+/\"",

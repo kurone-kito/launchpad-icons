@@ -2,8 +2,8 @@
 
 import chalk from 'chalk';
 import { copyToMeta } from './copyToMeta.mjs';
-import { ParsedArguments, usage } from './parseArguments.mjs';
 import { getAssetsDir, getSvgNames, getSvgPathes } from './getIconsList.mjs';
+import { ParsedArguments, usage } from './parseArguments.mjs';
 import { svgToContentStream } from './svgToContent.mjs';
 import {
   initializeSourceDir,

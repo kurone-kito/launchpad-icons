@@ -1,5 +1,5 @@
-import { join } from 'node:path';
 import { writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 /** The directory containing the destination files. */

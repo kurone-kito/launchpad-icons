@@ -1,8 +1,8 @@
 import type { Component } from 'solid-js';
 import Constants from '../../constants.yml';
+import { useLanguage, useTranslator } from '../../modules/createI18N';
 import type { HeadProps as InternalHeadProps } from '../molecules/Head.js';
 import { Head as InternalHead } from '../molecules/Head.js';
-import { useLanguage, useTranslator } from '../../modules/createI18N';
 
 export interface HeadProps
   extends Pick<InternalHeadProps, 'next' | 'prev' | 'title'> {

@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from 'storybook-solidjs';
 import type { ComponentProps } from 'solid-js';
+import type { Meta, StoryObj } from 'storybook-solidjs';
 
 import { FeatureDetail } from './FeatureDetail.js';
 

@@ -1,8 +1,8 @@
 import type { Component } from 'solid-js';
 import Constants from '../../constants.yml';
+import { useTranslator } from '../../modules/createI18N';
 import { Hero } from '../atoms/Hero.js';
 import { MultiShare } from './MultiShare.js';
-import { useTranslator } from '../../modules/createI18N';
 
 const npmReact = Constants['npmReact'];
 const npmSolid = Constants['npmSolid'];

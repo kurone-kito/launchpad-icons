@@ -16,10 +16,10 @@ on:
       - unpublished
   workflow_dispatch:
   workflow_run:
-    workflows:
-      - Build Release
     types:
       - completed
+    workflows:
+      - Build Release
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -82,10 +82,10 @@ jobs:
           path: |
             ${{ env.pathToCi }}/.nuke/temp
             ~/.nuget/packages
-      - name: Build Package Version Listing with Nuke
-        run: '"${{ env.pathToCi }}/build.cmd" BuildRepoListing --root "${{ env.pathToCi }}" --list-publish-directory "$GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}" --current-package-name "${{ vars.PACKAGE_NAME }}"'
-        env:
+      - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: Build Package Version Listing with Nuke
+        run: '"${{ env.pathToCi }}/build.cmd" BuildRepoListing --root "${{ env.pathToCi }}" --list-publish-directory "$GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}" --current-package-name "${{ vars.PACKAGE_NAME }}"'
       - name: Copy the generated index.json to the publish directory
         run: cp $GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}/index.json $GITHUB_WORKSPACE/${{ env.listPublishDirectory }}/
       - name: Prepare for GitHub Pages deployment

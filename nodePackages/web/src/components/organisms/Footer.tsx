@@ -1,9 +1,9 @@
 import { createDateNow } from '@solid-primitives/date';
 import { FaBrandsGithub, FaBrandsYoutube, FaSolidHouse } from 'solid-icons/fa';
 import type { Component } from 'solid-js';
+import { useTranslator } from '../../modules/createI18N.js';
 import { X } from '../atoms/icons/X.js';
 import { NavIconItem } from '../molecules/NavIconItem.js';
-import { useTranslator } from '../../modules/createI18N.js';
 
 const [now] = createDateNow();
 
