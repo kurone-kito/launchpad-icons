@@ -163,6 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: black.kit.launchpadicons
     Standalone: black.kit.launchpadicons
+    iPhone: black.kit.launchpadicons
   buildNumber:
     Standalone: 0
     VisionOS: 0
