@@ -5,11 +5,18 @@ on:
 
 jobs:
   config:
+    env:
+      packagePath: Packages/${{ vars.PACKAGE_NAME }}
     name: configuration
     outputs:
       config_package: ${{ steps.config_package.outputs.configPackage }}
+      stable_version: ${{ steps.stable-match.outputs.match }}
+      upm_package: ${{ env.packagePath }}
+      version: ${{ steps.version.outputs.value }}
     runs-on: ubuntu-latest
     steps:
+      - name: Stages the pushed branch
+        uses: actions/checkout@v4
       - id: config_package
         name: Ensure that required repository variable has been created for the Package
         run: |
@@ -18,9 +25,24 @@ jobs:
           else
             echo "configPackage=false" >> $GITHUB_OUTPUT;
           fi
+      - id: version
+        name: Get the Package version based on the package.json file
+        # cspell: disable-next-line
+        uses: sergeysova/jq-action@v2
+        with:
+          cmd: jq -r ".version" "${{ env.packagePath }}/package.json"
+      - id: stable-match
+        name: Detect whether the version is a stable release
+        # cspell: disable-next-line
+        uses: kaisugi/action-regex-match@v1.0.1
+        with:
+          flags: gm
+          regex: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
+          text: ${{ steps.version.outputs.value }}
 
   build-npm:
     name: build the NPM package
+    needs: config
     permissions:
       contents: read
     runs-on: ubuntu-latest
@@ -54,28 +76,25 @@ jobs:
           EOF
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ env.stableVersion == '' }}
+        if: ${{ needs.config.outputs.stable_version == '' }}
         name: Publish the packages for pre-release
         run: pnpm run publish:next
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{ env.stableVersion != '' }}
+        if: ${{ needs.config.outputs.stable_version != '' }}
         name: Publish the packages for release
         run: pnpm run publish
 
   build-upm:
-    name: build the UPM package
-    needs: config
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
     env:
-      packagePath: Packages/${{ vars.PACKAGE_NAME }}
-      stableVersion: ''
       unityPackage: ''
-      version: ''
       zipFile: ''
     if: needs.config.outputs.config_package == 'true'
+    name: build the UPM package
+    needs: config
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
     steps:
       - id: gpg
         name: Import the GPG key
@@ -88,32 +107,16 @@ jobs:
       - name: Checkout Local Repository
         uses: actions/checkout@v4
       - name: copy the README and LICENSE files to the Package folder
-        run: cp README.md LICENSE "${{ env.packagePath }}"
-      - id: version
-        name: Get the Package version based on the package.json file
-        # cspell: disable-next-line
-        uses: sergeysova/jq-action@v2
-        with:
-          cmd: jq -r ".version" "${{ env.packagePath }}/package.json"
-      - id: stable-match
-        name: Detect whether the version is a stable release
-        # cspell: disable-next-line
-        uses: kaisugi/action-regex-match@v1.0.1
-        with:
-          flags: gm
-          regex: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
-          text: ${{ steps.version.outputs.value }}
+        run: cp README.md LICENSE "${{ needs.config.outputs.upm_package }}"
       - name: Configure the Environment Variables needed for releasing the Package
         run: |
-          echo "stableVersion=${{ steps.stable-match.outputs.match }}" >> $GITHUB_ENV
-          echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.unitypackage" >> $GITHUB_ENV
-          echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
-          echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.zip" >> $GITHUB_ENV
+          echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ needs.config.outputs.version }}.unitypackage" >> $GITHUB_ENV
+          echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ needs.config.outputs.version }}.zip" >> $GITHUB_ENV
       - name: Zip the Package for release
         run: zip -r -9 "${{ github.workspace }}/${{ env.zipFile }}" .
-        working-directory: '${{ env.packagePath }}'
+        working-directory: '${{ needs.config.outputs.upm_package }}'
       - name: Build a list of .meta files for future use
-        run: find "${{ env.packagePath }}/" -name '*.meta' -type f >> metaList
+        run: find "${{ needs.config.outputs.upm_package }}/" -name '*.meta' -type f >> metaList
       - name: Make a UnityPackage version of the Package for release
         uses: pCYSl5EDgo/create-unitypackage@v1
         with:
@@ -135,7 +138,7 @@ jobs:
         with:
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          tag: "${{ env.version }}"
+          tag: '${{ needs.config.outputs.version }}'
       - name: Publish the Release to GitHub
         uses: softprops/action-gh-release@v2
         with:
@@ -146,6 +149,6 @@ jobs:
             ${{ env.unityPackage }}.asc
             ${{ env.unityPackage }}.zip
             ${{ env.unityPackage }}.zip.asc
-            ${{ env.packagePath }}/package.json
-          prerelease: ${{ env.stableVersion == '' }}
-          tag_name: ${{ env.version }}
+            ${{ needs.config.outputs.upm_package }}/package.json
+          prerelease: ${{ needs.config.outputs.stable_version == '' }}
+          tag_name: ${{ needs.config.outputs.version }}
