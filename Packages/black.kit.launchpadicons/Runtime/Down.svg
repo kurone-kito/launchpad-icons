@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.6 83">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.6 83.8">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: white;
-        stroke-miterlimit: 10;
-        stroke-width: 32px;
-      }
-
-      .c {
-        fill: white;
-        stroke-width: 0px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <line class="b" x1="40.8" y1="47.7" x2="40.8" />
-  <polygon class="c" points="0 42.2 81.6 42.2 40.8 83 0 42.2" />
+  <polygon
+    class="b"
+    points="56.8 43 56.8 0 24.8 0 24.8 43 0 43 40.8 83.8 81.6 43 56.8 43"
+  />
 </svg>

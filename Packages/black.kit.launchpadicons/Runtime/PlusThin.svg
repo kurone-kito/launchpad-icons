@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 163">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: white;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-        stroke-width: 24px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <line class="b" x1="81" y1="12" x2="81" y2="151" />
-  <line class="b" x1="12" y1="82" x2="151" y2="82" />
+  <path
+    class="b"
+    d="M150.7,69.5h-57.2s0-57.5,0-57.5c0-7.3-6.5-13-14-11.8s-10,6.2-10,12.2v57.2s-57.5,0-57.5,0c-7.3,0-13,6.5-11.8,14,.9,5.9,6.2,10,12.2,10h57.2s0,57.2,0,57.2c0,5.9,4.2,11.2,10,12.2,7.5,1.2,14-4.6,14-11.8v-57.5h57.5c7.3,0,13-6.5,11.8-14s-6.2-10-12.2-10Z"
+  />
 </svg>

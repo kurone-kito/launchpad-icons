@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203 203">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: #fff;
-        stroke-miterlimit: 10;
-        stroke-width: 11px;
-      }
-
-      .c {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <circle class="b" cx="101.5" cy="101.5" r="96" />
-  <circle class="c" cx="56" cy="54" r="17" />
   <path
-    class="c"
+    class="b"
+    d="M101.5,203C45.5,203,0,157.5,0,101.5S45.5,0,101.5,0s101.5,45.5,101.5,101.5-45.5,101.5-101.5,101.5ZM101.5,11C51.6,11,11,51.6,11,101.5s40.6,90.5,90.5,90.5,90.5-40.6,90.5-90.5S151.4,11,101.5,11Z"
+  />
+  <circle class="b" cx="56.5" cy="54.5" r="17" />
+  <path
+    class="b"
     d="M101.1,18.6c-3.3,0-6.6.2-9.8.6,31.8,4.3,56.3,31.5,56.3,64.4s-29.1,65-65,65-58.1-22.7-63.8-52.7c-.1,1.7-.2,3.4-.2,5.2,0,45.6,36.9,82.5,82.5,82.5s82.5-36.9,82.5-82.5S146.7,18.6,101.1,18.6Z"
   />
 </svg>

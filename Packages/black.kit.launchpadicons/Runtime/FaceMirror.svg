@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 167">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: #fff;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 10px;
-      }
-
-      .c {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <rect class="b" x="5" y="5" width="130" height="157" rx="5" ry="5" />
-  <circle class="c" cx="35" cy="45" r="9" />
-  <circle class="c" cx="104" cy="45" r="9" />
   <path
-    class="c"
+    class="b"
+    d="M130,167H10c-5.5,0-10-4.5-10-10V10C0,4.5,4.5,0,10,0h120c5.5,0,10,4.5,10,10v147c0,5.5-4.5,10-10,10ZM10,10v147s120,0,120,0V10s-120,0-120,0Z"
+  />
+  <circle class="b" cx="35" cy="45" r="9" />
+  <circle class="b" cx="104" cy="45" r="9" />
+  <path
+    class="b"
     d="M48,65c-1.8,0-3.2,1.6-3,3.4,1.7,12.8,12.6,22.6,25.8,22.6s24.1-9.9,25.8-22.6c.2-1.8-1.2-3.4-3-3.4h-45.6Z"
   />
 </svg>
