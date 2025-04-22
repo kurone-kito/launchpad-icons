@@ -9,7 +9,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 1
-  texturedSpriteMeshType: 0
+  texturedSpriteMeshType: 1
   svgPixelsPerUnit: 100
   gradientResolution: 64
   alignment: 0
@@ -32,10 +32,10 @@ ScriptedImporter:
   textureWidth: 256
   textureHeight: 256
   wrapMode: 1
-  filterMode: 2
+  filterMode: 1
   sampleCount: 2
   preserveSVGImageAspect: 0
-  useSVGPixelsPerUnit: 0
+  useSVGPixelsPerUnit: 1
   spriteData:
     TessellationDetail: 0
     SpriteRect:
