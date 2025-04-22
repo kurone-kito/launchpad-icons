@@ -17,7 +17,7 @@ namespace black.kit.launchpadicons.Editor
         private const string ICONS_PATH = "Packages/black.kit.launchpadicons/Runtime";
 
         /// <summary>The capacity of the icons group.</summary>
-        private const int ICONS_GROUP_CAPACITY = 81;
+        private const int ICONS_GROUP_CAPACITY = 100;
 
         /// <summary>The background color for the new icons.</summary>
         private static readonly Color bgNew = new(.467f, 1f, .733f, .39f);
