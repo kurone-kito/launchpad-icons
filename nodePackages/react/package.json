@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-react",
-  "version": "0.12.0",
+  "version": "0.13.0-alpha.2",
   "description": "the icons like the VRChat icons for Node.js ecosystem with the React",
   "keywords": [
     "components",
