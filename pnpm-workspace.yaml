@@ -1,5 +1,6 @@
-packages:
-  - nodePackages/*
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
+  - unrs-resolver
+packages:
+  - nodePackages/*
