@@ -6,10 +6,6 @@
         fill: #eee;
       }
 
-      .b, .c {
-        stroke-width: 0px;
-      }
-
       .c {
         fill: #111;
       }

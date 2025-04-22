@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 60.3">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.5 60.3">
   <defs>
-    <style>
-      .b {
-        fill: none;
-        stroke: #fff;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 9px;
-      }
-
-      .c {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
+    <style>.b{fill:white;}</style>
   </defs>
-  <polyline class="b" points="4.5 4.5 4.5 49.5 38.5 49.5" />
-  <polygon class="c" points="35.3 60.3 54 49.5 35.3 38.7 35.3 60.3" />
+  <path
+    class="b"
+    d="M53.5,49.5l-18.5-10.8v6.3H9V4.7c0-2.2-1.4-4.2-3.6-4.6S0,1.7,0,4.5v45c0,2.5,2,4.5,4.5,4.5h30.5v6.3l18.5-10.8Z"
+  />
 </svg>

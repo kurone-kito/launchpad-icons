@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.22 172.42">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.22 172.42">
   <defs>
-    <style>.b{fill:#fff;}</style>
+    <style>.b{fill:white;}</style>
   </defs>
   <path
     class="b"

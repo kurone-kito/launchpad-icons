@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-root",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "private": true,
   "description": "the icons like the VRChat icons for the VRChat and Web",
   "keywords": [
@@ -58,34 +58,35 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@cspell/cspell-types": "^8.18.0",
+    "@cspell/cspell-types": "^8.19.2",
     "@kurone-kito/commitlint-config": "^0.18.0-alpha.1",
     "@kurone-kito/cspell-config": "^0.18.0-alpha.1",
     "@kurone-kito/eslint-config-solid": "^0.18.0-alpha.1",
     "@kurone-kito/lint-staged-config": "^0.18.0-alpha.1",
     "@kurone-kito/prettier-config": "^0.18.0-alpha.1",
     "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
+    "@prettier/plugin-xml": "^3.4.1",
     "@typescript-eslint/parser": "^8.28.0",
-    "cspell": "^8.18.0",
-    "eslint": "^9.23.0",
+    "cspell": "^8.19.2",
+    "eslint": "^9.25.1",
     "eslint-formatter-codeframe": "^7.32.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^15.5.1",
     "markdownlint-cli2": "^0.17.2",
-    "oxlint": "^0.16.3",
+    "oxlint": "^0.16.7",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.10",
-    "prettier-plugin-sh": "^0.15.0",
+    "prettier-plugin-sh": "^0.17.2",
     "prettier-plugin-sort-json": "^4.1.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "rimraf": "^5.0.10",
-    "typescript": "~5.8.2",
+    "rimraf": "^6.0.1",
+    "typescript": "~5.8.3",
     "typescript-eslint-language-service": "^5.0.5"
   },
-  "packageManager": "pnpm@10.7.0+sha512.6b865ad4b62a1d9842b61d674a393903b871d9244954f652b8842c2b553c72176b278f64c463e52d40fff8aba385c235c8c9ecf5cc7de4fd78b8bb6d49633ab6",
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f",
   "engines": {
-    "node": "^18.20 || ^20.11 || >=22"
+    "node": "^20.11 || >=22"
   },
   "publishConfig": {
     "access": "public"
