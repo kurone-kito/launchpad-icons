@@ -55,7 +55,7 @@
     "rimraf": "^6.0.1",
     "solid-js": "^1.9.5",
     "typedoc": "^0.28.3",
-    "typedoc-plugin-markdown": "~4.6.2",
+    "typedoc-plugin-markdown": "~4.6.3",
     "typescript": "~5.8.3",
     "vite-plugin-solid": "^2.11.6",
     "vitest": "^3.1.2"

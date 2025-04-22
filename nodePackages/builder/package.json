@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.2",
     "cpy-cli": "^5.0.0",
     "rimraf": "^6.0.1",
     "symlink-dir": "^6.0.5",
