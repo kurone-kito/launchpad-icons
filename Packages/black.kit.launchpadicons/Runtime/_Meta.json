@@ -1,7 +1,7 @@
 {
   "coloredIcons": [
-    "AudioLegacy",
-    "Bubble",
+    "AudioColor",
+    "BubbleColor",
     "BulbWithBubble",
     "CircleHandle",
     "CountryballEU",
@@ -9,6 +9,7 @@
     "CountryballUS",
     "Cursor",
     "EyeThin",
+    "InfoColor",
     "Layer3D",
     "LockAvatar",
     "PieHi",
@@ -40,7 +41,7 @@
     "WarnColor"
   ],
   "newIcons": [
-    "Audio",
+    "AudioColor",
     "Bookmarked",
     "CineCamera",
     "CircleDouble",
