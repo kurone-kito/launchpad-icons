@@ -27,6 +27,15 @@
   "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "files": [],
+  "scripts": {
+    "build": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
+    "clean": "rimraf -g \"*.tgz\" LICENSE LICENSE.*.txt",
+    "prepack": "pnpm run clean && pnpm run build"
+  },
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "rimraf": "^6.0.1"
+  },
   "engines": {
     "node": "^20.11 || >=22"
   },
