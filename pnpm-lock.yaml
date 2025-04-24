@@ -70,7 +70,7 @@ importers:
         version: 3.5.3
     devDependencies:
       '@kurone-kito/typescript-config':
-        specifier: ^0.18.0-alpha.1
+        specifier: ^0.18.0
         version: 0.18.0(typescript@5.8.3)
       '@types/node':
         specifier: ^22.14.1
@@ -97,7 +97,7 @@ importers:
         specifier: workspace:^
         version: link:../builder
       '@kurone-kito/typescript-config':
-        specifier: ^0.18.0-alpha.1
+        specifier: ^0.18.0
         version: 0.18.0(typescript@5.8.3)
       '@testing-library/react':
         specifier: ^16.3.0
@@ -139,7 +139,7 @@ importers:
         specifier: workspace:^
         version: link:../builder
       '@kurone-kito/typescript-config':
-        specifier: ^0.18.0-alpha.1
+        specifier: ^0.18.0
         version: 0.18.0(typescript@5.8.3)
       '@solidjs/testing-library':
         specifier: ^0.8.10
@@ -224,7 +224,7 @@ importers:
         version: 2.5.0
     devDependencies:
       '@kurone-kito/typescript-config':
-        specifier: ^0.18.0-alpha.1
+        specifier: ^0.18.0
         version: 0.18.0(typescript@5.8.3)
       '@modyfi/vite-plugin-yaml':
         specifier: ^1.1.1
