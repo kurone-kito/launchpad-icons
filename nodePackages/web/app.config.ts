@@ -1,4 +1,4 @@
-import { readdir } from 'node:fs/promises';
+import { readdirSync } from 'node:fs';
 import { parse } from 'node:path';
 import ViteYaml from '@modyfi/vite-plugin-yaml';
 import { defineConfig } from '@solidjs/start/config';
@@ -14,15 +14,13 @@ const baseURL = process.env?.['BASE_PATH'];
  * @param dir The directory.
  * @returns The names of the files.
  */
-const getNames = async (dir: string) =>
-  (await readdir(dir, { withFileTypes: true }))
+const getNames = (dir: string) =>
+  readdirSync(dir, { withFileTypes: true })
     .filter((dirent) => dirent.isFile())
     .map(({ name }) => parse(name).name);
 
 /** The locales. */
-const locales = (await getNames('src/i18n')).filter((name) =>
-  /^[a-z]{2}$/.test(name),
-);
+const locales = getNames('src/i18n').filter((name) => /^[a-z]{2}$/.test(name));
 
 /** The Markdown parser. */
 const markdownIt = md({ html: true }).use(linkAttributes, {
@@ -30,19 +28,26 @@ const markdownIt = md({ html: true }).use(linkAttributes, {
   matcher: (href: string) => /^https?:/.test(href),
 });
 
-/** The pages. */
-const pages = await getNames('src/routes/[[language]]');
+/** The route paths for all pages and their localized versions. */
+const pathes = getNames('src/routes/[[language]]').flatMap((page) => [
+  `/${page}`,
+  ...locales.map((locale) => `/${locale}/${page}`),
+]);
+
+/**
+ * Adds a collection of paths from the external `pathes` array to an
+ * existing Set of routes.
+ *
+ * @param routes The existing Set of route strings to add paths to
+ * @returns The updated Set containing both the original routes and
+ * the added paths
+ */
+const addRoutes = (routes: Set<string>) =>
+  pathes.reduce<Set<string>>((acc, path) => acc.add(path), routes);
 
 export default defineConfig({
   server: {
-    hooks: {
-      'prerender:routes': async (routes) => {
-        pages.forEach((route) => {
-          routes.add(`/${route}`);
-          locales.forEach((locale) => routes.add(`/${locale}/${route}`));
-        });
-      },
-    },
+    hooks: { 'prerender:routes': addRoutes },
     preset: 'githubPages',
     prerender: { autoSubfolderIndex: false, routes: [] },
     ...(baseURL ? { baseURL } : {}),
