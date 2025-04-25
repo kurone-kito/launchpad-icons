@@ -25,7 +25,7 @@ export interface ValueShareProps {
  * @returns The component.
  */
 export const ValueShare: Component<ValueShareProps> = (props) => (
-  <div class="input input-bordered flex w-full items-center gap-0 pr-0">
+  <div class="input flex w-full items-center gap-0 pr-0">
     <span
       class="tooltip tooltip-bottom grow"
       data-tip={props.tooltipToClipboard}

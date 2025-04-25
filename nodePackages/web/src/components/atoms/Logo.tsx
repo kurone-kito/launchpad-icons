@@ -6,9 +6,9 @@ import type { Component } from 'solid-js';
  * @returns The component.
  */
 export const Logo: Component = () => (
-  <h1 class="text-base-content p-2 text-xl" role="banner">
+  <h1 class="flex items-end-safe text-base-content p-2 text-xl" role="banner">
     <a class="flex items-center gap-2 opacity-70 hover:opacity-95" href=".">
-      <Rocket class="[&_path]:fill-base-content h-5 w-5" />
+      <Rocket class="[&_*]:fill-base-content h-5 w-5" />
       <span translate="no">VRC Icons</span>
     </a>
   </h1>

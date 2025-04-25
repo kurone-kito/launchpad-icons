@@ -2,6 +2,7 @@ import { readdirSync } from 'node:fs';
 import { parse } from 'node:path';
 import ViteYaml from '@modyfi/vite-plugin-yaml';
 import { defineConfig } from '@solidjs/start/config';
+import tailwindcss from '@tailwindcss/vite';
 import md from 'markdown-it';
 import linkAttributes from 'markdown-it-link-attributes';
 import { Mode, plugin as mdPlugin } from 'vite-plugin-markdown';
@@ -52,5 +53,11 @@ export default defineConfig({
     prerender: { autoSubfolderIndex: false, routes: [] },
     ...(baseURL ? { baseURL } : {}),
   },
-  vite: { plugins: [mdPlugin({ markdownIt, mode: [Mode.HTML] }), ViteYaml()] },
+  vite: {
+    plugins: [
+      mdPlugin({ markdownIt, mode: [Mode.HTML] }),
+      tailwindcss(),
+      ViteYaml(),
+    ],
+  },
 });
