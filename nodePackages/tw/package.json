@@ -28,14 +28,17 @@
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "files": [],
   "scripts": {
-    "build": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
-    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" LICENSE LICENSE.*.txt",
+    "build": "pnpm run \"/^build:.+/\"",
+    "build:icons": "symlink-dir ../../Packages/black.kit.launchpadicons/Runtime generated-src",
+    "build:license": "cpy --flat ../../LICENSE . && cpy --flat ../../LICENSE.*.txt .",
+    "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist LICENSE LICENSE.*.txt generated-src",
     "prepack": "pnpm run clean && pnpm run build"
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.18.0",
     "cpy-cli": "^5.0.0",
     "rimraf": "^6.0.1",
+    "symlink-dir": "^6.0.5",
     "typescript": "~5.8.3"
   },
   "engines": {
