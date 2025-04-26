@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 238">
+  <defs>
+    <style>.b{fill:white;}</style>
+  </defs>
+  <circle class="b" cx="36.5" cy="29.5" r="29.5" />
+  <path
+    class="b"
+    d="M56.9,91.1c-4.1-23.3-37.5-23.4-41.7,0L0,177.1v60.9h29v-50.9c0-3.6,2.6-6.8,6.1-7.2s7.9,2.8,7.9,6.9v51.1h29v-60.9l-15.1-86Z"
+  />
+</svg>

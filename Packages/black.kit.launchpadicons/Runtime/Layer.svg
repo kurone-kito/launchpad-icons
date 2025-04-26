@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 226">
+  <defs>
+    <style>.b{fill:white;}</style>
+  </defs>
+  <polygon
+    class="b"
+    points="0 63.2 0 73.2 0 170 85 170 85 158.4 96.6 170 116.5 170 85 138.6 85 121.4 133.7 170 153.5 170 85 101.6 85 85.4 169.8 170 170 170 170 150.4 104.4 85 120.7 85 170 134.2 170 114.4 140.5 85 156.8 85 170 98.2 170 85 170 78.4 170 0 0 0 0 63.2"
+  />
+  <rect class="b" x="213" y="213" width="13" height="13" />
+  <rect class="b" x="156" y="213" width="14" height="13" />
+  <rect class="b" x="184" y="213" width="14" height="13" />
+  <rect class="b" x="127" y="213" width="14" height="13" />
+  <rect class="b" x="98" y="213" width="14" height="13" />
+  <rect class="b" x="71" y="213" width="13" height="13" />
+  <rect class="b" x="71" y="184" width="13" height="14" />
+  <rect class="b" x="184" y="71" width="14" height="13" />
+  <rect class="b" x="213" y="71" width="13" height="13" />
+  <rect class="b" x="213" y="184" width="13" height="14" />
+  <rect class="b" x="213" y="98" width="13" height="14" />
+  <rect class="b" x="213" y="156" width="13" height="14" />
+  <rect class="b" x="213" y="127" width="13" height="14" />
+</svg>
