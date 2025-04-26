@@ -6,6 +6,7 @@ import { MultiShare } from './MultiShare.js';
 
 const npmReact = Constants['npmReact'];
 const npmSolid = Constants['npmSolid'];
+const npmTw = Constants['npmTw'];
 const vccUrl = Constants['vccUrl'];
 const vpmUrl = Constants['vpmUrl'];
 
@@ -35,6 +36,11 @@ export const CompositedHero: Component = () => {
             label: 'Solid',
             tooltipToClipboard: t('commandToClipboard'),
             value: npmSolid,
+          },
+          {
+            label: 'TailwindCSS',
+            tooltipToClipboard: t('commandToClipboard'),
+            value: npmTw,
           },
         ]}
       />
