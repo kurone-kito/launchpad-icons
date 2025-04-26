@@ -97,7 +97,8 @@ namespace black.kit.launchpadicons.Editor
         {
             var containerGroup = TypedTarget.ContainerGrid;
             var groupRect = containerGroup.GetComponent<RectTransform>();
-            var layoutGroup = TypedTarget.GetComponent<HorizontalOrVerticalLayoutGroup>();
+            var layoutGroup = TypedTarget.GridContainer
+                .GetComponent<HorizontalOrVerticalLayoutGroup>();
             var width = GetWidth(groupRect, groupsLength, layoutGroup);
             var height = groupRect.sizeDelta.y + layoutGroup.padding.vertical;
             return new Vector2(width, height);
@@ -134,13 +135,15 @@ namespace black.kit.launchpadicons.Editor
             if (GUILayout.Button("Cleanup the catalog"))
             {
                 RemoveAllChildren();
+                TypedTarget.Version.text = "v0.0.0";
             }
             if (GUILayout.Button("Update the catalog"))
             {
                 var iconsByGroups = ToGroups(FindIcons());
                 RemoveAllChildren();
-                var catalogRect = TypedTarget.GetComponent<RectTransform>();
+                var catalogRect = TypedTarget.GridContainer;
                 catalogRect.sizeDelta = GetCatalogRect(iconsByGroups.Length);
+                UpdateVersion();
                 var (newIcons, coloredIcons) = JsonUtility.FromJson<Meta>(
                     TypedTarget.IconsMeta.text);
                 Debug.Log($"newIcons: {newIcons.Length}");
@@ -162,14 +165,19 @@ namespace black.kit.launchpadicons.Editor
             base.OnInspectorGUI();
         }
 
+        /// <summary>Update the display version.</summary>
+        private void UpdateVersion()
+        {
+            var manifest = JsonUtility.FromJson<Manifest>(
+                TypedTarget.Manifest.text);
+            TypedTarget.Version.text = $"v{manifest.version}";
+        }
+
         /// <summary>The target of the inspector.</summary>
         private Catalog TypedTarget => target as Catalog;
 
         /// <summary>Remove all children of the catalog.</summary>
-        private void RemoveAllChildren()
-        {
-            var catalogRect = TypedTarget.GetComponent<RectTransform>();
-            RemoveAllChildren(catalogRect);
-        }
+        private void RemoveAllChildren() =>
+            RemoveAllChildren(TypedTarget.GridContainer);
     }
 }
