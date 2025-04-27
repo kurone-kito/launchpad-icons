@@ -7,6 +7,7 @@ import { createMemo } from 'solid-js';
 import en from '../i18n/en.js';
 import ja from '../i18n/ja.js';
 import type { Resources } from '../i18n/types.js';
+import type { ReadonlyRecord } from '../types/types.mjs';
 
 /** The dictionaries. */
 const dictionaries = { en, ja } as const;
@@ -40,8 +41,8 @@ export const createI18N = (language: Accessor<Language>): I18NTr<Dictionary> =>
  * @returns The i18n accessor.
  */
 export const createI18NText =
-  (texts: Record<Language, string>) =>
-  (language: Accessor<Language>): I18NTr<Record<'text', string>> =>
+  (texts: ReadonlyRecord<Language, string>) =>
+  (language: Accessor<Language>): I18NTr<ReadonlyRecord<'text', string>> =>
     translator(createMemo(() => ({ text: texts[language()] })));
 
 /**

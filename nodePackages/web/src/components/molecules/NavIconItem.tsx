@@ -2,6 +2,7 @@ import { A } from '@solidjs/router';
 import clsx from 'clsx';
 import type { Component, JSX, ParentProps } from 'solid-js';
 import { splitProps } from 'solid-js';
+import type { RequiredNonNullable } from '../../types/types.mjs';
 import type { NavTooltipItemProps } from '../atoms/NavTooltipItem.js';
 import { NavTooltipItem } from '../atoms/NavTooltipItem.js';
 
@@ -10,7 +11,7 @@ type BasedAnchorProps = Readonly<JSX.AnchorHTMLAttributes<HTMLAnchorElement>>;
 export interface NavIconItemProps
   extends NavTooltipItemProps,
     Omit<BasedAnchorProps, 'href' | 'target'>,
-    Required<Pick<BasedAnchorProps, 'href'>> {}
+    RequiredNonNullable<Pick<BasedAnchorProps, 'href'>> {}
 
 /**
  * A navigation icon item.
