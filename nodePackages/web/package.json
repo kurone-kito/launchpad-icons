@@ -49,7 +49,7 @@
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
     "@kurone-kito/launchpad-icons-solid": "workspace:^",
     "@solid-primitives/clipboard": "^1.6.0",
-    "@solid-primitives/date": "^2.1.1",
+    "@solid-primitives/date": "^2.1.2",
     "@solid-primitives/i18n": "^2.2.0",
     "@solid-primitives/media": "^2.3.0",
     "@solid-primitives/platform": "^0.2.0",
