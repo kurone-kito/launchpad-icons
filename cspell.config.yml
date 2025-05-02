@@ -5,30 +5,18 @@ cache:
   useCache: true
 dictionaries:
   - css
-  - dotnet
-  - en_us
-  - en-gb
+  - flutter
   - game-development
   - gaming-terms
-  - git
-  - markdown
-  - php
   - python
-  - softwareTerms
   - unity
 import:
   - '@kurone-kito/cspell-config'
 ignorePaths:
-  - .git
-  - .github/CODE_OF_CONDUCT.*
-  - .vscode/extensions.json
   - Assets/TextMesh Pro
   - Assets/UdonSharp
   - Assets/XR
-  - cspell.config.yml
   - Library
-  - node_modules
-  - npm
   - Packages/com.*
   - Packages/dev.*
   - Packages/*.json
@@ -48,6 +36,7 @@ words:
   - MSAA
   - scriban
   - solidjs
+  - spatialize
   - udon
   - unityyamlmerge
   - vinxi
