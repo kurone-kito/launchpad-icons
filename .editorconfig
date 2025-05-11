@@ -17,6 +17,9 @@ trim_trailing_whitespace = false
 [Packages/black.kit.*/**/Runtime/**/*.cs]
 dotnet_diagnostic.IDE0066.severity = none
 
+[Packages/vpm-manifest.json]
+insert_final_newline = false
+
 [Assets/UdonSharp/**.txt]
 indent_size = 4
 
