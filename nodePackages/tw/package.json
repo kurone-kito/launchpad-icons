@@ -1,0 +1,36 @@
+{
+  "name": "@kurone-kito/vrc-icons-tw",
+  "version": "0.13.0-alpha.1",
+  "description": "the icons like the VRChat icons for the Tailwind CSS",
+  "keywords": [
+    "icons",
+    "launchpad",
+    "launchPad icons",
+    "library",
+    "purecss",
+    "svg",
+    "tailwind",
+    "tailwindcss",
+    "vcc",
+    "vector",
+    "vpm",
+    "vrchat",
+    "vrc icons"
+  ],
+  "homepage": "https://github.com/kurone-kito/launchpad-icons#readme",
+  "bugs": "https://github.com/kurone-kito/launchpad-icons/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurone-kito/launchpad-icons.git",
+    "directory": "nodePackages/tw"
+  },
+  "license": "MIT",
+  "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
+  "files": [],
+  "engines": {
+    "node": "^20.11 || >=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
