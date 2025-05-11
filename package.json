@@ -64,7 +64,7 @@
     "@kurone-kito/eslint-config-solid": "^0.18.0-alpha.1",
     "@kurone-kito/lint-staged-config": "^0.18.0-alpha.1",
     "@kurone-kito/prettier-config": "^0.18.0-alpha.1",
-    "@kurone-kito/typescript-config": "^0.18.0-alpha.1",
+    "@kurone-kito/typescript-config": "^0.18.0",
     "@prettier/plugin-xml": "^3.4.1",
     "@typescript-eslint/parser": "^8.28.0",
     "cspell": "^8.19.2",

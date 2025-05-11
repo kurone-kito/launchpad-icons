@@ -1,6 +1,10 @@
 {
-  "compilerOptions": {
-    "noEmit": true
-  },
-  "extends": "@kurone-kito/typescript-config/tsconfig.json"
+  "files": [],
+  "references": [
+    { "path": "./nodePackages/builder" },
+    { "path": "./nodePackages/react" },
+    { "path": "./nodePackages/solid" },
+    { "path": "./nodePackages/tw" },
+    { "path": "./nodePackages/web" }
+  ]
 }
