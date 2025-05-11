@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import type { Component, JSX } from 'solid-js';
-import { mergeProps, Show, splitProps } from 'solid-js';
+import { Show, mergeProps, splitProps } from 'solid-js';
 
 export type HeadlessAnchorProps = Omit<
   Readonly<JSX.AnchorHTMLAttributes<HTMLAnchorElement>>,

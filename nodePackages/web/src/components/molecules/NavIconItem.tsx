@@ -1,9 +1,9 @@
+import { A } from '@solidjs/router';
+import clsx from 'clsx';
 import type { Component, JSX, ParentProps } from 'solid-js';
 import { splitProps } from 'solid-js';
 import type { NavTooltipItemProps } from '../atoms/NavTooltipItem.js';
 import { NavTooltipItem } from '../atoms/NavTooltipItem.js';
-import clsx from 'clsx';
-import { A } from '@solidjs/router';
 
 type BasedAnchorProps = Readonly<JSX.AnchorHTMLAttributes<HTMLAnchorElement>>;
 

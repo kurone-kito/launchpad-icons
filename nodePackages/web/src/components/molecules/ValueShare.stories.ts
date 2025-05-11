@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from 'storybook-solidjs';
 import type { ComponentProps } from 'solid-js';
+import type { Meta, StoryObj } from 'storybook-solidjs';
 
 import { ValueShare } from './ValueShare.js';
 

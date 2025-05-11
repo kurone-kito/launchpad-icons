@@ -1,5 +1,5 @@
 import type { Component } from 'solid-js';
-import { createSignal, For, Show } from 'solid-js';
+import { For, Show, createSignal } from 'solid-js';
 import type { ValueShareProps } from '../molecules/ValueShare.js';
 import { ValueShare } from '../molecules/ValueShare.js';
 
@@ -42,7 +42,7 @@ export const MultiShare: Component<MultiShareProps> = (props) => {
                 setShareData({
                   tooltipAddToVcc: currentTarget.dataset['tooltip-vcc'],
                   tooltipToClipboard: currentTarget.dataset['tooltip-copy'],
-                  vccSchemeUrl: currentTarget.dataset['vcc'],
+                  vccSchemeUrl: currentTarget.dataset.vcc,
                   value: currentTarget.value,
                 })
               }

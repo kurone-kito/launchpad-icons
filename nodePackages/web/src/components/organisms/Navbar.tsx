@@ -2,14 +2,14 @@ import { Join } from '@kurone-kito/launchpad-icons-solid';
 import { FaBrandsGithub } from 'solid-icons/fa';
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
+import { useTranslator } from '../../modules/createI18N.js';
 import { HamburgerButton } from '../atoms/HamburgerButton.js';
+import { Logo } from '../atoms/Logo.js';
 import { Booth } from '../atoms/icons/Booth.js';
 import { X } from '../atoms/icons/X.js';
-import { Logo } from '../atoms/Logo.js';
 import { ChangeThemeIcon } from '../molecules/ChangeThemeIcon.js';
 import { LanguageChanger } from '../molecules/LanguageChanger.js';
 import { NavIconItem } from '../molecules/NavIconItem.js';
-import { useTranslator } from '../../modules/createI18N.js';
 
 /**
  * The navigation bar.

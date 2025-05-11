@@ -11,16 +11,16 @@ import { html as enRaw } from '../../assets/texts/rawSvg.en.md';
 import { html as jaRaw } from '../../assets/texts/rawSvg.ja.md';
 import { FeatureDetail } from '../../components/atoms/FeatureDetail.js';
 import { WideAnchorButton } from '../../components/atoms/WideAnchorButton.js';
+import { CompositedHero } from '../../components/organisms/CompositedHero';
 import { Features } from '../../components/organisms/Features.js';
 import { Head } from '../../components/organisms/Head.js';
+import { DefaultTemplate } from '../../components/templates/DefaultTemplate';
 import Constants from '../../constants.yml';
 import {
   createI18NText,
   useLanguage,
   useTranslator,
 } from '../../modules/createI18N';
-import { CompositedHero } from '../../components/organisms/CompositedHero';
-import { DefaultTemplate } from '../../components/templates/DefaultTemplate';
 
 /** Free & Public repo */
 const freeTranslator = createI18NText({ en: enFree, ja: jaFree } as const);
@@ -38,7 +38,7 @@ const rawSvgTranslator = createI18NText({ en: enRaw, ja: jaRaw } as const);
 const iconsLength = iconNames.length;
 
 /** The maximum number of icons to do. */
-const maxIcons = Constants['iconsToDo'];
+const maxIcons = Constants.iconsToDo;
 
 /** The base URL. */
 const base = import.meta.env.SERVER_BASE_URL;

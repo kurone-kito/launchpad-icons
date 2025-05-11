@@ -2,8 +2,8 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { WritableStream } from 'node:stream/web';
 import { format } from 'prettier';
-import type { StreamContent } from './svgToContent.mjs';
 import type { SupportedFrameworks } from './parseArguments.mjs';
+import type { StreamContent } from './svgToContent.mjs';
 
 /** The filename containing the icons list. */
 export const ICON_NAMES = 'iconNames';
