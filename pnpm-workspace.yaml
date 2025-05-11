@@ -1,5 +1,6 @@
-packages:
-  - nodePackages/*
 onlyBuiltDependencies:
+  - '@biomejs/biome'
   - '@parcel/watcher'
   - esbuild
+packages:
+  - nodePackages/*
