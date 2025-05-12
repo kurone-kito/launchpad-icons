@@ -25,7 +25,7 @@ export const MultiShare: Component<MultiShareProps> = (props) => {
   return (
     <div class="mockup-browser bg-accent/10 w-full max-w-3xl">
       <div
-        class="mockup-browser-toolbar tabs tabs-lifted tabs-lg !mb-0 w-full"
+        class="mockup-browser-toolbar tabs tabs-lift tabs-lg !mb-0 w-full"
         role="tablist"
       >
         <For each={props.items}>
@@ -36,7 +36,7 @@ export const MultiShare: Component<MultiShareProps> = (props) => {
               data-tooltip-vcc={item.tooltipAddToVcc}
               data-vcc={item.vccSchemeUrl}
               checked={index() === 0}
-              class="tab [--tab-border:0px]"
+              class="tab [--border:0px]"
               name="target"
               onChange={({ currentTarget }) =>
                 setShareData({

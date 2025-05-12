@@ -42,7 +42,7 @@ export const Hero: Component<HeroProps> = (props) => (
           </ul>
         </div>
         <aside class="hidden max-w-96 lg:block">
-          <i class="not-italic blur-sm">
+          <i class="not-italic blur-xs">
             <SaturnWithSatellites class="[&_circle]:fill-base-content/15 [&_path]:fill-base-content/15 h-full w-full" />
           </i>
         </aside>
