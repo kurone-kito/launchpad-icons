@@ -8,6 +8,18 @@
 npm install @kurone-kito/vrc-icons-tw
 ```
 
+```css
+@import "tailwindcss";
+@import "@kurone-kito/vrc-icons-tw";
+```
+
+```html
+<i class="vrc-icon-Avatars h-6 w-6"></i>
+<i class="vrc-icon-Abduction"></i>
+```
+
+[Let's find out what icons are available!](https://kurone-kito.github.io/launchpad-icons/explore)
+
 ## License
 
 Copyright (c) Kuroné Kito (黒音キト)
