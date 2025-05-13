@@ -1,4 +1,3 @@
-import { CrossThin, Hamburger } from '@kurone-kito/launchpad-icons-solid';
 import type { Component, JSX } from 'solid-js';
 import { mergeProps } from 'solid-js';
 import { twMerge } from 'tailwind-merge';
@@ -28,8 +27,8 @@ export const HamburgerButton: Component<HamburgerButtonProps> = (props) => {
         type="checkbox"
         value="expanded"
       />
-      <Hamburger class="swap-off [&_line]:stroke-base-content h-5 w-5" />
-      <CrossThin class="swap-on [&_line]:stroke-base-content h-5 w-5" />
+      <i class="swap-off vrc-icon-Hamburger h-5 w-5" />
+      <i class="swap-on vrc-icon-CrossThin h-5 w-5" />
     </label>
   );
 };

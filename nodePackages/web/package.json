@@ -64,6 +64,7 @@
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.18.0",
+    "@kurone-kito/vrc-icons-tw": "workspace:^",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",

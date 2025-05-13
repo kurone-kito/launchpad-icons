@@ -1,5 +1,5 @@
 import { createDateNow } from '@solid-primitives/date';
-import { FaBrandsGithub, FaBrandsYoutube, FaSolidHouse } from 'solid-icons/fa';
+import { FaBrandsGithub, FaBrandsYoutube } from 'solid-icons/fa';
 import type { Component } from 'solid-js';
 import { useTranslator } from '../../modules/createI18N.js';
 import { X } from '../atoms/icons/X.js';
@@ -43,7 +43,7 @@ export const Footer: Component = () => {
             <FaBrandsGithub class="fill-base-content h-[1.125rem] w-[1.125rem]" />
           </NavIconItem>
           <NavIconItem href="https://kit.black/" tooltip="Home page" top>
-            <FaSolidHouse class="fill-base-content h-[1.125rem] w-[1.125rem]" />
+            <i class="vrc-icon-Home" />
           </NavIconItem>
         </ul>
       </address>

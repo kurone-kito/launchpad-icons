@@ -1,7 +1,6 @@
 import { VCC } from '@kurone-kito/launchpad-icons-solid';
 import { writeClipboard } from '@solid-primitives/clipboard';
 import { isMobile } from '@solid-primitives/platform';
-import { FaSolidCopy } from 'solid-icons/fa';
 import type { Component } from 'solid-js';
 import { Show } from 'solid-js';
 
@@ -30,7 +29,7 @@ export const ValueShare: Component<ValueShareProps> = (props) => (
       class="tooltip tooltip-bottom grow"
       data-tip={props.tooltipToClipboard}
     >
-      <label class="flex gap-2">
+      <label class="flex gap-2 pr-2">
         <input
           type="text"
           class="grow"
@@ -41,7 +40,7 @@ export const ValueShare: Component<ValueShareProps> = (props) => (
           value={props.value}
           readonly
         />
-        <FaSolidCopy class="mr-4 h-[1.125rem] w-[1.125rem]" role="button" />
+        <i class="vrc-icon-Copy" />
       </label>
     </span>
     <Show when={!isMobile && props.vccSchemeUrl}>
