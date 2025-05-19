@@ -29,6 +29,8 @@ and click on the **Add to VCC** button.
 
 ### 3. Use the package, enjoy :D
 
+[Let's find out what icons are available!](https://kurone-kito.github.io/launchpad-icons/explore)
+
 ## Contributing
 
 Welcome to contribute to this repository! For more details,

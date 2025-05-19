@@ -19,6 +19,8 @@ export const App: FC = () => (
 );
 ```
 
+[Let's find out what icons are available!](https://kurone-kito.github.io/launchpad-icons/explore)
+
 ## License
 
 Copyright (c) Kuroné Kito (黒音キト)
