@@ -24,6 +24,9 @@ export interface Params extends RouterParams {
   readonly language?: Language;
 }
 
+/** The keys list of the dictionaries. */
+const languages = Object.keys(dictionaries) as ReadonlyArray<Language>;
+
 /**
  * Creates the i18n accessor.
  * @param language The language.
@@ -51,7 +54,11 @@ export const createI18NText =
  */
 export const useLanguage = (): Accessor<Language> => {
   const params = useParams<Params>();
-  return createMemo(() => params.language || 'en');
+  return createMemo(() =>
+    params.language && languages.includes(params.language)
+      ? params.language
+      : 'en',
+  );
 };
 
 /**
