@@ -1,1 +1,1 @@
-export { default } from '@kurone-kito/lint-staged-config/.lintstagedrc.json' with { type: 'json' };
+export { useBiome as default } from '@kurone-kito/lint-staged-config';

@@ -1,4 +1,3 @@
-import { SaturnWithSatellites } from '@kurone-kito/launchpad-icons-solid';
 import type { Component, JSX, ParentProps } from 'solid-js';
 
 export interface HeroProps extends Readonly<ParentProps> {
@@ -41,10 +40,8 @@ export const Hero: Component<HeroProps> = (props) => (
             </li>
           </ul>
         </div>
-        <aside class="hidden max-w-96 lg:block">
-          <i class="not-italic blur-sm">
-            <SaturnWithSatellites class="[&_circle]:fill-base-content/15 [&_path]:fill-base-content/15 h-full w-full" />
-          </i>
+        <aside class="blur-xs hidden w-96 lg:block">
+          <i class="vrc-icon-SaturnWithSatellites opacity-15 h-full w-full" />
         </aside>
       </div>
       {props.children}

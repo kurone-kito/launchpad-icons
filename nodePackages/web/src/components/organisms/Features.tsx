@@ -1,6 +1,6 @@
 import type { Component } from 'solid-js';
-import { FeatureItem } from '../atoms/FeatureItem.js';
 import { useTranslator } from '../../modules/createI18N.js';
+import { FeatureItem } from '../atoms/FeatureItem.js';
 
 export interface FeaturesProps {
   /** Number of icons currently implemented. */

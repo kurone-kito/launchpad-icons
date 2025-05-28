@@ -1,2 +1,2 @@
-dotnet 8.0.408
-nodejs 20.19.0 ref:v20.19.0 lts-iron lts latest system
+dotnet 8.0.410
+nodejs 20.19.2 ref:v20.19.2 lts-iron lts latest system

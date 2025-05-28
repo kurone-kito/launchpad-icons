@@ -14,6 +14,12 @@ reviews:
     - '!nodePackages/**/docs/**/*'
   path_instructions:
     - instructions: This folder contains C# files, but these are UdonSharp and have different restrictions than standard C#. Please review with this in mind.
-      path: Assets/black.kit.*/Runtime/**/*
+      path: Packages/black.kit.*/Runtime/**/*
     - instructions: Some files look broken, but they contain templates from Scriban. Please review with this in mind.
       path: Website/**/*
+    - instructions: When making a pull request to the main branch, please warn that the pre-release notation should be removed if the version is a pre-release.
+      path: nodePackages/**/package.json
+    - instructions: When making a pull request to the main branch, please warn that the pre-release notation should be removed if the version is a pre-release.
+      path: package.json
+    - instructions: When making a pull request to the main branch, please warn that the pre-release notation should be removed if the version is a pre-release.
+      path: packages/black.kit.*/package.json

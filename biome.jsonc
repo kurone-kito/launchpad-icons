@@ -1,0 +1,31 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": ["./node_modules/@kurone-kito/biome-config/biome.json"],
+  "files": {
+    "ignore": [
+      "Assets/**/*",
+      "docs/**/*",
+      "Packages/com.vrchat.*/**/*",
+      "Packages/dev.*/**/*",
+      "Packages/vpm-manifest.json",
+      "ProjectSettings/**/*",
+      "Website/*"
+    ]
+  },
+  "linter": {
+    "rules": {
+      "a11y": {
+        "noSvgWithoutTitle": "warn",
+        "useHeadingContent": "warn",
+        "useSemanticElements": "warn"
+      },
+      "complexity": {
+        "noForEach": "warn",
+        // TODO: backport to biome-config
+        "useLiteralKeys": "off"
+      },
+      "style": { "noNonNullAssertion": "warn" },
+      "suspicious": { "noAssignInExpressions": "warn" }
+    }
+  }
+}

@@ -4,8 +4,8 @@
 
 ## ✨ Features
 
-- ✅ 192 Icons like the VRChat
-  - ...and 300+ icons in the future!
+- ✅ 270 Icons like the VRChat
+  - ...and 400+ icons in the future!
 - ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat
 - ✅ Includes raw SVG files, making it easy to use for applications other than VRChat
@@ -19,15 +19,18 @@
 
 ### 1. Import the registry via the VRChat Creator Companion (VCC)
 
-Visit the **[VPM Catalogue page](https://kurone-kito.github.io/vpm/)**
-and click on the **Add to VCC** button.
+Visit the **[VPM Catalogue page](https://kurone-kito.github.io/vpm/)** and
+click on the **Add to VCC** button.
 
 ### 2. Import the package to your project
 
 1. Click on the "Manage Project" button in the VCC
-2. Find the "VRC Icons" package and click on the "(+) Add package" button
+2. Find the "VRChat Example Package" package and click on the
+   "(+) Add package" button
 
 ### 3. Use the package, enjoy :D
+
+[Let's find out what icons are available!](https://kurone-kito.github.io/launchpad-icons/explore)
 
 ## Contributing
 

@@ -1,0 +1,6 @@
+{
+  "compilerOptions": { "noEmit": true, "types": ["node"] },
+  "exclude": ["./*.config.*", "./dist/**", "./scripts/**"],
+  "extends": "@kurone-kito/typescript-config/tsconfig.json",
+  "include": ["*.mts"]
+}

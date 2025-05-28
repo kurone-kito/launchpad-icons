@@ -354,12 +354,15 @@ nodePackages/web/src/meta.json
 # Example scenes
 [Aa]ssets/Scenes*
 
+# TextMesh Pro
+Glyph Report.*
+
 # UdonSharp
 [Aa]ssets/SerializedUdonPrograms*
 [Aa]ssets/UdonSharp/PrefabBuild*
 
-# VRChat SDK
-ClientSimStorage
+# VRChat ClientSim
+ClientSimStorage/*
 
 # VRWorld Toolkit
 [Aa]ssets/_LastBuild*

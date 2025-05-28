@@ -1,6 +1,6 @@
 # 🚀 Builder for VRC Icons
 
-LIB: _LunchPad Icons Builder_
+`liBuilder`: _LunchPad Icons Builder_
 
 ## Usage
 

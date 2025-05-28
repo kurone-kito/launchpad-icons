@@ -15,7 +15,7 @@ export interface WideAnchorButtonProps extends Readonly<ParentProps> {
  */
 export const WideAnchorButton: Component<WideAnchorButtonProps> = (props) => (
   <a
-    class="btn btn-block btn-primary btn-lg rounded-full shadow-sm hover:shadow"
+    class="btn btn-block btn-primary btn-lg rounded-full shadow-xs hover:shadow-sm"
     href={props.url ?? '#'}
     rel="next"
   >

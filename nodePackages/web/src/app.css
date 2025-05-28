@@ -1,21 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "@kurone-kito/vrc-icons-tw";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+@plugin "tailwindcss-safe-area";
 
-@layer utilities {
-  .article-container {
-    @apply px-safe-or-6 lg:px-safe mx-auto lg:container lg:py-6;
-  }
+@utility article-container {
+  @apply px-safe-or-6 lg:px-safe mx-auto lg:container lg:py-6;
+}
 
-  .heading-root {
-    @apply text-base-content py-4 text-3xl font-extrabold;
-  }
+@utility heading-root {
+  @apply text-base-content py-4 text-3xl font-extrabold;
+}
 
-  .prose-article {
-    @apply article-container prose prose-hr:my-8 prose-hr:mx-16 prose-pre:shadow-lg leading-loose;
-  }
+@utility prose-article {
+  @apply article-container prose prose-hr:my-8 prose-hr:mx-16 prose-pre:shadow-lg leading-loose;
+}
 
-  .prose-anchor {
-    @apply prose-a:link prose-a:link-info [&[href^='vcc://']]:prose-a:btn [&[href^='vcc://']]:prose-a:btn-accent [&[href^='https://']]:prose-a:after:bg-info [&[href^='https://']]:prose-a:after:relative [&[href^='https://']]:prose-a:after:-top-1 [&[href^='https://']]:prose-a:after:ml-0.5 [&[href^='https://']]:prose-a:after:inline-block [&[href^='https://']]:prose-a:after:h-2 [&[href^='https://']]:prose-a:after:w-2 [&[href^='https://']]:prose-a:after:[mask-image:var(--image-external-url)] [&[href^='https://']]:prose-a:after:[mask-position:top_right] [&[href^='https://']]:prose-a:after:[mask-repeat:no-repeat] [&[href^='https://']]:prose-a:after:[mask-size:cover];
-  }
+@utility prose-anchor {
+  @apply prose-a:link prose-a:link-info prose-a:[&[href^='vcc://']]:btn prose-a:[&[href^='vcc://']]:btn-accent prose-a:[&[href^='https://']]:after:bg-info prose-a:[&[href^='https://']]:after:relative prose-a:[&[href^='https://']]:after:-top-1 prose-a:[&[href^='https://']]:after:ml-0.5 prose-a:[&[href^='https://']]:after:inline-block prose-a:[&[href^='https://']]:after:h-2 prose-a:[&[href^='https://']]:after:w-2 prose-a:[&[href^='https://']]:after:[mask-image:var(--image-external-url)] prose-a:[&[href^='https://']]:after:[mask-position:top_right] prose-a:[&[href^='https://']]:after:[mask-repeat:no-repeat] prose-a:[&[href^='https://']]:after:[mask-size:cover];
 }
