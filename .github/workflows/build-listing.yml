@@ -68,7 +68,7 @@ jobs:
       - env:
           HUSKY: 0
         name: Install the dependencies
-        run: pnpm install --prefer-frozen-lockfile
+        run: pnpm install --frozen-lockfile --prefer-offline
       - env:
           BASE_PATH: /launchpad-icons
         name: Run the build to generate the website

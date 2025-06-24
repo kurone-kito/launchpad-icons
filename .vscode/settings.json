@@ -70,7 +70,6 @@
     "ProjectSettings/**": true
   },
   "files.watcherExclude": {
-    "**/.eslintcache": true,
     "**/*.suo": true,
     "**/node_modules/**/*": true,
     "Build/": true,
