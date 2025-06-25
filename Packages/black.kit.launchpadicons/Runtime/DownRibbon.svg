@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189 163.7">
+  <defs>
+    <style>.b{fill:white;}</style>
+  </defs>
+  <polygon
+    class="b"
+    points="140.5 36 80.6 139.7 94.5 163.7 133 97 168.2 36 140.5 36"
+  />
+  <polygon
+    class="b"
+    points="87.6 103.7 27.7 0 0 0 25.3 43.8 73.7 127.7 87.6 103.7"
+  />
+  <polygon class="b" points="41.6 0 55.4 24 147.4 24 175.1 24 189 0 41.6 0" />
+</svg>
