@@ -33,8 +33,11 @@ ${chalk.bold('Options:')}
  * Parses the command-line arguments and returns the result.
  * @returns The parsed arguments.
  */
-export const ParsedArguments = (): ParsedArguments => {
+export const ParsedArguments = (
+  args: readonly string[] = process.argv.slice(2),
+): ParsedArguments => {
   const { positionals, values } = parseArgs({
+    args: [...args],
     allowPositionals: true,
     options: { help: { type: 'boolean', short: 'h' } },
   });
