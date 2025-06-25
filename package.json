@@ -44,6 +44,7 @@
     "postlint:fix": "pnpm run lint:cspell:check",
     "prepare": "husky",
     "prestart": "pnpm --filter='!*web' run build",
+    "pretest": "pnpm run prestart",
     "publish": "pnpm --filter '*builder' run build && pnpm -r publish",
     "publish:next": "pnpm run publish --no-git-check --tag next",
     "start": "pnpm run --parallel --workspace-concurrency=Infinity -r start",
