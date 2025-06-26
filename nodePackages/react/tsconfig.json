@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
+    "lib": ["DOM", "ES2023"],
     "outDir": "dist",
     "rootDir": "generated-src"
   },

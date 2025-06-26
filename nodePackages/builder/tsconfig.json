@@ -3,6 +3,7 @@
     "composite": false,
     "declaration": false,
     "declarationMap": false,
+    "lib": ["DOM", "ES2023"],
     "outDir": "dist",
     "sourceRoot": "src",
     "types": ["node"]

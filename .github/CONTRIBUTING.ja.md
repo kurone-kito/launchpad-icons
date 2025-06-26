@@ -17,3 +17,6 @@ Language: [🇬🇧](./CONTRIBUTING.md) | **🇯🇵** | [🇨🇳](./CONTRIBUTI
 4. このリポジトリでは、できる限り
    **[英語、または日本語](https://translate.google.com/)
    での議論**を推奨しています。
+5. コミット時における、コミットメッセージの検証を導入しています。
+   “**[Conventional Commits](https://www.conventionalcommits.org/ja/)**”
+   ルールを適用し、慣例に反するコミットメッセージは機械的に弾きます。

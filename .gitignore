@@ -338,6 +338,9 @@ $RECYCLE.BIN/
 ### THE PROJECT SPECIFIES #################################################
 
 ### Node ###
+# pnpm
+pnpm-lock.yaml.*
+
 # Solid.js
 .output
 .vinxi

@@ -1,3 +1,6 @@
+gitChecks: false
+ignoreWorkspaceRootCheck: true
+linkWorkspacePackages: true
 onlyBuiltDependencies:
   - '@biomejs/biome'
   - '@parcel/watcher'

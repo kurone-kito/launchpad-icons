@@ -12,6 +12,8 @@
     "*.mjs": "${capture}.*",
     "*.png": "${capture}@*.png",
     "*.sln": "*.csproj",
+    "*.ts": "${capture}.spec.*",
+    "*.tsx": "${capture}.spec.*, ${capture}.stories.*",
     "*.xml": "${capture}.dll",
     ".gitconfig": ".gitattributes, .gitignore",
     ".markdownlint.*": ".markdownlint-cli2.*",
@@ -70,7 +72,6 @@
     "ProjectSettings/**": true
   },
   "files.watcherExclude": {
-    "**/.eslintcache": true,
     "**/*.suo": true,
     "**/node_modules/**/*": true,
     "Build/": true,

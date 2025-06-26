@@ -4,7 +4,7 @@
 
 ## ✨ Features
 
-- ✅ 270 Icons like the VRChat
+- ✅ 300 Icons like the VRChat
   - ...and 400+ icons in the future!
 - ✅ Redrawn in _SVG_ vector format
 - ✅ Bundled by _VPM_ package for use in VRChat

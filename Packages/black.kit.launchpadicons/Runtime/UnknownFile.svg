@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187 255">
+  <defs>
+    <style>
+      .b {
+        fill: #474747;
+      }
+      .c {
+        fill: #dfad3c;
+      }
+    </style>
+  </defs>
+  <path
+    class="c"
+    d="M176,250H9c-2.8,0-5-2.2-5-5V71.9L68,5h108c2.8,0,5,2.2,5,5v235c0,2.8-2.2,5-5,5Z"
+  />
+  <path
+    class="b"
+    d="M177,0h-108c-1.4,0-2.7.6-3.6,1.5L1.4,68.4c-.9.9-1.4,2.2-1.4,3.4v173.1c0,5.5,4.5,10,10,10h167c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM10,245V73.9L71.2,10h105.8s0,235,0,235H10Z"
+  />
+  <polygon class="b" points="77 86 77 31.3 22.3 86 77 86" />
+  <rect class="b" x="82" y="113" width="26" height="77" rx="9.5" ry="9.5" />
+  <circle class="b" cx="94.9" cy="209.7" r="12.8" />
+</svg>

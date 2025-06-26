@@ -65,7 +65,7 @@ jobs:
       - env:
           HUSKY: 0
         name: Install the dependencies
-        run: pnpm install --prefer-frozen-lockfile
+        run: pnpm install --frozen-lockfile --prefer-offline
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         name: Sets the token to deploying the NPM packages

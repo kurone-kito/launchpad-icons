@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-react",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "the icons like the VRChat icons for Node.js ecosystem with the React",
   "keywords": [
     "components",
@@ -42,16 +42,16 @@
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
-    "@kurone-kito/typescript-config": "^0.18.0",
+    "@kurone-kito/typescript-config": "^0.19.0",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^18.3.19",
-    "@vitejs/plugin-react": "^4.4.1",
+    "@vitejs/plugin-react": "^4.6.0",
     "cpy-cli": "^5.0.0",
     "jsdom": "^26.1.0",
     "react": "^18.3.1",
     "rimraf": "^6.0.1",
     "typedoc": "^0.28.4",
-    "typedoc-plugin-markdown": "~4.6.3",
+    "typedoc-plugin-markdown": "~4.7.0",
     "typescript": "~5.8.3",
     "vitest": "^3.1.3"
   },
