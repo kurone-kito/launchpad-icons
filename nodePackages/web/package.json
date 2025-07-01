@@ -71,7 +71,7 @@
     "@solidjs/testing-library": "^0.8.10",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
-    "@storybook/addon-links": "^9.0.13",
+    "@storybook/addon-links": "^9.0.14",
     "@storybook/blocks": "^8.6.14",
     "@storybook/docs-tools": "^8.6.14",
     "@storybook/types": "^8.6.14",
