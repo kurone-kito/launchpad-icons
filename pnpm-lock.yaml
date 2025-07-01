@@ -27,8 +27,8 @@ importers:
         specifier: 0.19.0
         version: 0.19.0(@biomejs/biome@1.9.4)
       '@kurone-kito/commitlint-config':
-        specifier: ^0.19.0
-        version: 0.19.0(@commitlint/config-conventional@19.8.1)
+        specifier: ^0.20.0
+        version: 0.20.0(@commitlint/config-conventional@19.8.1)
       '@kurone-kito/cspell-config':
         specifier: ^0.19.0
         version: 0.19.0(cspell@9.1.2)
@@ -1121,9 +1121,9 @@ packages:
       '@biomejs/biome':
         optional: true
 
-  '@kurone-kito/commitlint-config@0.19.0':
-    resolution: {integrity: sha512-/u/rX/Vv+T4z3YVP9FLtfc8H0xY1H5OkSDOH+b11y6lCZtfeROUK75m8J4IvA7BnjtufY/YROr/ucMvvbNXkIQ==}
-    engines: {node: ^20.11 || >=22}
+  '@kurone-kito/commitlint-config@0.20.0':
+    resolution: {integrity: sha512-sgTjN7Yv5C59b+Jw0XYxCye5Wc8LiB77wFg3ma2DeE7wLZeudQ/BaA3ihWWuC4vzTl18BWsmKfQ0VQUGAYEAVw==}
+    engines: {node: ^20.11 || ^22 || >=24}
     peerDependencies:
       '@commitlint/config-conventional': '>=19.x.x'
     peerDependenciesMeta:
@@ -6466,7 +6466,7 @@ snapshots:
     optionalDependencies:
       '@biomejs/biome': 1.9.4
 
-  '@kurone-kito/commitlint-config@0.19.0(@commitlint/config-conventional@19.8.1)':
+  '@kurone-kito/commitlint-config@0.20.0(@commitlint/config-conventional@19.8.1)':
     optionalDependencies:
       '@commitlint/config-conventional': 19.8.1
 
