@@ -63,7 +63,7 @@ jobs:
       - name: Post-prepare the Node.js environment
         uses: actions/setup-node@v4
         with:
-          cache: ${{ !env.ACT && 'pnpm' || '' }}
+          cache: pnpm
           node-version-file: .node-version
       - env:
           HUSKY: 0
