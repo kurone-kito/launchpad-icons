@@ -12,5 +12,6 @@
 - `unitypackage`: <span translate="no">VRChat Creator Companion
   (<abbr translate="no">VCC</abbr>)</span> 向け
 - [<abbr translate="no">NPM</abbr>](https://www.npmjs.com/search?q=%40kurone-kito%2Flaunchpad-icons):
-  **[<span translate="no">React</span>](https://react.dev)** または
-  **[<span translate="no">Solid</span>](https://www.solidjs.com)** 向け
+  **[<span translate="no">React</span>](https://react.dev)**、
+  **[<span translate="no">Solid</span>](https://www.solidjs.com)** または
+  **[<span translate="no">TailwindCSS</span>](https://tailwindcss.com)** 向け

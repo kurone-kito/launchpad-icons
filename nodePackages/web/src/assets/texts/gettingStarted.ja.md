@@ -63,7 +63,7 @@
 - **[<span translate="no">React</span>](https://react.dev)** または
   **[<span translate="no">Solid</span>](https://www.solidjs.com)**
 
-#### 1. パッケージをインストールする
+#### 1. お好みのパッケージをインストールする
 
 ```sh
 npm i @kurone-kito/launchpad-icons-react
@@ -71,6 +71,10 @@ npm i @kurone-kito/launchpad-icons-react
 
 ```sh
 npm i @kurone-kito/launchpad-icons-solid
+```
+
+```sh
+npm i @kurone-kito/vrc-icons-tw
 ```
 
 #### 2. パッケージを使用して楽しみましょう！ :D
@@ -87,4 +91,10 @@ import { Avatars } from '@kurone-kito/launchpad-icons-solid';
 import type { Component } from 'solid-js';
 
 export const MyComponent: Component = () => <Avatars />;
+```
+
+```tsx
+import type { Component } from 'solid-js';
+
+export const MyComponent: Component = () => <i class="vrc-icon-Avatars size-16" />;
 ```
