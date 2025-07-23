@@ -66,6 +66,7 @@ jobs:
       - name: Pre-prepare the Node.js version ${{ matrix.node-version }} environment
         uses: actions/setup-node@v4
         with:
+          check-latest: true
           node-version: ${{ matrix.node-version }}
       - name: Install the latest corepack explicitly
         run: npm install --force -g corepack@latest
@@ -75,6 +76,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache: pnpm
+          check-latest: true
           node-version: ${{ matrix.node-version }}
       - env:
           HUSKY: 0

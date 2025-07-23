@@ -55,6 +55,7 @@ jobs:
       - name: Pre-prepare the Node.js environment
         uses: actions/setup-node@v4
         with:
+          check-latest: true
           node-version-file: .node-version
       - name: Install the latest corepack explicitly
         run: npm install --force -g corepack@latest
@@ -64,6 +65,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache: pnpm
+          check-latest: true
           node-version-file: .node-version
       - env:
           HUSKY: 0
