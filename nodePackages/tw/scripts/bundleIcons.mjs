@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join, resolve } from 'node:path';
 import { optimize } from 'svgo';
 import meta from '../generated-src/_Meta.json' with { type: 'json' };
@@ -15,7 +15,7 @@ const dst = join(dstDir, 'index.css');
 /** The common notation */
 const common = [
   '@import "tailwindcss";',
-  '@utility vrc-iconbase { @apply align-middle bg-current h-4 inline-block mask-center mask-contain mask-no-repeat not-italic w-4; }',
+  '@utility vrc-iconbase { @apply align-middle bg-current inline-block mask-center mask-contain mask-no-repeat not-italic size-4; }',
 ];
 
 /** Tailwind CSS */

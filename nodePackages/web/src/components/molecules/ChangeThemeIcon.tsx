@@ -55,11 +55,11 @@ export const ChangeThemeIcon: Component<ChangeThemeIconProps> = (props) => {
         />
         <FaSolidSun
           aria-label={concProps.labelToDark}
-          class="fill-base-content swap-off h-6 w-6"
+          class="fill-base-content swap-off size-6"
         />
         <FaSolidMoon
           aria-label={concProps.labelToLight}
-          class="fill-base-content swap-on h-6 w-6"
+          class="fill-base-content swap-on size-6"
         />
       </label>
     </span>

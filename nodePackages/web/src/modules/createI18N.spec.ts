@@ -1,9 +1,11 @@
+import type { NullableTranslator } from '@solid-primitives/i18n';
 import { createRoot } from 'solid-js';
 import { describe, expect, it } from 'vitest';
+import type { Resources } from '../i18n/types.js';
 import { createI18N, createI18NText } from './createI18N';
 
 const init = (lang: 'en' | 'ja') => {
-  let t: (key: string, ...args: unknown[]) => unknown = () => undefined;
+  let t: NullableTranslator<Resources> = () => undefined;
   createRoot(() => {
     t = createI18N(() => lang);
   });
@@ -22,7 +24,7 @@ describe('createI18N', () => {
 describe('createI18NText', () => {
   it('handles simple dictionary', () => {
     const texts = { en: 'Hello', ja: 'こんにちは' } as const;
-    let t: (k: string) => string = () => '';
+    let t: NullableTranslator<Record<'text', string>> = () => undefined;
     createRoot(() => {
       t = createI18NText(texts)(() => 'ja');
     });

@@ -30,7 +30,7 @@ export const IconItem: Component<IconItemProps> = (props) => (
         </div>
       </div>
     </Show>
-    <i class="inline-flex h-16 w-16 items-center justify-center not-italic drop-shadow-lg">
+    <i class="inline-flex size-16 items-center justify-center not-italic drop-shadow-lg">
       {props.children}
     </i>
     <figcaption class="block text-wrap text-xs font-light" translate="no">

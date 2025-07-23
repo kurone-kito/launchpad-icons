@@ -41,7 +41,7 @@ export const Hero: Component<HeroProps> = (props) => (
           </ul>
         </div>
         <aside class="blur-xs hidden w-96 lg:block">
-          <i class="vrc-icon-SaturnWithSatellites opacity-15 h-full w-full" />
+          <i class="vrc-icon-SaturnWithSatellites opacity-15 size-full" />
         </aside>
       </div>
       {props.children}

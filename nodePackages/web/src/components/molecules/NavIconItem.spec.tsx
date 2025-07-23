@@ -5,6 +5,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 vi.mock('@solidjs/router', () => ({
   A: (props: JSX.IntrinsicElements['a']) => <a {...props}>{props.children}</a>,
 }));
+
 import { NavIconItem } from './NavIconItem';
 
 describe('NavIconItem', () => {

@@ -48,9 +48,8 @@ export const ValueShare: Component<ValueShareProps> = (props) => (
         <a
           class="btn btn-ghost"
           href={`${props.vccSchemeUrl}${encodeURIComponent(props.value)}`}
-          role="button"
         >
-          <VCC class="h-[18px] w-[18px]" />
+          <VCC class="size-[18px]" />
         </a>
       </span>
     </Show>

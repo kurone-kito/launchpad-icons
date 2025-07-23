@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+
 vi.mock('@testing-library/jest-dom/vitest', () => ({}));
 
 const useLocation = vi.hoisted(() => vi.fn());

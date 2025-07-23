@@ -19,33 +19,35 @@ export const Footer: Component = () => {
         © {now().getFullYear()} {t('author')}
       </p>
       <address class="not-italic">
-        <ul class="menu menu-horizontal" role="navigation">
-          <NavIconItem
-            href="https://youtube.com/@kuronekito"
-            tooltip="@kuronekito"
-            top
-          >
-            <FaBrandsYoutube class="fill-base-content h-[1.125rem] w-[1.125rem]" />
-          </NavIconItem>
-          <NavIconItem
-            href="https://x.com/kurone_kito"
-            rel="author"
-            tooltip="@kurone_kito"
-            top
-          >
-            <X class="h-4 w-4" />
-          </NavIconItem>
-          <NavIconItem
-            href="https://github.com/kurone-kito"
-            tooltip="@kurone-kito"
-            top
-          >
-            <FaBrandsGithub class="fill-base-content h-[1.125rem] w-[1.125rem]" />
-          </NavIconItem>
-          <NavIconItem href="https://kit.black/" tooltip="Home page" top>
-            <i class="vrc-icon-Home" />
-          </NavIconItem>
-        </ul>
+        <nav>
+          <ul class="menu menu-horizontal">
+            <NavIconItem
+              href="https://youtube.com/@kuronekito"
+              tooltip="@kuronekito"
+              top
+            >
+              <FaBrandsYoutube class="fill-base-content size-[1.125rem]" />
+            </NavIconItem>
+            <NavIconItem
+              href="https://x.com/kurone_kito"
+              rel="author"
+              tooltip="@kurone_kito"
+              top
+            >
+              <X class="size-4" />
+            </NavIconItem>
+            <NavIconItem
+              href="https://github.com/kurone-kito"
+              tooltip="@kurone-kito"
+              top
+            >
+              <FaBrandsGithub class="fill-base-content size-[1.125rem]" />
+            </NavIconItem>
+            <NavIconItem href="https://kit.black/" tooltip="Home page" top>
+              <i class="vrc-icon-Home" />
+            </NavIconItem>
+          </ul>
+        </nav>
       </address>
     </footer>
   );

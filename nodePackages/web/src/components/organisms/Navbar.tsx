@@ -3,9 +3,9 @@ import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 import { useTranslator } from '../../modules/createI18N.js';
 import { HamburgerButton } from '../atoms/HamburgerButton.js';
-import { Logo } from '../atoms/Logo.js';
 import { Booth } from '../atoms/icons/Booth.js';
 import { X } from '../atoms/icons/X.js';
+import { Logo } from '../atoms/Logo.js';
 import { ChangeThemeIcon } from '../molecules/ChangeThemeIcon.js';
 import { LanguageChanger } from '../molecules/LanguageChanger.js';
 import { NavIconItem } from '../molecules/NavIconItem.js';
@@ -56,26 +56,26 @@ export const Navbar: Component = () => {
             href="https://vrchat.com/home/launch?worldId=wrld_30b17c73-5085-4ed3-b5fc-2fb9bbff7ae0"
             tooltip={t('sampleWorld')}
           >
-            <i class="vrc-icon-Join h-6 w-6" />
+            <i class="vrc-icon-Join size-6" />
           </NavIconItem>
           <NavIconItem
             tooltip="Booth"
             href="https://kurone-kito.booth.pm/items/5616180"
           >
-            <Booth class="h-6 w-6" />
+            <Booth class="size-6" />
           </NavIconItem>
           <NavIconItem
             href="https://github.com/kurone-kito/launchpad-icons"
             tooltip="GitHub"
           >
-            <FaBrandsGithub class="fill-base-content h-6 w-6" />
+            <FaBrandsGithub class="fill-base-content size-6" />
           </NavIconItem>
           <NavIconItem
             rel="author"
             tooltip="X"
             href="https://x.com/kurone_kito"
           >
-            <X class="h-6 w-6" />
+            <X class="size-6" />
           </NavIconItem>
         </ul>
       </nav>
