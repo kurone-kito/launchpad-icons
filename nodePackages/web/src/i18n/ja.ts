@@ -10,7 +10,7 @@ const ja: Resources = {
   docs: 'ドキュメント',
   explore: 'アイコンを探す',
   exploreDescription:
-    'VRC Iconsは<strong>{{ num }}個</strong>のアイコンを提供しています。最新バージョンで新規追加したアイコンは<marker>ハイライト</marker>表示しています。',
+    'VRC Iconsは<strong>{{ num }}個</strong>のアイコンを提供しています。最新バージョンで新規追加したアイコンは<marker>ハイライト</marker>表示しています。<strong>tailwindcss</strong> リボンのあるアイコンは <code>@kurone-kito/vrc-icons-tw</code> にも収録します。',
   exploreTitle: 'アイコンを探す',
   features: '特徴',
   features1Body: '今後{{ num }}個以上のアイコンを予定！',

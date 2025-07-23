@@ -10,7 +10,7 @@ const en: Resources = {
   docs: 'Docs',
   explore: 'Explore',
   exploreDescription:
-    'The VRC Icons provide&nbsp;<strong>{{ num }} icons</strong>. The&nbsp;<marker>highlighted</marker>&nbsp;icons are those added in the latest version.',
+    'The VRC Icons provide&nbsp;<strong>{{ num }} icons</strong>. The&nbsp;<marker>highlighted</marker>&nbsp;icons are those added in the latest version. Icons with the <strong>tailwindcss</strong> ribbon are also included in <code>@kurone-kito/vrc-icons-tw</code>.',
   exploreTitle: 'Icons explorer',
   features: 'Features',
   features1Body: '...and {{ num }}+ icons in the future!',
