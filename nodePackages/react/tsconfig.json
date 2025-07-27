@@ -6,6 +6,6 @@
     "rootDir": "generated-src"
   },
   "exclude": ["dist", "node_modules", "**/*.spec.tsx"],
-  "extends": "@kurone-kito/typescript-config/tsconfig.json",
+  "extends": "@kurone-kito/typescript-config",
   "include": ["generated-src/*.mts", "generated-src/*.tsx"]
 }

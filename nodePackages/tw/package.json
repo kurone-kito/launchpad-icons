@@ -38,7 +38,7 @@
     "prepack": "pnpm run clean && pnpm run build"
   },
   "devDependencies": {
-    "@kurone-kito/typescript-config": "^0.19.0",
+    "@kurone-kito/typescript-config": "^0.20.0",
     "cpy-cli": "^5.0.0",
     "rimraf": "^6.0.1",
     "svgo": "^4.0.0",
