@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @import "@kurone-kito/vrc-icons-tw";
+@import "tailwindcss-safe-area";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
-@plugin "tailwindcss-safe-area";
 
 @utility article-container {
   @apply px-safe-or-6 lg:px-safe mx-auto lg:container lg:py-6;
