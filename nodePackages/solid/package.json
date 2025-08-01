@@ -55,7 +55,7 @@
     "typedoc": "^0.28.8",
     "typedoc-plugin-markdown": "~4.7.1",
     "typescript": "~5.8.3",
-    "vite-plugin-solid": "^2.11.7",
+    "vite-plugin-solid": "^2.11.8",
     "vitest": "^3.2.4"
   },
   "peerDependencies": {

@@ -98,7 +98,7 @@
     "vinxi": "^0.5.8",
     "vite": "^7.0.6",
     "vite-plugin-markdown": "^2.2.0",
-    "vite-plugin-solid": "^2.11.7",
+    "vite-plugin-solid": "^2.11.8",
     "vitest": "^3.2.4"
   },
   "engines": {
