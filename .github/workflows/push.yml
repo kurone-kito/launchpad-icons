@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Local Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Zip the Package for testing
         run: zip -r "${{ github.workspace }}/${{ env.zipFile }}" .
         working-directory: '${{ env.packagePath }}'
@@ -30,7 +30,7 @@ jobs:
           include-files: metaList
           package-path: ${{ env.unityPackage }}
       - name: Checkout Automation Repository without removing prior checkouts
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           clean: false
           path: ${{ env.pathToCi }}
@@ -62,7 +62,7 @@ jobs:
           git config --global core.autocrlf false
           git config --global core.eol lf
       - name: Stages the pushed branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Pre-prepare the Node.js version ${{ matrix.node-version }} environment
         uses: actions/setup-node@v4
         with:
