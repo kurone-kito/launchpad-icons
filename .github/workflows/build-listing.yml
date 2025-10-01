@@ -53,7 +53,7 @@ jobs:
           path: ${{ env.pathToCi }}
           repository: vrchat-community/package-list-action
       - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: .node-version
       - name: Install the latest corepack explicitly
@@ -61,7 +61,7 @@ jobs:
       - name: Enable the corepack because of the pnpm
         run: corepack enable
       - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           cache: ${{ !env.ACT && 'pnpm' || '' }}
           node-version-file: .node-version
