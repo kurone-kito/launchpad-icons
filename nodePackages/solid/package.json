@@ -29,7 +29,9 @@
   "type": "module",
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "pnpm run \"/^build:.+/\"",
@@ -45,24 +47,24 @@
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
-    "@kurone-kito/typescript-config": "^0.20.0",
+    "@kurone-kito/typescript-config": "^0.21.0",
     "@solidjs/testing-library": "^0.8.10",
-    "@testing-library/jest-dom": "^6.6.4",
-    "cpy-cli": "^5.0.0",
-    "jsdom": "^26.1.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "cpy-cli": "^6.0.0",
+    "jsdom": "^27.0.0",
     "rimraf": "^6.0.1",
-    "solid-js": "^1.9.7",
+    "solid-js": "^1.9.9",
     "typedoc": "^0.28.8",
     "typedoc-plugin-markdown": "~4.7.1",
-    "typescript": "~5.8.3",
-    "vite-plugin-solid": "^2.11.7",
+    "typescript": "~5.9.3",
+    "vite-plugin-solid": "^2.11.9",
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
     "solid-js": ">=1.x.x"
   },
   "engines": {
-    "node": "^20.11 || >=22"
+    "node": "^20.11 || ^22 || >=24"
   },
   "publishConfig": {
     "access": "public"
