@@ -213,6 +213,9 @@ importers:
       '@kurone-kito/launchpad-icons-solid':
         specifier: workspace:^
         version: link:../solid
+      '@kurone-kito/web-toybox':
+        specifier: 0.1.0-alpha.2
+        version: 0.1.0-alpha.2
       '@solid-primitives/clipboard':
         specifier: ^1.6.2
         version: 1.6.2(solid-js@1.9.9)
@@ -1355,6 +1358,10 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  '@kurone-kito/web-toybox@0.1.0-alpha.2':
+    resolution: {integrity: sha512-7Dyoket3jqTu4d75l2dhkkmKk8AJ3Jp3NH4licSNANikKqxBs8j4EoaHOD+FpY99YawPSWc9KD8b5OgFsn5aeQ==}
+    engines: {node: ^20.11 || ^22 || >=24}
 
   '@mapbox/node-pre-gyp@2.0.0':
     resolution: {integrity: sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg==}
@@ -5167,6 +5174,10 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
+  tagged-tag@1.0.0:
+    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
+    engines: {node: '>=20'}
+
   tailwind-merge@3.3.1:
     resolution: {integrity: sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==}
 
@@ -5320,6 +5331,10 @@ packages:
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
+
+  type-fest@5.0.1:
+    resolution: {integrity: sha512-9MpwAI52m8H6ssA542UxSLnSiSD2dsC3/L85g6hVubLSXd82wdI80eZwTWhdOfN67NlA+D+oipAs1MlcTcu3KA==}
+    engines: {node: '>=20'}
 
   typedoc-plugin-markdown@4.7.1:
     resolution: {integrity: sha512-HN/fHLm2S6MD4HX8txfB4eWvVBzX/mEYy5U5s1KTAdh3E5uX5/lilswqTzZlPTT6fNZInAboAdFGpbAuBKnE4A==}
@@ -6709,6 +6724,10 @@ snapshots:
   '@kurone-kito/typescript-config@0.21.0(typescript@5.9.3)':
     optionalDependencies:
       typescript: 5.9.3
+
+  '@kurone-kito/web-toybox@0.1.0-alpha.2':
+    dependencies:
+      type-fest: 5.0.1
 
   '@mapbox/node-pre-gyp@2.0.0':
     dependencies:
@@ -10978,6 +10997,8 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
+  tagged-tag@1.0.0: {}
+
   tailwind-merge@3.3.1: {}
 
   tailwindcss-safe-area@1.1.0(tailwindcss@4.1.14):
@@ -11100,6 +11121,10 @@ snapshots:
   tslib@2.8.1: {}
 
   type-fest@4.41.0: {}
+
+  type-fest@5.0.1:
+    dependencies:
+      tagged-tag: 1.0.0
 
   typedoc-plugin-markdown@4.7.1(typedoc@0.28.8(typescript@5.9.3)):
     dependencies:
