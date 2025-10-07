@@ -45,9 +45,9 @@ jobs:
           git config --global core.autocrlf false
           git config --global core.eol lf
       - name: Checkout Local Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Checkout Automation Repository without removing prior checkouts
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           clean: false
           path: ${{ env.pathToCi }}
@@ -91,14 +91,14 @@ jobs:
           enablement: true
           token: ${{ secrets.REPO_TOKEN }}
       - name: Upload the VPM Listing Website to GitHub Pages artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ${{ env.listPublishDirectory }}
       - id: deployment
         name: Deploy the uploaded VPM Listing Website to GitHub Pages
         uses: actions/deploy-pages@v4
       - name: Trigger the action of the curation repository
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           event-type: build-listing
           repository: kurone-kito/vpm
