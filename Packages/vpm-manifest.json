@@ -4,7 +4,7 @@
       "version": "0.1.29"
     },
     "com.mimylab.penoptimizationutility": {
-      "version": "1.0.2"
+      "version": "1.0.4"
     },
     "com.vrchat.base": {
       "version": "3.9.0"
@@ -16,7 +16,7 @@
       "version": "3.3.1"
     },
     "net.ureishi.qvpen": {
-      "version": "3.3.8"
+      "version": "3.3.9"
     }
   },
   "locked": {
@@ -25,7 +25,7 @@
       "dependencies": {}
     },
     "com.mimylab.penoptimizationutility": {
-      "version": "1.0.2",
+      "version": "1.0.4",
       "dependencies": {
         "com.vrchat.worlds": "^3.4.2",
         "net.ureishi.qvpen": "^3.2.6"
@@ -46,7 +46,7 @@
       "dependencies": {}
     },
     "net.ureishi.qvpen": {
-      "version": "3.3.8",
+      "version": "3.3.9",
       "dependencies": {
         "com.vrchat.worlds": "^3.5.0"
       }
