@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 208">
+  <defs>
+    <style>.b{fill:white;}</style>
+  </defs>
+  <rect class="b" x="192" width="48" height="208" rx="5" ry="5"/>
+  <rect class="b" x="128" y="43" width="48" height="165" rx="5" ry="5"/>
+  <rect class="b" x="64" y="86" width="48" height="122" rx="5" ry="5"/>
+  <rect class="b" y="129" width="48" height="79" rx="5" ry="5"/>
+</svg>

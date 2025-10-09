@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-react",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "description": "the icons like the VRChat icons for Node.js ecosystem with the React",
   "keywords": [
     "components",
@@ -26,7 +26,9 @@
   "type": "module",
   "main": "dist/index.mjs",
   "types": "dist/index.d.mts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "pnpm run \"/^build:.+/\"",
@@ -42,24 +44,24 @@
   },
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
-    "@kurone-kito/typescript-config": "^0.20.0",
+    "@kurone-kito/typescript-config": "^0.21.0",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^18.3.19",
     "@vitejs/plugin-react": "^4.7.0",
-    "cpy-cli": "^5.0.0",
-    "jsdom": "^26.1.0",
+    "cpy-cli": "^6.0.0",
+    "jsdom": "^27.0.0",
     "react": "^18.3.1",
     "rimraf": "^6.0.1",
-    "typedoc": "^0.28.8",
-    "typedoc-plugin-markdown": "~4.7.1",
-    "typescript": "~5.8.3",
+    "typedoc": "^0.28.13",
+    "typedoc-plugin-markdown": "~4.9.0",
+    "typescript": "~5.9.3",
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
     "react": "^18.3.1"
   },
   "engines": {
-    "node": "^20.11 || >=22"
+    "node": "^20.11 || ^22 || >=24"
   },
   "publishConfig": {
     "access": "public"

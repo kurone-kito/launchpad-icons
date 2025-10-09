@@ -62,7 +62,7 @@ The package requires the following dependencies:
 - [<span translate="no">Node.js</span>](https://nodejs.org/) `>=18`
 - **[<span translate="no">React</span>](https://react.dev)** or **[<span translate="no">Solid</span>](https://www.solidjs.com)**
 
-#### 1. Install the package
+#### 1. Install any package
 
 ```sh
 npm i @kurone-kito/launchpad-icons-react
@@ -70,6 +70,10 @@ npm i @kurone-kito/launchpad-icons-react
 
 ```sh
 npm i @kurone-kito/launchpad-icons-solid
+```
+
+```sh
+npm i @kurone-kito/vrc-icons-tw
 ```
 
 #### 2. Use the package, enjoy :D
@@ -86,4 +90,10 @@ import { Avatars } from '@kurone-kito/launchpad-icons-solid';
 import type { Component } from 'solid-js';
 
 export const MyComponent: Component = () => <Avatars />;
+```
+
+```tsx
+import type { Component } from 'solid-js';
+
+export const MyComponent: Component = () => <i class="vrc-icon-Avatars size-16" />;
 ```

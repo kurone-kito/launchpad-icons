@@ -14,7 +14,7 @@ npm install @kurone-kito/vrc-icons-tw
 ```
 
 ```html
-<i class="vrc-icon-Avatars h-6 w-6"></i>
+<i class="vrc-icon-Avatars size-6"></i>
 <i class="vrc-icon-Abduction"></i>
 ```
 

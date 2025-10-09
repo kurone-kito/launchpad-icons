@@ -1,4 +1,4 @@
-import type { ReadonlyRecord } from '../types/types.mjs';
+import type { ReadonlyRecord } from '@kurone-kito/web-toybox';
 
 /** Type definition for the resources object. */
 export type Resources = ReadonlyRecord<ResourcesKeys, string>;

@@ -9,6 +9,7 @@ export const Booth: Component<JSX.SvgSVGAttributes<SVGSVGElement>> = (
   props,
 ) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" {...props}>
+    <title>Booth</title>
     <path
       class="fill-base-content"
       clip-rule="evenodd"

@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/launchpad-icons-builder",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "private": true,
   "description": "the builder for the VRC icons NPM packages",
   "keywords": [
@@ -25,7 +25,9 @@
   "bin": {
     "liBuilder": "./dist/index.mjs"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "pnpm run \"/^prebuild:.+/\"",
     "build": "tsc",
@@ -43,16 +45,16 @@
     "prettier": "^3.6.2"
   },
   "devDependencies": {
-    "@kurone-kito/typescript-config": "^0.20.0",
-    "@types/node": "^24.1.0",
-    "cpy-cli": "^5.0.0",
+    "@kurone-kito/typescript-config": "^0.21.0",
+    "@types/node": "^24.7.0",
+    "cpy-cli": "^6.0.0",
     "rimraf": "^6.0.1",
-    "symlink-dir": "^6.0.5",
-    "typescript": "~5.8.3",
+    "symlink-dir": "^9.0.0",
+    "typescript": "~5.9.3",
     "vitest": "^3.2.4"
   },
   "engines": {
-    "node": "^20.11 || >=22"
+    "node": "^20.11 || ^22 || >=24"
   },
   "publishConfig": {
     "access": "public"

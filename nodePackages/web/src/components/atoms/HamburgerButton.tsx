@@ -27,8 +27,8 @@ export const HamburgerButton: Component<HamburgerButtonProps> = (props) => {
         type="checkbox"
         value="expanded"
       />
-      <i class="swap-off vrc-icon-Hamburger h-5 w-5" />
-      <i class="swap-on vrc-icon-CrossThin h-5 w-5" />
+      <i class="swap-off vrc-icon-Hamburger size-5" />
+      <i class="swap-on vrc-icon-CrossThin size-5" />
     </label>
   );
 };

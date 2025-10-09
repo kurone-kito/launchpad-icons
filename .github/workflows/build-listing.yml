@@ -45,25 +45,22 @@ jobs:
           git config --global core.autocrlf false
           git config --global core.eol lf
       - name: Checkout Local Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Checkout Automation Repository without removing prior checkouts
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           clean: false
           path: ${{ env.pathToCi }}
           repository: vrchat-community/package-list-action
-      - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+      - name: Setup the pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version-file: .node-version
-      - name: Install the latest corepack explicitly
-        run: npm install --force -g corepack@latest
-      - name: Enable the corepack because of the pnpm
-        run: corepack enable
-      - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+          run_install: false
+      - name: Prepare the Node.js environment
+        uses: actions/setup-node@v5
         with:
-          cache: ${{ !env.ACT && 'pnpm' || '' }}
+          cache: pnpm
+          check-latest: true
           node-version-file: .node-version
       - env:
           HUSKY: 0
@@ -94,14 +91,14 @@ jobs:
           enablement: true
           token: ${{ secrets.REPO_TOKEN }}
       - name: Upload the VPM Listing Website to GitHub Pages artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ${{ env.listPublishDirectory }}
       - id: deployment
         name: Deploy the uploaded VPM Listing Website to GitHub Pages
         uses: actions/deploy-pages@v4
       - name: Trigger the action of the curation repository
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           event-type: build-listing
           repository: kurone-kito/vpm

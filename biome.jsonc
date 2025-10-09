@@ -1,15 +1,15 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
   "extends": ["./node_modules/@kurone-kito/biome-config/biome.json"],
   "files": {
-    "ignore": [
-      "Assets/**/*",
-      "docs/**/*",
-      "Packages/com.vrchat.*/**/*",
-      "Packages/dev.*/**/*",
-      "Packages/vpm-manifest.json",
-      "ProjectSettings/**/*",
-      "Website/*"
+    "includes": [
+      "!Assets/**/*",
+      "!**/docs/**/*",
+      "!Packages/com.vrchat.*/**/*",
+      "!Packages/dev.*/**/*",
+      "!Packages/vpm-manifest.json",
+      "!ProjectSettings/**/*",
+      "!Website/*"
     ]
   },
   "linter": {

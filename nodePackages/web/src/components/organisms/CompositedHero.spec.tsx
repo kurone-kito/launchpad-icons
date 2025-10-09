@@ -30,6 +30,13 @@ describe('CompositedHero', () => {
     const { CompositedHero } = await import('./CompositedHero');
     render(() => <CompositedHero />);
     expect(Hero).toHaveBeenCalled();
-    expect(MultiShare.mock.calls[0]?.[0]?.items).toHaveLength(4);
+    expect(MultiShare).toHaveBeenCalledWith({
+      items: [
+        expect.any(Object),
+        expect.any(Object),
+        expect.any(Object),
+        expect.any(Object),
+      ],
+    });
   });
 });

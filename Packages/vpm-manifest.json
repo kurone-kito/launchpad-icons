@@ -4,19 +4,19 @@
       "version": "0.1.29"
     },
     "com.mimylab.penoptimizationutility": {
-      "version": "1.0.2"
+      "version": "1.0.4"
     },
     "com.vrchat.base": {
-      "version": "3.8.2"
+      "version": "3.9.0"
     },
     "com.vrchat.worlds": {
-      "version": "3.8.2"
+      "version": "3.9.0"
     },
     "dev.onevr.vrworldtoolkit": {
-      "version": "3.2.1"
+      "version": "3.3.1"
     },
     "net.ureishi.qvpen": {
-      "version": "3.3.8"
+      "version": "3.3.9"
     }
   },
   "locked": {
@@ -25,28 +25,28 @@
       "dependencies": {}
     },
     "com.mimylab.penoptimizationutility": {
-      "version": "1.0.2",
+      "version": "1.0.4",
       "dependencies": {
         "com.vrchat.worlds": "^3.4.2",
         "net.ureishi.qvpen": "^3.2.6"
       }
     },
     "com.vrchat.base": {
-      "version": "3.8.2",
+      "version": "3.9.0",
       "dependencies": {}
     },
     "com.vrchat.worlds": {
-      "version": "3.8.2",
+      "version": "3.9.0",
       "dependencies": {
-        "com.vrchat.base": "3.8.2"
+        "com.vrchat.base": "3.9.0"
       }
     },
     "dev.onevr.vrworldtoolkit": {
-      "version": "3.2.1",
+      "version": "3.3.1",
       "dependencies": {}
     },
     "net.ureishi.qvpen": {
-      "version": "3.3.8",
+      "version": "3.3.9",
       "dependencies": {
         "com.vrchat.worlds": "^3.5.0"
       }

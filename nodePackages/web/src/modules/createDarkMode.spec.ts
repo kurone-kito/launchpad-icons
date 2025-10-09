@@ -1,5 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+
 vi.mock('@testing-library/jest-dom/vitest', () => ({}));
+
 import type { createSignal } from 'solid-js';
 
 let signal: ReturnType<typeof createSignal<string | null>>;

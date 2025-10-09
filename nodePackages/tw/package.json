@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/vrc-icons-tw",
-  "version": "0.14.1",
+  "version": "0.15.0",
   "description": "the icons like the VRChat icons for the Tailwind CSS",
   "keywords": [
     "icons",
@@ -28,7 +28,9 @@
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "main": "dist/index.css",
   "style": "dist/index.css",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "node scripts/bundleIcons.mjs",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" dist LICENSE LICENSE.*.txt generated-src",
@@ -38,19 +40,19 @@
     "prepack": "pnpm run clean && pnpm run build"
   },
   "devDependencies": {
-    "@kurone-kito/typescript-config": "^0.20.0",
-    "cpy-cli": "^5.0.0",
+    "@kurone-kito/typescript-config": "^0.21.0",
+    "cpy-cli": "^6.0.0",
     "rimraf": "^6.0.1",
     "svgo": "^4.0.0",
-    "symlink-dir": "^6.0.5",
-    "tailwindcss": "^4.1.11",
-    "typescript": "~5.8.3"
+    "symlink-dir": "^9.0.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.9.3"
   },
   "peerDependencies": {
     "tailwindcss": ">=4.x.x"
   },
   "engines": {
-    "node": "^20.11 || >=22"
+    "node": "^20.11 || ^22 || >=24"
   },
   "publishConfig": {
     "access": "public"

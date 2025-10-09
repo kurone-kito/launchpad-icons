@@ -13,7 +13,7 @@ export const LanguageChanger: Component = () => {
   return (
     <details class="dropdown">
       <summary class="btn btn-ghost">
-        <TbLanguageHiragana class="h-6 w-6" />
+        <TbLanguageHiragana class="size-6" />
       </summary>
       <ul class="menu dropdown-content bg-base-100 text-base-content !mt-0 gap-2">
         <li>

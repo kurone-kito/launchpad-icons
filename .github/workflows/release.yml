@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stages the pushed branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - id: config_package
         name: Ensure that required repository variable has been created for the Package
         run: |
@@ -48,19 +48,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stages the pushed branch
-        uses: actions/checkout@v4
-      - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/checkout@v5
+      - name: Setup the pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version-file: .node-version
-      - name: Install the latest corepack explicitly
-        run: npm install --force -g corepack@latest
-      - name: Enable the corepack because of the pnpm
-        run: corepack enable
-      - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+          run_install: false
+      - name: Prepare the Node.js environment
+        uses: actions/setup-node@v5
         with:
-          cache: ${{ !env.ACT && 'pnpm' || '' }}
+          cache: pnpm
+          check-latest: true
           node-version-file: .node-version
       - env:
           HUSKY: 0
@@ -105,7 +102,7 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
           trust_level: 5
       - name: Checkout Local Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: copy the README and LICENSE files to the Package folder
         run: cp README.md LICENSE "${{ needs.config.outputs.upm_package }}"
       - name: Configure the Environment Variables needed for releasing the Package

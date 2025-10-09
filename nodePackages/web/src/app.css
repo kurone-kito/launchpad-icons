@@ -17,5 +17,5 @@
 }
 
 @utility prose-anchor {
-  @apply prose-a:link prose-a:link-info prose-a:[&[href^='vcc://']]:btn prose-a:[&[href^='vcc://']]:btn-accent prose-a:[&[href^='https://']]:after:bg-info prose-a:[&[href^='https://']]:after:relative prose-a:[&[href^='https://']]:after:-top-1 prose-a:[&[href^='https://']]:after:ml-0.5 prose-a:[&[href^='https://']]:after:inline-block prose-a:[&[href^='https://']]:after:h-2 prose-a:[&[href^='https://']]:after:w-2 prose-a:[&[href^='https://']]:after:[mask-image:var(--image-external-url)] prose-a:[&[href^='https://']]:after:[mask-position:top_right] prose-a:[&[href^='https://']]:after:[mask-repeat:no-repeat] prose-a:[&[href^='https://']]:after:[mask-size:cover];
+  @apply prose-a:link prose-a:link-info prose-a:[&[href^='vcc://']]:btn prose-a:[&[href^='vcc://']]:btn-accent prose-a:[&[href^='https://']]:after:bg-info prose-a:[&[href^='https://']]:after:relative prose-a:[&[href^='https://']]:after:-top-1 prose-a:[&[href^='https://']]:after:ml-0.5 prose-a:[&[href^='https://']]:after:inline-block prose-a:[&[href^='https://']]:after:size-2 prose-a:[&[href^='https://']]:after:[mask-image:var(--image-external-url)] prose-a:[&[href^='https://']]:after:[mask-position:top_right] prose-a:[&[href^='https://']]:after:[mask-repeat:no-repeat] prose-a:[&[href^='https://']]:after:[mask-size:cover];
 }
