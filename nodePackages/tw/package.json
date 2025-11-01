@@ -45,7 +45,7 @@
     "rimraf": "^6.0.1",
     "svgo": "^4.0.0",
     "symlink-dir": "^9.0.0",
-    "tailwindcss": "^4.1.14",
+    "tailwindcss": "^4.1.16",
     "typescript": "~5.9.3"
   },
   "peerDependencies": {
