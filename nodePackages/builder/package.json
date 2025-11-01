@@ -51,7 +51,7 @@
     "rimraf": "^6.0.1",
     "symlink-dir": "^9.0.0",
     "typescript": "~5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.6"
   },
   "engines": {
     "node": "^20.11 || ^22 || >=24"
