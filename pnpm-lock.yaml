@@ -220,8 +220,8 @@ importers:
         specifier: ^1.6.2
         version: 1.6.2(solid-js@1.9.9)
       '@solid-primitives/date':
-        specifier: ^2.1.4
-        version: 2.1.4(solid-js@1.9.9)
+        specifier: ^2.1.6
+        version: 2.1.6(solid-js@1.9.9)
       '@solid-primitives/i18n':
         specifier: ^2.2.1
         version: 2.2.1(solid-js@1.9.9)
@@ -1579,8 +1579,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/date@2.1.4':
-    resolution: {integrity: sha512-HN5r2991UlMP4yQvbSppGzbQWuGqV2aSvIs6R19XwFG1yvlnClYaYDupUssl23mnTbXby0jJK33H3diURtPLMA==}
+  '@solid-primitives/date@2.1.6':
+    resolution: {integrity: sha512-lKNdQHr4B6q1a1iw3F1o3Sx2eyj6TAZ2S8fp+LQ/Lt/tSg7QQiLCM9WO32X9AxEZ6ZWmGjlGnWDq1AVKfbsJPA==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -1599,8 +1599,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/memo@1.4.3':
-    resolution: {integrity: sha512-CA+n9yaoqbYm+My5tY2RWb6EE16tVyehM4GzwQF4vCwvjYPAYk1JSRIVuMC0Xuj5ExD2XQJE5E2yAaKY2HTUsg==}
+  '@solid-primitives/memo@1.4.5':
+    resolution: {integrity: sha512-dMfFShNsyX5virETyDv/Uoy2HP+PL4k8cUTTLb2r4TfoqJb010KIaOuURqp/Qbdznp4ZkDuP57b28d45kaOueQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -1614,8 +1614,8 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
-  '@solid-primitives/scheduled@1.5.2':
-    resolution: {integrity: sha512-/j2igE0xyNaHhj6kMfcUQn5rAVSTLbAX+CDEBm25hSNBmNiHLu2lM7Usj2kJJ5j36D67bE8wR1hBNA8hjtvsQA==}
+  '@solid-primitives/scheduled@1.5.3':
+    resolution: {integrity: sha512-oNwLE6E6lxJAWrc8QXuwM0k2oU1BnANnkChwMw82aK1j3+mWGJkG1IFe5gCwbV+afYmjI76t9JJV3md/8tLw+g==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -1636,13 +1636,18 @@ packages:
       solid-start:
         optional: true
 
-  '@solid-primitives/timer@1.4.3':
-    resolution: {integrity: sha512-m2h6DgbnBLIh6zj0+BdGRZL0d+USPjmK7u+SqeK5N8hx+gFypZviSufCuC7ig/zGT3/C02nREUmxxjqd0OdHfg==}
+  '@solid-primitives/timer@1.4.4':
+    resolution: {integrity: sha512-Ayjyb3+v1hyU92vuLUN0tVHq2mmTCPGxSDLGJMsDydRqx9ZfJIc9xj6cxK4XvdY3pif3ps2mIv52pjgToybEpQ==}
     peerDependencies:
       solid-js: ^1.6.12
 
   '@solid-primitives/utils@6.3.2':
     resolution: {integrity: sha512-hZ/M/qr25QOCcwDPOHtGjxTD8w2mNyVAYvcfgwzBHq2RwNqHNdDNsMZYap20+ruRwW4A3Cdkczyoz0TSxLCAPQ==}
+    peerDependencies:
+      solid-js: ^1.6.12
+
+  '@solid-primitives/utils@6.4.0':
+    resolution: {integrity: sha512-AeGTBg8Wtkh/0s+evyLtP8piQoS4wyqqQaAFs2HJcFMMjYAtUgo+ZPduRXLjPlqKVc2ejeR544oeqpbn8Egn8A==}
     peerDependencies:
       solid-js: ^1.6.12
 
@@ -2687,6 +2692,7 @@ packages:
 
   dax-sh@0.43.2:
     resolution: {integrity: sha512-uULa1sSIHgXKGCqJ/pA0zsnzbHlVnuq7g8O2fkHokWFNwEGIhh5lAJlxZa1POG5En5ba7AU4KcBAvGQWMMf8rg==}
+    deprecated: This package has moved to simply be 'dax' instead of 'dax-sh'
 
   db0@0.3.4:
     resolution: {integrity: sha512-RiXXi4WaNzPTHEOu8UPQKMooIbqOEyqA1t7Z6MsdxSCeb8iUC9ko3LcmsLmeUt2SM5bctfArZKkRQggKZz7JNw==}
@@ -3091,11 +3097,13 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@11.0.3:
     resolution: {integrity: sha512-2Nim7dha1KVkaiF4q6Dj+ngPPMdfvLJEOpZk/jKiUAkqKebpGAWQXAq9z1xu9HKu5lWfqw/FASuccEjyznjPaA==}
     engines: {node: 20 || >=22}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   global-directory@4.0.1:
@@ -4537,6 +4545,7 @@ packages:
   tar@7.5.1:
     resolution: {integrity: sha512-nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   terracotta@1.0.6:
     resolution: {integrity: sha512-yVrmT/Lg6a3tEbeYEJH8ksb1PYkR5FA9k5gr1TchaSNIiA2ZWs5a+koEbePXwlBP0poaV7xViZ/v50bQFcMgqw==}
@@ -5002,6 +5011,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -6242,11 +6252,11 @@ snapshots:
       '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
       solid-js: 1.9.9
 
-  '@solid-primitives/date@2.1.4(solid-js@1.9.9)':
+  '@solid-primitives/date@2.1.6(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/memo': 1.4.3(solid-js@1.9.9)
-      '@solid-primitives/timer': 1.4.3(solid-js@1.9.9)
-      '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
+      '@solid-primitives/memo': 1.4.5(solid-js@1.9.9)
+      '@solid-primitives/timer': 1.4.4(solid-js@1.9.9)
+      '@solid-primitives/utils': 6.4.0(solid-js@1.9.9)
       solid-js: 1.9.9
 
   '@solid-primitives/event-listener@2.4.3(solid-js@1.9.9)':
@@ -6266,10 +6276,10 @@ snapshots:
       '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
       solid-js: 1.9.9
 
-  '@solid-primitives/memo@1.4.3(solid-js@1.9.9)':
+  '@solid-primitives/memo@1.4.5(solid-js@1.9.9)':
     dependencies:
-      '@solid-primitives/scheduled': 1.5.2(solid-js@1.9.9)
-      '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
+      '@solid-primitives/scheduled': 1.5.3(solid-js@1.9.9)
+      '@solid-primitives/utils': 6.4.0(solid-js@1.9.9)
       solid-js: 1.9.9
 
   '@solid-primitives/platform@0.2.1(solid-js@1.9.9)':
@@ -6281,7 +6291,7 @@ snapshots:
       '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
       solid-js: 1.9.9
 
-  '@solid-primitives/scheduled@1.5.2(solid-js@1.9.9)':
+  '@solid-primitives/scheduled@1.5.3(solid-js@1.9.9)':
     dependencies:
       solid-js: 1.9.9
 
@@ -6295,11 +6305,15 @@ snapshots:
       '@solid-primitives/utils': 6.3.2(solid-js@1.9.9)
       solid-js: 1.9.9
 
-  '@solid-primitives/timer@1.4.3(solid-js@1.9.9)':
+  '@solid-primitives/timer@1.4.4(solid-js@1.9.9)':
     dependencies:
       solid-js: 1.9.9
 
   '@solid-primitives/utils@6.3.2(solid-js@1.9.9)':
+    dependencies:
+      solid-js: 1.9.9
+
+  '@solid-primitives/utils@6.4.0(solid-js@1.9.9)':
     dependencies:
       solid-js: 1.9.9
 

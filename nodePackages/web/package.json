@@ -51,7 +51,7 @@
     "@kurone-kito/launchpad-icons-solid": "workspace:^",
     "@kurone-kito/web-toybox": "0.1.0-alpha.2",
     "@solid-primitives/clipboard": "^1.6.2",
-    "@solid-primitives/date": "^2.1.4",
+    "@solid-primitives/date": "^2.1.6",
     "@solid-primitives/i18n": "^2.2.1",
     "@solid-primitives/media": "^2.3.3",
     "@solid-primitives/platform": "^0.2.1",
