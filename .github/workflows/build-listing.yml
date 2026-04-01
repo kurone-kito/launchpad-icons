@@ -86,7 +86,7 @@ jobs:
       - name: Copy the generated index.json to the publish directory
         run: cp $GITHUB_WORKSPACE/${{ env.jsonGeneratedDirectory }}/index.json $GITHUB_WORKSPACE/${{ env.listPublishDirectory }}/
       - name: Prepare for GitHub Pages deployment
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           enablement: true
           token: ${{ secrets.REPO_TOKEN }}
