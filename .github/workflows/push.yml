@@ -64,7 +64,7 @@ jobs:
       - name: Stages the pushed branch
         uses: actions/checkout@v5
       - name: Setup the pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v5
         with:
           run_install: false
       - name: Prepare the Node.js version ${{ matrix.node-version }} environment
