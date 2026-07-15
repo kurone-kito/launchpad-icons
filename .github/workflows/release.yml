@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stages the pushed branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
       - id: config_package
         name: Ensure that required repository variable has been created for the Package
         run: |
@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stages the pushed branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
       - name: Setup the pnpm
         uses: pnpm/action-setup@v6
         with:
@@ -102,7 +102,7 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
           trust_level: 5
       - name: Checkout Local Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
       - name: copy the README and LICENSE files to the Package folder
         run: cp README.md LICENSE "${{ needs.config.outputs.upm_package }}"
       - name: Configure the Environment Variables needed for releasing the Package
