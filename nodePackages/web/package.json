@@ -86,7 +86,7 @@
     "cpy-cli": "^6.0.0",
     "daisyui": "^5.1.29",
     "jsdom": "^27.0.0",
-    "markdown-it": "^14.2.0",
+    "markdown-it": "^14.3.0",
     "markdown-it-link-attributes": "^4.0.1",
     "rimraf": "^6.0.1",
     "solid-icons": "^1.1.0",
