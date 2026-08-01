@@ -76,7 +76,7 @@
     "@storybook/blocks": "^8.6.14",
     "@storybook/docs-tools": "^8.6.14",
     "@storybook/types": "^8.6.14",
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.1.14",
     "@testing-library/jest-dom": "6.9.1",
     "@types/markdown-it": "^14.1.2",
