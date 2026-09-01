@@ -36,8 +36,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.0(cspell@9.2.1)(lint-staged@16.2.3)
       '@kurone-kito/markdownlint-config':
-        specifier: ^0.21.0
-        version: 0.21.0
+        specifier: ^0.22.0
+        version: 0.22.0
       '@kurone-kito/typescript-config':
         specifier: ^0.21.0
         version: 0.21.0(typescript@5.9.3)
@@ -1378,8 +1378,8 @@ packages:
       lint-staged:
         optional: true
 
-  '@kurone-kito/markdownlint-config@0.21.0':
-    resolution: {integrity: sha512-mTbVM6wWk1XK6m2WJQAeOtynqSZHBTHieDH5VPqtLce2JFCcV8/x/7HlcJC8iO3Zn63Kyhricq9f8YrU6ic0cQ==}
+  '@kurone-kito/markdownlint-config@0.22.0':
+    resolution: {integrity: sha512-eldayG/vr7tXDfbQczUwRr6YsR6Zlm/PS85ix7BL3MQjUTi6dP79zY/bq4usZ+bWPBIHswTBRSwpUOTax8gKiA==}
     engines: {node: ^20.11 || ^22 || >=24}
 
   '@kurone-kito/typescript-config@0.21.0':
@@ -6636,7 +6636,7 @@ snapshots:
       cspell: 9.2.1
       lint-staged: 16.2.3
 
-  '@kurone-kito/markdownlint-config@0.21.0': {}
+  '@kurone-kito/markdownlint-config@0.22.0': {}
 
   '@kurone-kito/typescript-config@0.21.0(typescript@5.9.3)':
     optionalDependencies:
