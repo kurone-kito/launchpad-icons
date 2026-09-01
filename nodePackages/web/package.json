@@ -99,7 +99,7 @@
     "vinxi": "^0.5.8",
     "vite": "^7.3.5",
     "vite-plugin-markdown": "^2.2.0",
-    "vite-plugin-solid": "^2.11.9",
+    "vite-plugin-solid": "^2.11.14",
     "vitest": "^3.2.6"
   },
   "engines": {
