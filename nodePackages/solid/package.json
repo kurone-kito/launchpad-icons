@@ -51,7 +51,7 @@
     "@solidjs/testing-library": "^0.8.10",
     "@testing-library/jest-dom": "^6.9.1",
     "cpy-cli": "^6.0.0",
-    "jsdom": "^27.0.0",
+    "jsdom": "^30.0.1",
     "rimraf": "^6.0.1",
     "solid-js": "^1.9.9",
     "typedoc": "^0.28.20",
