@@ -45,7 +45,7 @@
   "devDependencies": {
     "@kurone-kito/launchpad-icons-builder": "workspace:^",
     "@kurone-kito/typescript-config": "^0.21.0",
-    "@testing-library/react": "^16.3.0",
+    "@testing-library/react": "^16.3.3",
     "@types/react": "^18.3.19",
     "@vitejs/plugin-react": "^4.7.0",
     "cpy-cli": "^6.0.0",
