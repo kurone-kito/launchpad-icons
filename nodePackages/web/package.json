@@ -62,7 +62,7 @@
     "clsx": "^2.1.1",
     "solid-js": "^1.9.9",
     "tailwind-merge": "^3.6.0",
-    "theme-change": "^2.5.0"
+    "theme-change": "^3.0.4"
   },
   "devDependencies": {
     "@kurone-kito/typescript-config": "^0.21.0",
