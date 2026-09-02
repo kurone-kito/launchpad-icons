@@ -253,8 +253,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0
       theme-change:
-        specifier: ^2.5.0
-        version: 2.5.0
+        specifier: ^3.0.4
+        version: 3.0.4
     devDependencies:
       '@kurone-kito/typescript-config':
         specifier: ^0.21.0
@@ -5149,8 +5149,8 @@ packages:
     resolution: {integrity: sha512-te/NtwBwfiNRLf9Ijqx3T0nlqZiQ2XrrtBvu+cLL8ZRrGkO0NHTug8MYFKyoSrv/sHTaSKfilUkizV6XhxMJ3g==}
     engines: {node: '>=8'}
 
-  theme-change@2.5.0:
-    resolution: {integrity: sha512-B/UdsgdHAGhSKHTAQnxg/etN0RaMDpehuJmZIjLMDVJ6DGIliRHGD6pODi1CXLQAN9GV0GSyB3G6yCuK05PkPQ==}
+  theme-change@3.0.4:
+    resolution: {integrity: sha512-tPknw142u0yX7M63rXOU1gc2N3cw61iLUtuvh5OKxXTA4/B5SOXxOeS+JT8Ig14SCjs5T2rY41aLFDeTRclV5w==}
 
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
@@ -10658,7 +10658,7 @@ snapshots:
 
   text-extensions@2.4.0: {}
 
-  theme-change@2.5.0: {}
+  theme-change@3.0.4: {}
 
   through@2.3.8: {}
 
