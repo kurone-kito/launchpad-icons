@@ -84,7 +84,7 @@
     "@vitest/coverage-v8": "^3.2.4",
     "autoprefixer": "^10.5.0",
     "cpy-cli": "^6.0.0",
-    "daisyui": "^5.1.29",
+    "daisyui": "^5.7.22",
     "jsdom": "^30.0.1",
     "markdown-it": "^14.3.0",
     "markdown-it-link-attributes": "^4.0.1",
