@@ -30,8 +30,8 @@ importers:
         specifier: ^0.21.0
         version: 0.21.0(@commitlint/config-conventional@21.2.0)
       '@kurone-kito/cspell-config':
-        specifier: ^0.21.0
-        version: 0.21.0(cspell@9.2.1)
+        specifier: ^0.23.0
+        version: 0.23.0(cspell@9.2.1)
       '@kurone-kito/lint-staged-config':
         specifier: ^0.21.0
         version: 0.21.0(cspell@9.2.1)(lint-staged@16.2.3)
@@ -1392,11 +1392,11 @@ packages:
       '@commitlint/config-conventional':
         optional: true
 
-  '@kurone-kito/cspell-config@0.21.0':
-    resolution: {integrity: sha512-e5md1IDwmZm0YaDFKhfpjqiByMWY5xIEevfZayup9d6N2gUD2OJ+xMF9yeRxFYqHZFkJPcKXj7LXhBaA1TI+3A==}
-    engines: {node: ^20.11 || ^22 || >=24}
+  '@kurone-kito/cspell-config@0.23.0':
+    resolution: {integrity: sha512-8fmxEQa0PlChqActw4ybqgYU6emSOQUUqVr93S4REjpu4KC+JrJ8C+EJPjMU8r4Xate4bMc5FrlbJL46VtkmVA==}
+    engines: {node: ^22.23.2 || ^24.2.0 || >=26.0.0}
     peerDependencies:
-      cspell: '*'
+      cspell: '>=8.x.x'
     peerDependenciesMeta:
       cspell:
         optional: true
@@ -6920,7 +6920,7 @@ snapshots:
     optionalDependencies:
       '@commitlint/config-conventional': 21.2.0
 
-  '@kurone-kito/cspell-config@0.21.0(cspell@9.2.1)':
+  '@kurone-kito/cspell-config@0.23.0(cspell@9.2.1)':
     optionalDependencies:
       cspell: 9.2.1
 
