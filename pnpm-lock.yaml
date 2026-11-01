@@ -21,8 +21,8 @@ importers:
         specifier: ^21.2.0
         version: 21.2.0
       '@cspell/cspell-types':
-        specifier: ^9.2.1
-        version: 9.2.1
+        specifier: ^10.4.0
+        version: 10.4.0
       '@kurone-kito/biome-config':
         specifier: ^0.21.0
         version: 0.21.0(@biomejs/biome@2.2.5)
@@ -736,6 +736,10 @@ packages:
   '@cspell/cspell-service-bus@9.2.1':
     resolution: {integrity: sha512-k4M6bqdvWbcGSbcfLD7Lf4coZVObsISDW+sm/VaWp9aZ7/uwiz1IuGUxL9WO4JIdr9CFEf7Ivmvd2txZpVOCIA==}
     engines: {node: '>=20'}
+
+  '@cspell/cspell-types@10.4.0':
+    resolution: {integrity: sha512-LTOrZcDSHj5BkeNSvimuV3AMF7gWjxzXUdQ7zYT/h/57/5flHuE6NPKSXS69ty8vJM0WrVh35L5aDxnCPfDzXA==}
+    engines: {node: '>=22.18.0'}
 
   '@cspell/cspell-types@9.2.1':
     resolution: {integrity: sha512-FQHgQYdTHkcpxT0u1ddLIg5Cc5ePVDcLg9+b5Wgaubmc5I0tLotgYj8c/mvStWuKsuZIs6sUopjJrE91wk6Onw==}
@@ -6487,6 +6491,8 @@ snapshots:
       global-directory: 4.0.1
 
   '@cspell/cspell-service-bus@9.2.1': {}
+
+  '@cspell/cspell-types@10.4.0': {}
 
   '@cspell/cspell-types@9.2.1': {}
 
