@@ -59,7 +59,7 @@
     "@cspell/cspell-types": "^9.2.1",
     "@kurone-kito/biome-config": "^0.21.0",
     "@kurone-kito/commitlint-config": "^0.21.0",
-    "@kurone-kito/cspell-config": "^0.21.0",
+    "@kurone-kito/cspell-config": "^0.23.0",
     "@kurone-kito/lint-staged-config": "^0.21.0",
     "@kurone-kito/markdownlint-config": "^0.22.0",
     "@kurone-kito/typescript-config": "^0.21.0",
